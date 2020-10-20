@@ -1,0 +1,3441 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Laravel · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="backend_testing.html" />
+    
+    
+    <link rel="prev" href="backend_framework_symfony.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    はじめに
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    このサイトについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    自己紹介
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="self_introduction.html">
+            
+                <a href="self_introduction.html">
+            
+                    
+                    長谷川広樹と申します
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    PHP｜オブジェクト指向
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="backend_object_oriented_analysis_and_design.html">
+            
+                <a href="backend_object_oriented_analysis_and_design.html">
+            
+                    
+                    オブジェクト指向分析／設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="backend_object_oriented_programming_class.html">
+            
+                <a href="backend_object_oriented_programming_class.html">
+            
+                    
+                    オブジェクト指向設計／プログラミング（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="backend_object_oriented_programming_method_data.html">
+            
+                <a href="backend_object_oriented_programming_method_data.html">
+            
+                    
+                    オブジェクト指向設計／プログラミング （2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    PHP｜ロジック
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="backend_logic_validation.html">
+            
+                <a href="backend_logic_validation.html">
+            
+                    
+                    バックエンド側の検証ロジック
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="backend_logic_iteration.html">
+            
+                <a href="backend_logic_iteration.html">
+            
+                    
+                    繰り返しロジック
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PHP｜API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="backend_api_restful.html">
+            
+                <a href="backend_api_restful.html">
+            
+                    
+                    RESTful APIの概念と実装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    PHP｜ライブラリ／フレームワーク
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="backend_library.html">
+            
+                <a href="backend_library.html">
+            
+                    
+                    ライブラリ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="backend_framework_symfony.html">
+            
+                <a href="backend_framework_symfony.html">
+            
+                    
+                    Symfony
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="backend_framework_laravel.html">
+            
+                <a href="backend_framework_laravel.html">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="backend_testing.html">
+            
+                <a href="backend_testing.html">
+            
+                    
+                    テストフレームワークとテスト仕様書
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    PHP｜アーキテクチャ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="backend_architecture_domain_driven_design.html">
+            
+                <a href="backend_architecture_domain_driven_design.html">
+            
+                    
+                    ドメイン駆動設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="backend_architecture_cqrs.html">
+            
+                <a href="backend_architecture_cqrs.html">
+            
+                    
+                    CQRS設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    フロントエンドとバックエンド間のデータ通信
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="frontend_and_backend_authentication_authorization.html">
+            
+                <a href="frontend_and_backend_authentication_authorization.html">
+            
+                    
+                    認証と認可
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="frontend_and_backend_json.html">
+            
+                <a href="frontend_and_backend_json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    JS｜オブジェクト指向
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="frontend_object_oriented_based_prototype_method_data.html">
+            
+                <a href="frontend_object_oriented_based_prototype_method_data.html">
+            
+                    
+                    プロトタイプベースのオブジェクト指向
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    JS｜ロジック
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="frontend_logic_validation.html">
+            
+                <a href="frontend_logic_validation.html">
+            
+                    
+                    フロントエンド側の検証ロジック
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    JS｜アーキテクチャ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="frontend_architecture_spa_vuejs.html">
+            
+                <a href="frontend_architecture_spa_vuejs.html">
+            
+                    
+                    Single Page Application設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    PHP / JS｜デバッグ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="backend_debug.html">
+            
+                <a href="backend_debug.html">
+            
+                    
+                    バックエンドのデバッグの豆知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="frontend_debug.html">
+            
+                <a href="frontend_debug.html">
+            
+                    
+                    フロントエンドのデバッグの豆知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    JS / HTML｜ブラウザレンダリング
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="frontend_browser_rendering.html">
+            
+                <a href="frontend_browser_rendering.html">
+            
+                    
+                    ブラウザレンダリングの仕組み
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    データベース
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="backend_database_operation.html">
+            
+                <a href="backend_database_operation.html">
+            
+                    
+                    データベースの操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="backend_database_mysql.html">
+            
+                <a href="backend_database_mysql.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    ネットワーク｜構造
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="infrastructure_network_internet.html">
+            
+                <a href="infrastructure_network_internet.html">
+            
+                    
+                    ネットワークの構造
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    ネットワーク｜セキュリティ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="infrastructure_network_cyber_attacks.html">
+            
+                <a href="infrastructure_network_cyber_attacks.html">
+            
+                    
+                    サイバー攻撃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="infrastructure_network_encryption_technology.html">
+            
+                <a href="infrastructure_network_encryption_technology.html">
+            
+                    
+                    通信データの暗号化技術
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    ソフトウェア｜種類
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="infrastructure_software.html">
+            
+                <a href="infrastructure_software.html">
+            
+                    
+                    ソフトウェアの種類
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    ソフトウェア｜ミドルウェア
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="infrastructure_software_middleware_nginx.html">
+            
+                <a href="infrastructure_software_middleware_nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="infrastructure_software_middleware_apache.html">
+            
+                <a href="infrastructure_software_middleware_apache.html">
+            
+                    
+                    Apache
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    ソフトウェア｜CentOSの構成
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="infrastructure_software_centos.html">
+            
+                <a href="infrastructure_software_centos.html">
+            
+                    
+                    CentOSの構成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    ソフトウェア｜機械語と進数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="infrastructure_software_machine_language_and_radix.html">
+            
+                <a href="infrastructure_software_machine_language_and_radix.html">
+            
+                    
+                    機械語と進数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    クラウドインフラストラクチャ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="infrastructure_cloud_computing.html">
+            
+                <a href="infrastructure_cloud_computing.html">
+            
+                    
+                    クラウドコンピューティング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="infrastructure_cloud_computing_aws.html">
+            
+                <a href="infrastructure_cloud_computing_aws.html">
+            
+                    
+                    Amazon Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="infrastructure_cloud_computing_gcp.html">
+            
+                <a href="infrastructure_cloud_computing_gcp.html">
+            
+                    
+                    Google Cloud Platform
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    IaC｜種類
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="infrastructure_as_code.html">
+            
+                <a href="infrastructure_as_code.html">
+            
+                    
+                    Infrastructure as Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" >
+            
+                <span>
+            
+                    
+                    IaC｜Terraform
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="infrastructure_terraform.html">
+            
+                <a href="infrastructure_terraform.html">
+            
+                    
+                    Terraform
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" >
+            
+                <span>
+            
+                    
+                    インフラストラクチャ｜仮想化サーバ，コンテナ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="infrastructure_virtualization_comparison.html">
+            
+                <a href="infrastructure_virtualization_comparison.html">
+            
+                    
+                    仮想化技術の比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="infrastructure_virtualization_server.html">
+            
+                <a href="infrastructure_virtualization_server.html">
+            
+                    
+                    コンテナ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="infrastructure_virtualization_container.html">
+            
+                <a href="infrastructure_virtualization_container.html">
+            
+                    
+                    コンテナオーケストレーション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="infrastructure_virtualization_container_orchestration.html">
+            
+                <a href="infrastructure_virtualization_container_orchestration.html">
+            
+                    
+                    仮想サーバ（仮想マシン）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" >
+            
+                <span>
+            
+                    
+                    インフラストラクチャ｜CI/CD
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="infrastructure_ci_cd.html">
+            
+                <a href="infrastructure_ci_cd.html">
+            
+                    
+                    CircleCI，Capistrano
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" >
+            
+                <span>
+            
+                    
+                    ハードウェア
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="hardware.html">
+            
+                <a href="hardware.html">
+            
+                    
+                    ハードウェア
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26.2" data-path="hardware_embedded_system.html">
+            
+                <a href="hardware_embedded_system.html">
+            
+                    
+                    組み込み機器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" >
+            
+                <span>
+            
+                    
+                    開発フロー
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="management_development_flow.html">
+            
+                <a href="management_development_flow.html">
+            
+                    
+                    システム開発フローの全体像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.28.1" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    Gitの豆知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" >
+            
+                <span>
+            
+                    
+                    アルゴリズム
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.29.1" data-path="backend_logic_algorithm.html">
+            
+                <a href="backend_logic_algorithm.html">
+            
+                    
+                    アルゴリズムのロジック
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" >
+            
+                <span>
+            
+                    
+                    r言語
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.30.1" data-path="statistic_analysis.html">
+            
+                <a href="statistic_analysis.html">
+            
+                    
+                    統計解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Laravel</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="laravel">Laravel</h1>
+<h2 id="facade">Facade</h2>
+<h3 id="&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;">&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;</h3>
+<h4 id="&#x30FB;facade&#x3068;&#x306F;">&#x30FB;Facade&#x3068;&#x306F;</h4>
+<p>Facade&#x306B;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#xFF08;Facade&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3068;ServiceContainer&#x3092;&#x7E4B;&#x3050;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x3068;&#x3057;&#x3066;&#x50CD;&#x304F;&#xFF0E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;</p>
+<h4 id="&#x30FB;facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;">&#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;</h4>
+<p>new&#x6F14;&#x7B97;&#x5B50;&#x3067;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> 
+
+<span class="hljs-title">class</span> <span class="hljs-title">Example</span>
+{
+    <span class="hljs-title">public</span> <span class="hljs-title">function</span> <span class="hljs-title">method</span>()
+    {
+        <span class="hljs-title">return</span> &quot;<span class="hljs-title">example</span>&quot;;
+    }
+}
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// &#x901A;&#x5E38;</span>
+$example = <span class="hljs-keyword">new</span> Example();
+$example-&gt;method();
+</code></pre>
+<h4 id="&#x30FB;facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;">&#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;</h4>
+<p>&#x9759;&#x7684;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x8A18;&#x6CD5;&#x3067;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#xFF0E;&#x305F;&#x3060;&#x3057;&#xFF0C;&#x81EA;&#x4F5C;&#x30AF;&#x30E9;&#x30B9;&#x3092;Facade&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5316;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x30B9;&#x30D1;&#x30B2;&#x30C3;&#x30C6;&#x30A3;&#x306A;&#x300C;Composition&#xFF08;&#x5408;&#x6210;&#xFF09;&#x300D;&#x306E;&#x4F9D;&#x5B58;&#x95A2;&#x4FC2;&#x3092;&#x751F;&#x3058;&#x3055;&#x305B;&#x3066;&#x3057;&#x307E;&#x3046;&#xFF0E;&#x4F8B;&#x3048;&#x3070;&#xFF0C;Facade&#x306E;&#x4E2D;&#x3067;&#x3082;&#xFF0C;<code>Route</code>&#x306E;&#x3088;&#x3046;&#x306A;&#xFF0C;&#x4EE3;&#x66FF;&#x3059;&#x308B;&#x3088;&#x308A;&#x3082;Facade&#x3092;&#x4F7F;&#x3063;&#x305F;&#x307B;&#x3046;&#x304C;&#x65AD;&#x7136;&#x4FBF;&#x5229;&#x3067;&#x3042;&#x308B;&#x90E8;&#x5206;&#x4EE5;&#x5916;&#x306F;&#xFF0C;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x307B;&#x3046;&#x304C;&#x3088;&#x3044;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<p>Facade&#x3068;&#x3057;&#x3066;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x3044;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;example&quot;</span>;
+    }
+}
+</code></pre>
+<pre><code class="lang-config/app.php```&#x306E;```aliases```&#x914D;&#x5217;&#x306B;&#xFF0C;&#x30A8;&#x30A4;&#x30EA;&#x30A2;&#x30B9;&#x540D;&#x3068;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x540D;&#x524D;&#x7A7A;&#x9593;&#x3092;&#x767B;&#x9332;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x305D;&#x306E;&#x30A8;&#x30A4;&#x30EA;&#x30A2;&#x30B9;&#x540D;&#x3067;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5316;&#x3068;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x30B3;&#x30FC;&#x30EB;&#x3092;&#x884C;&#x3048;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;">
+```php
+&lt;?php
+
+&apos;aliases&apos; =&gt; [
+    &apos;Example&apos; =&gt; App\Domain\Entity\Example::class,
+]
+</code></pre>
+<p>&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5316;&#x3068;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x30B3;&#x30FC;&#x30EB;&#x3092;&#x884C;&#x3046;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Facades</span>\<span class="hljs-title">Example</span>;
+
+<span class="hljs-comment">// Facade&#x5229;&#x7528;</span>
+$result = Example::method();
+</code></pre>
+<h4 id="&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;">&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;</h4>
+<p>&#x4EE5;&#x4E0B;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#xFF0C;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3067;&#x767B;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;Facade&#x3067;&#x3042;&#x308B;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x30A8;&#x30A4;&#x30EA;&#x30A2;&#x30B9;&#x540D;</th>
+<th style="text-align:left">&#x30AF;&#x30E9;&#x30B9;&#x540D;</th>
+<th style="text-align:left">&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x30B3;&#x30F3;&#x30C6;&#x30CA;&#x7D50;&#x5408;&#x30AD;&#x30FC;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">App</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Foundation/Application.html" target="_blank">Illuminate\Foundation\Application</a></td>
+<td style="text-align:left"><code>app</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Artisan</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Console/Kernel.html" target="_blank">Illuminate\Contracts\Console\Kernel</a></td>
+<td style="text-align:left"><code>artisan</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Auth</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Auth/AuthManager.html" target="_blank">Illuminate\Auth\AuthManager</a></td>
+<td style="text-align:left"><code>auth</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Auth (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Auth/Guard.html" target="_blank">Illuminate\Contracts\Auth\Guard</a></td>
+<td style="text-align:left"><code>auth.driver</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Blade</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/View/Compilers/BladeCompiler.html" target="_blank">Illuminate\View\Compilers\BladeCompiler</a></td>
+<td style="text-align:left"><code>blade.compiler</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Broadcast</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Broadcasting/Factory.html" target="_blank">Illuminate\Contracts\Broadcasting\Factory</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Broadcast (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Broadcasting/Broadcaster.html" target="_blank">Illuminate\Contracts\Broadcasting\Broadcaster</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Bus</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Bus/Dispatcher.html" target="_blank">Illuminate\Contracts\Bus\Dispatcher</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Cache</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Cache/CacheManager.html" target="_blank">Illuminate\Cache\CacheManager</a></td>
+<td style="text-align:left"><code>cache</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cache (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Cache/Repository.html" target="_blank">Illuminate\Cache\Repository</a></td>
+<td style="text-align:left"><code>cache.store</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Config</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Config/Repository.html" target="_blank">Illuminate\Config\Repository</a></td>
+<td style="text-align:left"><code>config</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cookie</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Cookie/CookieJar.html" target="_blank">Illuminate\Cookie\CookieJar</a></td>
+<td style="text-align:left"><code>cookie</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Crypt</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Encryption/Encrypter.html" target="_blank">Illuminate\Encryption\Encrypter</a></td>
+<td style="text-align:left"><code>encrypter</code></td>
+</tr>
+<tr>
+<td style="text-align:left">DB</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Database/DatabaseManager.html" target="_blank">Illuminate\Database\DatabaseManager</a></td>
+<td style="text-align:left"><code>db</code></td>
+</tr>
+<tr>
+<td style="text-align:left">DB (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Database/Connection.html" target="_blank">Illuminate\Database\Connection</a></td>
+<td style="text-align:left"><code>db.connection</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Event</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Events/Dispatcher.html" target="_blank">Illuminate\Events\Dispatcher</a></td>
+<td style="text-align:left"><code>events</code></td>
+</tr>
+<tr>
+<td style="text-align:left">File</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Filesystem/Filesystem.html" target="_blank">Illuminate\Filesystem\Filesystem</a></td>
+<td style="text-align:left"><code>files</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Gate</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Auth/Access/Gate.html" target="_blank">Illuminate\Contracts\Auth\Access\Gate</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Hash</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Hashing/Hasher.html" target="_blank">Illuminate\Contracts\Hashing\Hasher</a></td>
+<td style="text-align:left"><code>hash</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Lang</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Translation/Translator.html" target="_blank">Illuminate\Translation\Translator</a></td>
+<td style="text-align:left"><code>translator</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Log</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Log/LogManager.html" target="_blank">Illuminate\Log\LogManager</a></td>
+<td style="text-align:left"><code>log</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Mail</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Mail/Mailer.html" target="_blank">Illuminate\Mail\Mailer</a></td>
+<td style="text-align:left"><code>mailer</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Notification</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Notifications/ChannelManager.html" target="_blank">Illuminate\Notifications\ChannelManager</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Password</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Auth/Passwords/PasswordBrokerManager.html" target="_blank">Illuminate\Auth\Passwords\PasswordBrokerManager</a></td>
+<td style="text-align:left"><code>auth.password</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Password (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Auth/Passwords/PasswordBroker.html" target="_blank">Illuminate\Auth\Passwords\PasswordBroker</a></td>
+<td style="text-align:left"><code>auth.password.broker</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Queue</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Queue/QueueManager.html" target="_blank">Illuminate\Queue\QueueManager</a></td>
+<td style="text-align:left"><code>queue</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Queue (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Queue/Queue.html" target="_blank">Illuminate\Contracts\Queue\Queue</a></td>
+<td style="text-align:left"><code>queue.connection</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Queue (Base Class)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Queue/Queue.html" target="_blank">Illuminate\Queue\Queue</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Redirect</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Routing/Redirector.html" target="_blank">Illuminate\Routing\Redirector</a></td>
+<td style="text-align:left"><code>redirect</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Redis</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Redis/RedisManager.html" target="_blank">Illuminate\Redis\RedisManager</a></td>
+<td style="text-align:left"><code>redis</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Redis (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Redis/Connections/Connection.html" target="_blank">Illuminate\Redis\Connections\Connection</a></td>
+<td style="text-align:left"><code>redis.connection</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Request</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Http/Request.html" target="_blank">Illuminate\Http\Request</a></td>
+<td style="text-align:left"><code>request</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Response</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Routing/ResponseFactory.html" target="_blank">Illuminate\Contracts\Routing\ResponseFactory</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Response (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Http/Response.html" target="_blank">Illuminate\Http\Response</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Route</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Routing/Router.html" target="_blank">Illuminate\Routing\Router</a></td>
+<td style="text-align:left"><code>router</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Schema</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Database/Schema/Builder.html" target="_blank">Illuminate\Database\Schema\Builder</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Session</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Session/SessionManager.html" target="_blank">Illuminate\Session\SessionManager</a></td>
+<td style="text-align:left"><code>session</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Session (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Session/Store.html" target="_blank">Illuminate\Session\Store</a></td>
+<td style="text-align:left"><code>session.store</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Storage</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Filesystem/FilesystemManager.html" target="_blank">Illuminate\Filesystem\FilesystemManager</a></td>
+<td style="text-align:left"><code>filesystem</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Storage (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Contracts/Filesystem/Filesystem.html" target="_blank">Illuminate\Contracts\Filesystem\Filesystem</a></td>
+<td style="text-align:left"><code>filesystem.disk</code></td>
+</tr>
+<tr>
+<td style="text-align:left">URL</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Routing/UrlGenerator.html" target="_blank">Illuminate\Routing\UrlGenerator</a></td>
+<td style="text-align:left"><code>url</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Validator</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Validation/Factory.html" target="_blank">Illuminate\Validation\Factory</a></td>
+<td style="text-align:left"><code>validator</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Validator (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/Validation/Validator.html" target="_blank">Illuminate\Validation\Validator</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">View</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/View/Factory.html" target="_blank">Illuminate\View\Factory</a></td>
+<td style="text-align:left"><code>view</code></td>
+</tr>
+<tr>
+<td style="text-align:left">View (Instance)</td>
+<td style="text-align:left"><a href="https://laravel.com/api/6.x/Illuminate/View/View.html" target="_blank">Illuminate\View\View</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="serviceprovider">ServiceProvider</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<pre><code class="lang-bash">$ php artisan make:provider {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
+</code></pre>
+<h3 id="serviceprovider">ServiceProvider</h3>
+<h4 id="&#x30FB;serviceprovider&#x306E;&#x7528;&#x9014;">&#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x7528;&#x9014;&#x306E;&#x7A2E;&#x985E;</th>
+<th>&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AppServiceProvider</td>
+<td>&#x30FB;ServiceContainer&#x3078;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF08;&#x767B;&#x9332;&#xFF09;<br>&#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;&#xFF08;&#x751F;&#x6210;&#xFF09;</td>
+</tr>
+<tr>
+<td>MacroServiceProvider</td>
+<td>ServiceContainer&#x3078;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF08;&#x767B;&#x9332;&#xFF09;</td>
+</tr>
+<tr>
+<td>RouteServiceProvider<br>&#xFF08;app.php&#xFF0C;web.php&#x3082;&#x4F7F;&#x7528;&#xFF09;</td>
+<td>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3068;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306E;&#x5BFE;&#x5FDC;&#x95A2;&#x4FC2;&#x306E;&#x5B9A;&#x7FA9;</td>
+</tr>
+<tr>
+<td>EventServiceProvider</td>
+<td>EventListener&#x3068;Eventhandler&#x95A2;&#x6570;&#x306E;&#x5BFE;&#x5FDC;&#x95A2;&#x4FC2;&#x306E;&#x5B9A;&#x7FA9;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x30FB;serviceprovider&#x306E;&#x30B3;&#x30FC;&#x30EB;">&#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;</h4>
+<pre><code class="lang-config/app.php```&#x306E;```providers```&#x914D;&#x5217;&#x306B;&#xFF0C;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x540D;&#x524D;&#x7A7A;&#x9593;&#x3092;&#x767B;&#x9332;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x8D77;&#x52D5;&#x6642;&#x306B;ServiceProvider&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#x305F;&#x3081;&#xFF0C;ServiceContainer&#x3078;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x304C;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x5B8C;&#x4E86;&#x3059;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+&lt;?php
+
+&apos;providers&apos; =&gt; [
+
+    // &#x8907;&#x6570;&#x306E;ServiceProvider&#x304C;&#x5B9F;&#x88C5;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;
+
+    App\Providers\ComposerServiceProvider::class,
+],
+</code></pre>
+<h3 id="appserviceprovider">AppServiceProvider</h3>
+<h4 id="&#x30FB;servicecontainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;">&#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</h4>
+<p>&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF08;&#x767B;&#x9332;&#xFF09;&#x3057;&#x305F;&#x3060;&#x3051;&#x3067;&#x65B0;&#x3057;&#x3044;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x30EA;&#x30BE;&#x30EB;&#x30D6;&#xFF08;&#x751F;&#x6210;&#xFF09;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x300E;ServiceContainer&#x300F;&#x3068;&#x3044;&#x3046;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Contracts</span>\<span class="hljs-title">Container</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Closure</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Psr</span>\<span class="hljs-title">Container</span>\<span class="hljs-title">ContainerInterface</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Container</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ContainerInterface</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x901A;&#x5E38;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C7;&#x30A3;&#x30F3;&#x30B0;&#x3068;&#x3057;&#x3066;&#xFF0C;&#x81EA;&#x8EAB;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3059;&#x308B;&#xFF0E;
+     * &#x7B2C;&#x4E8C;&#x5F15;&#x6570;&#x306F;&#xFF0C;&#x30AF;&#x30ED;&#x30FC;&#x30B8;&#x30E3;&#x30FC;&#xFF0C;&#x3082;&#x3057;&#x304F;&#x306F;&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x524D;&#x7A7A;&#x9593;
+     *
+     * <span class="hljs-doctag">@param</span>  string  $abstract
+     * <span class="hljs-doctag">@param</span>  \Closure|string|null  $concrete
+     * <span class="hljs-doctag">@param</span>  bool  $shared
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bind</span><span class="hljs-params">($abstract, $concrete = null, $shared = false)</span></span>;
+
+    <span class="hljs-comment">/**
+     * singleton&#x3068;&#x3057;&#x3066;&#xFF0C;&#x81EA;&#x8EAB;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3059;&#x308B;&#xFF0E;
+     *
+     * <span class="hljs-doctag">@param</span>  string  $abstract
+     * <span class="hljs-doctag">@param</span>  \Closure|string|null  $concrete
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">singleton</span><span class="hljs-params">($abstract, $concrete = null)</span></span>;
+}
+</code></pre>
+<h4 id="&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
+<p>AppSeriveProvider&#x306B;&#x3066;&#xFF0C;ServiceContainer&#x306B;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;ServiceContainer&#x304C;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x751F;&#x6210;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;Laravel&#x3067;&#x306F;&#xFF0C;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x306F;ServiceContainer&#x306B;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3055;&#x308C;&#x3066;&#x304A;&#x308A;&#xFF0C;&#x4EE5;&#x4E0B;&#x306E;&#x5B9F;&#x88C5;&#x3092;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x306F;&#x306A;&#x3044;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">ServiceProvider</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30B3;&#x30F3;&#x30C6;&#x30CA;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">register</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;app-&gt;bind(Example::class, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($app)</span> </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Example1(<span class="hljs-keyword">new</span> Example2, <span class="hljs-keyword">new</span> Example3);
+        });
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example1</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example2</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example3</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">ServiceProvider</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExamplesServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+     <span class="hljs-comment">/**
+     * &#x5404;register&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">register</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;registerExample1();
+        $this-&gt;registerExample2();
+        $this-&gt;registerExample3();
+    }
+
+    <span class="hljs-comment">/**
+    * &#x4E00;&#x3064;&#x76EE;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;
+    */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">registerExample1</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;app-&gt;bind(Example1::class, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($app)</span> </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Example1();
+        });
+    }
+
+    <span class="hljs-comment">/**
+    * &#x4E8C;&#x3064;&#x76EE;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;
+    */</span>    
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">registerExample2</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;app-&gt;bind(Example2::class, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($app)</span> </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Example2();
+        });
+    }
+
+    <span class="hljs-comment">/**
+    * &#x4E09;&#x3064;&#x76EE;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;
+    */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">registerExample3</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;app-&gt;bind(Example3::class, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($app)</span> </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Example3();
+        });
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
+<p>&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3055;&#x308C;&#x308B;&#x304C;&#xFF0C;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x306F;&#xFF0C;&#x624B;&#x52D5;&#x3067;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#xFF0E;&#x3053;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3068;&#x5B9F;&#x88C5;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x751F;&#x6210;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">ServiceProvider</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">ExampleRepository</span> <span class="hljs-title">as</span> <span class="hljs-title">ExampleRepositoryInterface</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Infrastructure</span>\<span class="hljs-title">ExampleRepository</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30B3;&#x30F3;&#x30C6;&#x30CA;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">register</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">// Domain&#x5C64;&#x3068;Infrastructure&#x5C64;&#x306E;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;&#x7D50;&#x5408;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</span>
+        $this-&gt;app-&gt;bind(
+            <span class="hljs-string">&apos;App\Domain\Repositories\ArticleRepository&apos;</span>,
+            <span class="hljs-string">&apos;App\Infrastructure\Repositories\ArticleRepository&apos;</span>
+        );
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;servicecontainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;">&#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</h4>
+<p>&#x30B3;&#x30F3;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30BF;&#x306E;&#x5F15;&#x6570;&#x306B;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x6E21;&#x3057;&#x3066;&#x304A;&#x304F;&#xFF0E;App&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5BA3;&#x8A00;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#xFF0C;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x884C;&#x3046;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Entity</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30B5;&#x30D6;&#x30AF;&#x30E9;&#x30B9;
+     */</span>
+    <span class="hljs-keyword">protected</span> $subExample;
+
+    <span class="hljs-comment">/**
+     * &#x30B3;&#x30F3;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30BF;&#x30A4;&#x30F3;&#x30B8;&#x30A7;&#x30AF;&#x30B7;&#x30E7;&#x30F3;
+     *
+     * <span class="hljs-doctag">@param</span> SubExmaple $subExample
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(SubExmaple $subExample)</span>
+    </span>{
+        $this-&gt;example = $subExample;
+    }
+}
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;example&quot;</span>;
+    }
+}
+
+<span class="hljs-comment">// Example&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30EA;&#x30BE;&#x30EB;&#x30D6;&#x3057;&#xFF0C;&#x305D;&#x306E;&#x307E;&#x307E;method&#x3092;&#x30B3;&#x30FC;&#x30EB;</span>
+$result = app()-&gt;make(Example::class)-&gt;method();
+
+<span class="hljs-comment">// Example&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</span>
+$example = App::make(Example::class);
+$result = $example-&gt;method();
+</code></pre>
+<h3 id="macroserviceprovider">MacroServiceProvider</h3>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">declare</span>(strict_types=<span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Schema</span>\<span class="hljs-title">Blueprint</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">ServiceProvider</span>;
+
+<span class="hljs-comment">/**
+ * &#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30DE;&#x30AF;&#x30ED;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30AF;&#x30E9;&#x30B9;
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MigrationMacroServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x30B3;&#x30F3;&#x30C6;&#x30CA;&#x306B;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">register</span><span class="hljs-params">()</span>
+    </span>{
+        Blueprint::macro(<span class="hljs-string">&apos;systemColumns&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+            $this-&gt;string(<span class="hljs-string">&apos;created_by&apos;</span>)
+                -&gt;comment(<span class="hljs-string">&apos;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4F5C;&#x6210;&#x8005;&apos;</span>)
+                -&gt;nullable();
+            $this-&gt;string(<span class="hljs-string">&apos;updated_by&apos;</span>)
+                -&gt;comment(<span class="hljs-string">&apos;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x6700;&#x7D42;&#x66F4;&#x65B0;&#x8005;&apos;</span>)
+                -&gt;nullable();;
+            $this-&gt;string(<span class="hljs-string">&apos;created_at&apos;</span>)
+                -&gt;comment(<span class="hljs-string">&apos;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4F5C;&#x6210;&#x65E5;&apos;</span>)
+                -&gt;nullable();;
+            $this-&gt;string(<span class="hljs-string">&apos;updated_at&apos;</span>)
+                -&gt;comment(<span class="hljs-string">&apos;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x6700;&#x7D42;&#x66F4;&#x65B0;&#x65E5;&apos;</span>)
+                -&gt;nullable();;
+        });
+    }
+}
+</code></pre>
+<h3 id="routeserviceprovider">RouteServiceProvider</h3>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Foundation</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Providers</span>\<span class="hljs-title">RouteServiceProvider</span> <span class="hljs-title">as</span> <span class="hljs-title">ServiceProvider</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Facades</span>\<span class="hljs-title">Route</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RouteServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306E;&#x5834;&#x6240;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     */</span>
+    <span class="hljs-keyword">protected</span> $namespace = <span class="hljs-string">&apos;App\Http\Controllers&apos;</span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">const</span> HOME = <span class="hljs-string">&apos;/home&apos;</span>;
+
+    <span class="hljs-comment">/**
+     * &#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boot</span><span class="hljs-params">()</span>
+    </span>{
+        Route::pattern(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;[0-9]+&apos;</span>);
+
+        <span class="hljs-keyword">parent</span>::boot();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">map</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;mapApiRoutes();
+
+        $this-&gt;mapWebRoutes();
+    }
+
+    <span class="hljs-comment">/**
+     * Web&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30D1;&#x30B9;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x307E;&#x3059;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>  
+    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapWebRoutes</span><span class="hljs-params">()</span>
+    </span>{
+        Route::middleware(<span class="hljs-string">&apos;web&apos;</span>)
+             -&gt;namespace($this-&gt;namespace)
+             -&gt;group(base_path(<span class="hljs-string">&apos;routes/web.php&apos;</span>));
+    }
+
+    <span class="hljs-comment">/**
+     * Api&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30D1;&#x30B9;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>  
+    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapApiRoutes</span><span class="hljs-params">()</span>
+    </span>{
+        Route::prefix(<span class="hljs-string">&apos;api&apos;</span>)
+             -&gt;middleware(<span class="hljs-string">&apos;api&apos;</span>)
+             -&gt;namespace($this-&gt;namespace)
+             -&gt;group(base_path(<span class="hljs-string">&apos;routes/api.php&apos;</span>));
+    }
+}
+</code></pre>
+<h3 id="eventserviceprovider">EventServiceProvider</h3>
+<h2 id="routes">Routes</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;">&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x4E00;&#x89A7;&#x3067;&#x8868;&#x793A;</span>
+$ php artisan route:list
+</code></pre>
+<h4 id="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;">&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
+$ php artisan route:clear
+
+<span class="hljs-comment"># &#x5168;&#x3066;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
+$ php artisan optimize:clear
+</code></pre>
+<h3 id="&#x7A2E;&#x985E;">&#x7A2E;&#x985E;</h3>
+<h4 id="&#x30FB;apiphp">&#x30FB;api.php</h4>
+<p>RESTfulAPI&#x3068;&#x3057;&#x3066;&#x6271;&#x3046;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;</p>
+<h4 id="&#x30FB;webphp">&#x30FB;web.php</h4>
+<p>API&#x4EE5;&#x5916;&#x306E;&#x5834;&#x5408;&#xFF0C;&#x3053;&#x3061;&#x3089;&#x306B;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x51E6;&#x7406;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;&#xFF0E;&#x7B2C;&#x4E00;&#x5F15;&#x6570;&#x306B;URL&#xFF0C;&#x7B2C;&#x4E8C;&#x5F15;&#x6570;&#x306B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;</p>
+<h3 id="&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;">&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;</h3>
+<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;">&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;</h4>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+Route::get($uri, $callback);
+Route::post($uri, $callback);
+Route::put($uri, $callback);
+Route::patch($uri, $callback);
+Route::delete($uri, $callback);
+Route::options($uri, $callback);
+</code></pre>
+<pre><code class="lang-{&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x540D;}@{&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x540D;}```&#x3067;&#xFF0C;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306B;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x3042;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+Route::get(&apos;/user&apos;, &apos;UserController@index&apos;);
+</code></pre>
+<h4 id="&#x30FB;namespace">&#x30FB;namespace</h4>
+<pre><code class="lang-group```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3068;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x6642;&#x306B;&#xFF0C;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5185;&#x3067;&#x540C;&#x3058;&#x540D;&#x524D;&#x7A7A;&#x9593;&#x3092;&#x6307;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+&lt;?php
+
+Route::namespace(&apos;Admin&apos;)-&gt;group(function () {
+    // &quot;App\Http\Controllers\Admin\&quot; &#x4E0B;&#x306B;&#x3042;&#x308B;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;
+    Route::get(&apos;/user&apos;, &apos;UserController@index&apos;);
+    Route::post(&apos;/user/{userId}&apos;, &apos;UserController@createUser&apos;);
+});
+</code></pre>
+<h4 id="&#x30FB;where">&#x30FB;where</h4>
+<p>&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x5F62;&#x5F0F;&#x306E;&#x5236;&#x7D04;&#x3092;&#xFF0C;&#x6B63;&#x898F;&#x8868;&#x73FE;&#x3067;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+Route::namespace(<span class="hljs-string">&apos;Admin&apos;</span>)-&gt;group(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+
+    Route::get(<span class="hljs-string">&apos;/user&apos;</span>, <span class="hljs-string">&apos;UserController@index&apos;</span>)
+
+    <span class="hljs-comment">// userId&#x306E;&#x5F62;&#x5F0F;&#x3092;&#x300C;0&#x301C;9&#x304C;&#x4E00;&#x3064;&#x4EE5;&#x4E0A;&#x300D;&#x306B;&#x8A2D;&#x5B9A;</span>
+    Route::post(<span class="hljs-string">&apos;/user/{userId}&apos;</span>, <span class="hljs-string">&apos;UserController@createUser&apos;</span>)
+        -&gt;where(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;[0-9]+&apos;</span>);
+});
+</code></pre>
+<p>RouteServiceProvider&#x306E;<code>boot</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x3066;&#xFF0C;<code>pattern</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x5236;&#x7D04;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x6642;&#x306B;where&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x306A;&#x304F;&#x306A;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Foundation</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Providers</span>\<span class="hljs-title">RouteServiceProvider</span> <span class="hljs-title">as</span> <span class="hljs-title">ServiceProvider</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Facades</span>\<span class="hljs-title">Route</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RouteServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30EB;&#x30FC;&#x30C8;&#x30E2;&#x30C7;&#x30EB;&#x7D50;&#x5408;&#x3001;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x306A;&#x3069;&#x306E;&#x5B9A;&#x7FA9;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boot</span><span class="hljs-params">()</span>
+    </span>{
+        Route::pattern(<span class="hljs-string">&apos;articleId&apos;</span>, <span class="hljs-string">&apos;[0-9]+&apos;</span>);
+
+        <span class="hljs-keyword">parent</span>::boot();
+    }
+}
+</code></pre>
+<h3 id="&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;">&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;</h3>
+<h4 id="&#x30FB;csrf&#x5BFE;&#x7B56;">&#x30FB;CSRF&#x5BFE;&#x7B56;</h4>
+<p>Laravel&#x3067;&#x306F;&#xFF0C;CSRF&#x5BFE;&#x7B56;&#x306E;&#x305F;&#x3081;&#xFF0C;POST&#xFF0C;PUT&#xFF0C;DELETE&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3067;CSRF&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306B;&#x3088;&#x308B;&#x7167;&#x5408;&#x3092;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#xFF0E;&#x305D;&#x306E;&#x305F;&#x3081;&#x306B;&#xFF0C;View&#x5074;&#x3067;CSRF&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;&#xFF0E;&#x3053;&#x306E;&#x5B9F;&#x88C5;&#x306B;&#x3088;&#x308A;&#xFF0C;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x3054;&#x3068;&#x306B;&#xFF0C;&#x767B;&#x9332;&#x30E6;&#x30FC;&#x30B6;&#x306B;CSRF&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x4ED8;&#x4E0E;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;/profile&quot;</span>&gt;</span>
+    @csrf
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<h4 id="&#x30FB;xss&#x5BFE;&#x7B56;">&#x30FB;XSS&#x5BFE;&#x7B56;</h4>
+<h4 id="&#x30FB;&#x5E38;&#x6642;https&#x5316;">&#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;</h4>
+<h2 id="migration">Migration</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;">&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;</h4>
+<pre><code class="lang-bash">$ php artisan make:migrate create_{&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;}_table
+</code></pre>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;</h4>
+<p>&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x5143;&#x306B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-bash">$ php artisan migrate
+</code></pre>
+<h4 id="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;">&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;</h4>
+<pre><code class="lang-bash">$ php artisan migrate:status
+</code></pre>
+<h4 id="&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;">&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</h4>
+<p>&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#xFF0C;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;</p>
+<pre><code class="lang-bash">$ php artisan migrate:rollback --step={&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x6570;}
+</code></pre>
+<h4 id="&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;">&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</h4>
+<p>&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;</p>
+<pre><code class="lang-bash">$ php artisan migrate:reset
+</code></pre>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</h4>
+<pre><code class="lang-migrate:reset```&#x3068;```migrate```&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#xFF0E;">
+```bash
+$ php artisan migrate:refresh
+</code></pre>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</h4>
+<p>&#x5168;&#x3066;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3068;<code>migrate</code>&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#xFF0E;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x69CB;&#x6587;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x308F;&#x305A;&#x306B;&#xFF0C;&#x5F37;&#x5236;&#x7684;&#x306B;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-bash">$ php artisan migrate:fresh
+</code></pre>
+<h3 id="&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;">&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;</h3>
+<h4 id="&#x30FB;up&#xFF0C;down">&#x30FB;up&#xFF0C;down</h4>
+<pre><code class="lang-up```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#xFF0C;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x306E;CREATE&#x3092;&#x884C;&#x3046;&#xFF0E;```down```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;CREATE&#x306E;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+&lt;?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateExampleTable extends Migration
+{
+    /**
+     * &#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30C8;
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create(&apos;example&apos;, function (Blueprint $table) {
+            $table-&gt;bigIncrements(&apos;id&apos;);
+            $table-&gt;string(&apos;name&apos;);
+            $table-&gt;timestamps();
+        });
+    }
+
+    /**
+     * &#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop(&apos;example&apos;);
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;">&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;</h4>
+<pre><code>
+
+</code></pre><h2 id="factory&#xFF0C;seeder">Factory&#xFF0C;Seeder</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;factory&#x306E;&#x751F;&#x6210;">&#x30FB;Factory&#x306E;&#x751F;&#x6210;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># --model={&#x30E2;&#x30C7;&#x30EB;&#x540D;}</span>
+$ php artisan make:factory ExampleFactory --model=Example
+</code></pre>
+<h4 id="&#x30FB;&#x500B;&#x5225;seeder&#x306E;&#x751F;&#x6210;">&#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;</h4>
+<pre><code class="lang-bash">$ php artisan make:seeder UserSeeder
+</code></pre>
+<h4 id="&#x30FB;databaseseeder&#x306E;&#x5B9F;&#x884C;">&#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4E8B;&#x524D;&#x306B;&#xFF0C;Composer&#x306E;&#x30AA;&#x30FC;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3092;&#x518D;&#x751F;&#x6210;</span>
+$ composer dump-autoload
+
+<span class="hljs-comment"># DatabaseSeeder&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x5B9F;&#x884C;</span>
+$ php artisan db:seed --class=DatabaseSeeder
+</code></pre>
+<h3 id="&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;">&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;</h3>
+<h4 id="&#x30FB;factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;">&#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;</h4>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">User</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Faker</span>\<span class="hljs-title">Generator</span> <span class="hljs-title">as</span> <span class="hljs-title">Faker</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Factory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Str</span>;
+
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@var</span> Factory $factory
+ */</span>
+
+$factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Faker $faker)</span> </span>{
+    <span class="hljs-keyword">return</span> [
+        <span class="hljs-string">&apos;name&apos;</span>              =&gt; $faker-&gt;name,
+        <span class="hljs-string">&apos;email&apos;</span>             =&gt; $faker-&gt;unique()-&gt;safeEmail,
+        <span class="hljs-string">&apos;email_verified_at&apos;</span> =&gt; now(),
+        <span class="hljs-string">&apos;password&apos;</span>          =&gt; <span class="hljs-string">&apos;$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi&apos;</span>, <span class="hljs-comment">// password</span>
+        <span class="hljs-string">&apos;remember_token&apos;</span>    =&gt; Str::random(<span class="hljs-number">10</span>),
+    ];
+});
+</code></pre>
+<h4 id="&#x30FB;seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;">&#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;</h4>
+<p>Factory&#x306B;&#x304A;&#x3051;&#x308B;&#x5B9A;&#x7FA9;&#x3092;&#x57FA;&#x306B;&#x3057;&#x3066;&#xFF0C;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x6570;&#x3060;&#x3051;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Seeder</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserSeeder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Seeder</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Run the database seeds.
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">()</span>
+    </span>{
+        factory(App\User::class, <span class="hljs-number">50</span>)-&gt;create();
+    }
+}
+</code></pre>
+<p>DatabaseSeeder&#x306B;&#x3066;&#xFF0C;Seeder&#x3092;&#x307E;&#x3068;&#x3081;&#x3066;&#x5B9F;&#x884C;&#x3059;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Seeder</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseSeeder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Seeder</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x521D;&#x671F;&#x5024;&#x8A2D;&#x5B9A;&#x306E;&#x5B9F;&#x884C;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;call([
+            UserSeeder::class,
+        ]);
+    }
+}
+</code></pre>
+<h2 id="eloquent&#xFF5C;model">Eloquent&#xFF5C;Model</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<pre><code class="lang-bash">$ php artisan make:model Example
+</code></pre>
+<h3 id="active-record&#x30D1;&#x30BF;&#x30FC;&#x30F3;">Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;</h3>
+<h4 id="&#x30FB;active-record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;">&#x30FB;Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;</h4>
+<p><img src="https://raw.githubusercontent.com/Hiroki-IT/tech-notebook/master/images/ActiveRecord.png" alt="ActiveRecord"></p>
+<h4 id="&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;">&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;</th>
+<th>Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x95A2;&#x9023;&#x5EA6;&#x5408;&#x3044;</th>
+<th>&#x63A1;&#x7528;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active Record</td>
+<td>&#x975E;&#x5E38;&#x306B;&#x5F37;&#x3044;&#xFF0E;&#x57FA;&#x672C;&#x7684;&#x306B;&#x306F;&#xFF0C;Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x304C;&#x4E00;&#x5BFE;&#x4E00;&#x5BFE;&#x5FDC;&#x306B;&#x306A;&#x308B;&#xFF0E;</td>
+<td>Eloquent</td>
+</tr>
+<tr>
+<td>Data Mapper</td>
+<td></td>
+<td>Doctrine</td>
+</tr>
+<tr>
+<td>Repository</td>
+<td>&#x5404;&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x306E;&#x7C92;&#x5EA6;&#x6B21;&#x7B2C;&#x3067;&#x5F37;&#x304F;&#x3082;&#x5F31;&#x304F;&#x3082;&#x306A;&#x308B;&#xFF0E;</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x306A;&#x3057;</td>
+<td>&#x975E;&#x5E38;&#x306B;&#x5F31;&#x3044;</td>
+<td>DB&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;">&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x9805;&#x76EE;</th>
+<th>&#x30E1;&#x30EA;&#x30C3;&#x30C8;</th>
+<th>&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x4FDD;&#x5B88;&#x6027;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&#x53EF;&#x8AAD;&#x6027;</td>
+<td>&#x30FB;&#x8907;&#x96D1;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x7121;&#x3044;&#xFF0E;<br>&#x30FB;Model&#x306B;&#x304A;&#x3051;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x304C;&#x3069;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x884C;&#x308F;&#x308C;&#x308B;&#x306E;&#x304B;&#x63A8;&#x6E2C;&#x3057;&#x3084;&#x3059;&#x3044;&#xFF0E;<br>&#x30FB;&#x30EA;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x7406;&#x89E3;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x307E;&#x308A;&#x306A;&#x304F;&#xFF0C;&#x8907;&#x6570;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x7121;&#x79E9;&#x5E8F;&#x306B;SQL&#x3092;&#x767A;&#x884C;&#x3059;&#x308B;&#x3088;&#x3046;&#x306A;&#x8A2D;&#x8A08;&#x5B9F;&#x88C5;&#x306B;&#x306A;&#x308A;&#x306B;&#x304F;&#x3044;&#xFF0E;</td>
+<td>&#x30C7;&#x30FC;&#x30BF;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x304C;&#x8907;&#x6570;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x8DE8;&#x3050;&#x305F;&#x3081;&#x306B;&#x306F;&#xFF0C;&#x95A2;&#x9023;&#x4ED8;&#x304F;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x8EF8;&#x3068;&#x3057;&#x305F;&#x30EA;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#xFF0E;&#x3053;&#x306E;&#x6642;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#x306E;&#x4E0D;&#x8981;&#x306A;&#x53D6;&#x5F97;&#x3092;&#x884C;&#x3063;&#x3066;&#x3057;&#x307E;&#x3046;&#x3053;&#x3068;&#x304C;&#x3042;&#x308B;&#xFF0E;</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x62E1;&#x5F35;&#x6027;</td>
+<td></td>
+<td>Model&#x306E;&#x69CB;&#x6210;&#x304C;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x69CB;&#x9020;&#x306B;&#x5F37;&#x304F;&#x4F9D;&#x5B58;&#x3057;&#x3066;&#x3057;&#x307E;&#x3046;&#x305F;&#x3081;&#xFF0C;Model&#x306E;&#x30C9;&#x30E1;&#x30A4;&#x30F3;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x67D4;&#x8EDF;&#x306B;&#x5B9F;&#x88C5;&#x3067;&#x304D;&#x306A;&#x304F;&#x306A;&#x3063;&#x3066;&#x3057;&#x307E;&#x3046;&#xFF0E;&#x305D;&#x306E;&#x305F;&#x3081;&#xFF0C;&#x30C9;&#x30E1;&#x30A4;&#x30F3;&#x99C6;&#x52D5;&#x8A2D;&#x8A08;&#x3068;&#x306E;&#x76F8;&#x6027;&#x306F;&#x60AA;&#x3044;&#xFF0E;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;">Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;</h3>
+<h4 id="&#x30FB;model&#x306E;&#x7D99;&#x627F;">&#x30FB;Model&#x306E;&#x7D99;&#x627F;</h4>
+<p>Model&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#xFF0C;<code>INSERT</code>&#x6587;&#x3084;<code>UPDATE</code>&#x6587;&#x306A;&#x3069;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x4F7F;&#x7528;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-comment">// &#x30AF;&#x30E9;&#x30B9;&#x30C1;&#x30A7;&#x30FC;&#x30F3;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;&#x30C7;&#x30FC;&#x30BF;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x30B3;&#x30FC;&#x30EB;</span>
+}
+</code></pre>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
+<p>Eloquent&#x306F;&#xFF0C;Model&#x81EA;&#x8EAB;&#x306E;<code>table</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x4EE3;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x540D;&#x524D;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#xFF0C;Model&#x3092;&#x95A2;&#x9023;&#x4ED8;&#x3051;&#x308B;&#xFF0E;&#x305F;&#x3060;&#x3057;&#xFF0C;<code>table</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3092;&#x4EE3;&#x5165;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x306F;&#x306A;&#x3044;&#xFF0E;Eloquent&#x304C;&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x306E;&#x8907;&#x6570;&#x5F62;&#x3092;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3068;&#x898B;&#x306A;&#x3057;&#xFF0C;&#x3053;&#x308C;&#x3092;&#x30B9;&#x30CD;&#x30FC;&#x30AF;&#x30B1;&#x30FC;&#x30B9;&#x306B;&#x3057;&#x305F;&#x6587;&#x5B57;&#x5217;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x4EE3;&#x5165;&#x3059;&#x308B;&#xFF0E;&#x307E;&#x305F;&#xFF0C;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3092;&#x72EC;&#x81EA;&#x3067;&#x547D;&#x540D;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#xFF0C;&#x4EE3;&#x5165;&#x306B;&#x3088;&#x308B;Override&#x3092;&#x884C;&#x3063;&#x3066;&#x3082;&#x826F;&#x3044;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x3068;&#x95A2;&#x9023;&#x3057;&#x3066;&#x3044;&#x308B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;
+     *
+     * <span class="hljs-doctag">@var</span> string
+     */</span>
+    <span class="hljs-keyword">protected</span> $table = <span class="hljs-string">&apos;examples&apos;</span>;
+}
+</code></pre>
+<h4 id="&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
+<p>Eloquent&#x306F;&#xFF0C;<code>primaryKey</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306E;&#x5024;&#x3092;&#x4E3B;&#x30AD;&#x30FC;&#x306E;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3068;&#x898B;&#x306A;&#x3059;&#xFF0E;<code>keyType</code>&#x3067;&#x4E3B;&#x30AD;&#x30FC;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#xFF0C;&#x307E;&#x305F;<code>$incrementing</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3067;&#x4E3B;&#x30AD;&#x30FC;&#x306E;AutoIncrement&#x3092;&#x6709;&#x52B9;&#x5316;&#x3059;&#x308B;&#x304B;&#x5426;&#x304B;&#xFF0C;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x3059;&#x308B;&#x30AB;&#x30E9;&#x30E0;
+     * 
+     * <span class="hljs-doctag">@var</span> string 
+     */</span>
+    <span class="hljs-keyword">protected</span> $primaryKey = <span class="hljs-string">&apos;id&apos;</span>;
+
+    <span class="hljs-comment">/**
+     * &#x4E3B;&#x30AD;&#x30FC;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x578B;
+     * 
+     * <span class="hljs-doctag">@var</span> string 
+     */</span>
+    <span class="hljs-keyword">protected</span> $keyType = <span class="hljs-string">&apos;int&apos;</span>;
+
+    <span class="hljs-comment">/**
+     * &#x4E3B;&#x30AD;&#x30FC;&#x306E;AutoIncrement&#x306E;&#x6709;&#x52B9;&#x5316;
+     * 
+     * <span class="hljs-doctag">@var</span> bool 
+     */</span>
+    <span class="hljs-keyword">public</span> $incrementing = <span class="hljs-keyword">true</span>;
+}
+</code></pre>
+<h4 id="&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
+<p>Eloquent&#x306F;&#xFF0C;<code>timestamps</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306E;&#x5024;&#x304C;<code>true</code>&#x306E;&#x6642;&#x306B;&#xFF0C;Model&#x306B;&#x95A2;&#x9023;&#x4ED8;&#x304F;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;<code>created_at</code>&#x3068;<code>updated_at</code>&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x66F4;&#x65B0;&#x3059;&#x308B;&#xFF0E;&#x307E;&#x305F;&#xFF0C;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3092;&#x72EC;&#x81EA;&#x3067;&#x547D;&#x540D;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#xFF0C;&#x4EE3;&#x5165;&#x306B;&#x3088;&#x308B;Overide&#x3092;&#x884C;&#x3063;&#x3066;&#x3082;&#x826F;&#x3044;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-keyword">const</span> CREATED_AT = <span class="hljs-string">&apos;created_date_time&apos;</span>;
+    <span class="hljs-keyword">const</span> UPDATED_AT = <span class="hljs-string">&apos;updated_data_time&apos;</span>;
+
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x306E;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x3092;&#x66F4;&#x65B0;&#x3059;&#x308B;&#x304B;&#x306E;&#x6307;&#x793A;
+     *
+     * <span class="hljs-doctag">@var</span> bool
+     */</span>
+    <span class="hljs-keyword">protected</span> $timestamps = <span class="hljs-keyword">true</span>; <span class="hljs-comment">// false&#x3067;&#x7121;&#x52B9;&#x5316;</span>
+}
+</code></pre>
+<h4 id="&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;datetime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;">&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;</h4>
+<p>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x304B;&#x3089;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3092;&#x8AAD;&#x307F;&#x51FA;&#x3059;&#x3068;&#x540C;&#x6642;&#x306B;&#xFF0C;Carbon&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x306B;&#x5909;&#x63DB;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#xFF0C;<code>data</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x3066;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Carbon&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x306B;&#x81EA;&#x52D5;&#x5909;&#x63DB;&#x3057;&#x305F;&#x3044;&#x30AB;&#x30E9;&#x30E0;&#x540D;
+     *
+     * <span class="hljs-doctag">@var</span> array
+     */</span>
+    <span class="hljs-keyword">protected</span> $dates = [
+        <span class="hljs-string">&apos;created_at&apos;</span>,
+        <span class="hljs-string">&apos;updated_at&apos;</span>,
+        <span class="hljs-string">&apos;deleted_at&apos;</span>
+    ];
+}
+</code></pre>
+<h4 id="&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;">&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;</h4>
+<p>&#x7279;&#x5B9A;&#x306E;&#x30AB;&#x30E9;&#x30E0;&#x306E;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#xFF0C;<code>attributes</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x3066;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3068;&#x5024;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x5C5E;&#x6027;&#x306B;&#x5BFE;&#x3059;&#x308B;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;
+     *
+     * <span class="hljs-doctag">@var</span> array
+     */</span>
+    <span class="hljs-keyword">protected</span> $attributes = [
+        <span class="hljs-string">&apos;is_deleted&apos;</span> =&gt; <span class="hljs-keyword">false</span>,
+    ];
+}
+</code></pre>
+<h2 id="eloquent&#xFF5C;data-access">Eloquent&#xFF5C;Data Access</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<pre><code class="lang-bash">
+
+</code></pre>
+<h3 id="create">CREATE</h3>
+<h4 id="&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>\<span class="hljs-title">Controller</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Repository</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x4F5C;&#x6210;
+     *
+     * <span class="hljs-doctag">@param</span>  Request  $request
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">store</span><span class="hljs-params">(Example $example)</span>
+    </span>{
+        <span class="hljs-comment">// &#x5185;&#x90E8;&#x3067;insert&#x6587;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;</span>
+        $example-&gt;save();
+    }
+}
+</code></pre>
+<h3 id="read">READ</h3>
+<h4 id="&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<p>&#x5185;&#x90E8;&#x3067;select&#x6587;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;<code>all</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x307E;&#x305F;&#x306F;<code>get</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x8FD4;&#x5374;&#x5024;&#x306E;&#x578B;&#x306F;&#xFF0C;Collection&#x3067;&#x3042;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>\<span class="hljs-title">Controller</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Repository</span>
+</span>{
+    <span class="hljs-keyword">private</span> $example;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(Example $example)</span>
+    </span>{
+        $this-&gt;example = $example;
+    }
+
+    <span class="hljs-comment">/**
+     * &#x5168;&#x3066;&#x306E;Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x8AAD;&#x307F;&#x51FA;&#x3057;
+     *
+     * <span class="hljs-doctag">@param</span> Id $id
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findAllEntity</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;example-&gt;all()-&gt;toArray();
+    }
+
+    <span class="hljs-comment">/**
+     * &#x6761;&#x4EF6;&#x306B;&#x5408;&#x3046;Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x8AAD;&#x307F;&#x51FA;&#x3057;
+     *
+     * <span class="hljs-doctag">@param</span> Id $id
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findEntityByCriteria</span><span class="hljs-params">($id)</span>
+    </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;example-&gt;find($id)-&gt;toArray();
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;collection&#x30AF;&#x30E9;&#x30B9;">&#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;</h4>
+<p>List&#x578B;&#x3067;&#xFF0C;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4FDD;&#x6301;&#x3067;&#x304D;&#x308B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x3053;&#x3068;&#xFF0E;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x5909;&#x63DB;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+$collection = collect([
+    [
+        <span class="hljs-string">&apos;id&apos;</span>  =&gt; <span class="hljs-string">&apos;1&apos;</span>,
+        <span class="hljs-string">&apos;name&apos;</span> =&gt; <span class="hljs-string">&apos;&#x4F50;&#x85E4;&#x592A;&#x90CE;&apos;</span>,
+    ],
+    [
+        <span class="hljs-string">&apos;id&apos;</span>  =&gt; <span class="hljs-string">&apos;2&apos;</span>,
+        <span class="hljs-string">&apos;name&apos;</span> =&gt; <span class="hljs-string">&apos;&#x5C71;&#x7530;&#x6B21;&#x90CE;&apos;</span>,
+    ],
+]);
+
+<span class="hljs-comment">// Array&#x578B;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;</span>
+$collection-&gt;toArray();
+</code></pre>
+<h3 id="update">UPDATE</h3>
+<h4 id="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>\<span class="hljs-title">Controller</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Repository</span>
+</span>{
+    <span class="hljs-keyword">private</span> $example;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(Example $example)</span>
+    </span>{
+        $this-&gt;example = $example;
+    }
+
+    <span class="hljs-comment">/**
+     * Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x66F4;&#x65B0;
+     *
+     * <span class="hljs-doctag">@param</span> Id $id
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span><span class="hljs-params">(Id $id)</span>
+    </span>{
+        $example = $this-&gt;example-&gt;find($id);
+
+        <span class="hljs-comment">// &#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x66F4;&#x65B0;</span>
+        $example-&gt;name = $example-&gt;name;
+        $example-&gt;type = $example-&gt;type;
+
+        <span class="hljs-comment">// &#x5185;&#x90E8;&#x3067;update&#x6587;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;</span>
+        $example-&gt;save();
+    }
+}
+</code></pre>
+<h3 id="delete">DELETE</h3>
+<h4 id="&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;">&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;</h4>
+<pre><code class="lang-find```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x305F;&#x30E2;&#x30C7;&#x30EB;&#x304B;&#x3089;&#xFF0C;```delete```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3057;&#xFF0C;&#x3053;&#x306E;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;&#xFF0E;">
+```php
+&lt;?php
+
+namespace App\Http\Controllers;
+
+use App\Domain\Entity\Example;
+use App\Http\Controllers\Controller;
+
+class ExampleRepository extends Repository
+{
+    private $example;
+
+    public function __construct(Example $example)
+    {
+        $this-&gt;example = $example;
+    }
+
+    /**
+     * Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x524A;&#x9664;
+     *
+     * @param Id $id
+     */
+    public function delete(Id $id)
+    {
+        $example = $this-&gt;example-&gt;find($id);
+
+        // &#x5185;&#x90E8;&#x3067;delete&#x6587;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#xFF0C;&#x7269;&#x7406;&#x524A;&#x9664;&#x3055;&#x308C;&#x308B;&#xFF0E;
+        $example-&gt;delete();
+    }
+}
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>\<span class="hljs-title">Controller</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Repository</span>
+</span>{
+    <span class="hljs-keyword">private</span> $example;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(Example $example)</span>
+    </span>{
+        $this-&gt;example = $example;
+    }  
+
+    <span class="hljs-comment">/**
+     * Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x767B;&#x9332;
+     *
+     * <span class="hljs-doctag">@param</span>  Example $example
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">delete</span><span class="hljs-params">(Id $id)</span>
+    </span>{
+        $this-&gt;example-&gt;destroy($id);
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;">&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;</h4>
+<p>&#x8AD6;&#x7406;&#x524A;&#x9664;&#x3092;&#x884C;&#x3044;&#x305F;&#x3044;&#x5834;&#x5408;&#xFF0C;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30E2;&#x30C7;&#x30EB;&#x306B;&#x3066;&#xFF0C;SoftDeletes&#x30C8;&#x30EC;&#x30A4;&#x30C8;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">SoftDeletes</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-comment">/**
+    * &#x30C8;&#x30EC;&#x30A4;&#x30C8;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;
+    */</span>
+    <span class="hljs-keyword">use</span> <span class="hljs-title">SoftDeletes</span>;
+
+    <span class="hljs-comment">/**
+     * &#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306B;Carbon&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x3078;&#x81EA;&#x52D5;&#x5909;&#x63DB;&#x3059;&#x308B;&#x30AB;&#x30E9;&#x30E0;
+     *
+     * <span class="hljs-doctag">@var</span> array
+     */</span>
+    <span class="hljs-keyword">protected</span> $dates = [
+        <span class="hljs-string">&apos;deleted_at&apos;</span>
+    ];
+}
+</code></pre>
+<p>&#x3055;&#x3089;&#x306B;&#xFF0C;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x3066;<code>softDeletes</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#xFF0C;<code>deleted_at</code>&#x30AB;&#x30E9;&#x30E0;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#xFF0E;<code>deleted_at</code>&#x30AB;&#x30E9;&#x30E0;&#x306E;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306F;<code>NULL</code>&#x3067;&#x3042;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php">Schema::table(<span class="hljs-string">&apos;example&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Blueprint $table)</span> </span>{
+    $table-&gt;softDeletes();
+});
+</code></pre>
+<p>&#x4E0A;&#x8A18;&#x306E;&#x72B6;&#x614B;&#x3067;&#xFF0C;&#x540C;&#x69D8;&#x306B;<code>delete</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x7269;&#x7406;&#x524A;&#x9664;&#x3067;&#x306F;&#x306A;&#x304F;&#xFF0C;<code>deleled_at</code>&#x30AB;&#x30E9;&#x30E0;&#x304C;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;<code>find</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#xFF0C;<code>deleled_at</code>&#x304C;<code>NULL</code>&#x3067;&#x306A;&#x3044;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x51FA;&#x3055;&#x306A;&#x3044;&#x305F;&#x3081;&#xFF0C;&#x8AD6;&#x7406;&#x524A;&#x9664;&#x3092;&#x5B9F;&#x73FE;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>\<span class="hljs-title">Controller</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Repository</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x767B;&#x9332;
+     *
+     * <span class="hljs-doctag">@param</span> Id $id
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">delete</span><span class="hljs-params">(Id $id)</span>
+    </span>{
+        $example = Example::find($id);
+
+        <span class="hljs-comment">// &#x5185;&#x90E8;&#x3067;update&#x6587;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#xFF0C;&#x8AD6;&#x7406;&#x524A;&#x9664;&#x3055;&#x308C;&#x308B;&#xFF0E;</span>
+        $example-&gt;delete();
+    }
+}
+</code></pre>
+<h2 id="http&#xFF5C;middleware">HTTP&#xFF5C;Middleware</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># Middleware&#x3092;&#x81EA;&#x52D5;&#x751F;&#x6210;</span>
+$ php artisan make:middleware {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
+</code></pre>
+<h3 id="middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;">Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;</h3>
+<h4 id="&#x30FB;middleware&#x306E;&#x7A2E;&#x985E;">&#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;</h4>
+<p>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5F8C;&#x306B;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x524D;&#x306B;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;BeforeMiddle&#x3068;&#xFF0C;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x306E;&#x5B9F;&#x884C;&#x6642;&#x306B;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;AfterMiddleware&#x304C;&#x3042;&#x308B;</p>
+<p><img src="https://raw.githubusercontent.com/Hiroki-IT/tech-notebook/master/images/Laravel&#x306E;Middleware&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x4ED5;&#x7D44;&#x307F;.png" alt="Laravel&#x306E;&#x30DF;&#x30C8;&#x3099;&#x30EB;&#x30A6;&#x30A7;&#x30A2;"></p>
+<h4 id="&#x30FB;beforemiddleware">&#x30FB;BeforeMiddleware</h4>
+<p>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x6642;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x30B3;&#x30FC;&#x30EB;&#x524D;&#x306B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x51E6;&#x7406;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;<code>$request</code>&#x306B;&#x306F;&#xFF0C;<code>Illuminate\Http\Request</code>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x4EE3;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Middleware</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Closure</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleBeforeMiddleware</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle</span><span class="hljs-params">($request, Closure $next)</span>
+    </span>{
+        <span class="hljs-comment">// &#x4F55;&#x3089;&#x304B;&#x306E;&#x51E6;&#x7406;</span>
+
+        <span class="hljs-keyword">return</span> $next($request);
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;aftermiddleware">&#x30FB;AfterMiddleware</h4>
+<p>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x306E;&#x5B9F;&#x884C;&#x5F8C;&#xFF08;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x3092;&#x542B;&#x3080;&#xFF09;&#x306B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x51E6;&#x7406;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;<code>$response</code>&#x306B;&#x306F;&#xFF0C;<code>Illuminate\Http\Response</code>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x4EE3;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Middleware</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Closure</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleAfterMiddleware</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle</span><span class="hljs-params">($request, Closure $next)</span>
+    </span>{
+        $response = $next($request);
+
+        <span class="hljs-comment">// &#x4F55;&#x3089;&#x304B;&#x306E;&#x51E6;&#x7406;</span>
+
+        <span class="hljs-keyword">return</span> $response;
+    }
+}
+</code></pre>
+<h2 id="http&#xFF5C;request">HTTP&#xFF5C;Request</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x81EA;&#x52D5;&#x4F5C;&#x6210;</span>
+$ php artisan make:request {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
+</code></pre>
+<h3 id="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;">&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;</h3>
+<h4 id="&#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;">&#x30FB;<code>rules</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>validated</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
+<p>FormRequest&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#x306B;&#x3066;&#xFF0C;<code>rules</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30EB;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306B;&#x53CD;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x4E00;&#x3064;&#x76EE;&#x306E;&#x30EB;&#x30FC;&#x30EB;&#x540D;&#xFF08;&#x4F8B;&#x3048;&#x3070;<code>required</code>&#xFF09;&#x306B;&#x57FA;&#x3065;&#x304D;&#xFF0C;<code>validation.php</code>&#x304B;&#x3089;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Requests</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Foundation</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">FormRequest</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleRequest</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">FormRequest</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306B;&#x9069;&#x7528;&#x3059;&#x308B;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x3092;&#x53D6;&#x5F97;
+     *
+     * <span class="hljs-doctag">@return</span> array
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rules</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> [
+            <span class="hljs-string">&apos;title&apos;</span> =&gt; <span class="hljs-string">&apos;required|unique:posts|max:255&apos;</span>,
+            <span class="hljs-string">&apos;body&apos;</span>  =&gt; <span class="hljs-string">&apos;required&apos;</span>,
+        ];
+    }
+}
+</code></pre>
+<p>Controller&#x3067;&#xFF0C;ExampleRequest&#x3092;&#x578B;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x524D;&#x306B;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x81EA;&#x52D5;&#x3067;&#x884C;&#x308F;&#x308C;&#x308B;&#xFF0E;&#x305D;&#x306E;&#x305F;&#x3081;&#xFF0C;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306E;&#x4E2D;&#x3067;&#x306F;&#xFF0C;<code>validated</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x7D42;&#x3048;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x3044;&#x304D;&#x306A;&#x308A;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x5931;&#x6557;&#x3057;&#x305F;&#x5834;&#x5408;&#xFF0C;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x30B3;&#x30FC;&#x30EB;&#x524D;&#x306B;&#xFF0C;ExampleRequest&#x304C;&#x5143;&#x3005;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x30EA;&#x30C0;&#x30A4;&#x30EC;&#x30AF;&#x30C8;&#x3059;&#x308B;&#x51E6;&#x7406;&#x3092;&#x81EA;&#x52D5;&#x3067;&#x5B9F;&#x884C;&#x3059;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-comment">/**
+ * &#x30D6;&#x30ED;&#x30B0;&#x30DD;&#x30B9;&#x30C8;&#x306E;&#x4FDD;&#x5B58;
+ *
+ * <span class="hljs-doctag">@param</span>  ExampleRequest $request
+ * <span class="hljs-doctag">@return</span> Response
+ */</span>
+<span class="hljs-comment">// &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#x524D;&#x306B;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x884C;&#x308F;&#x308C;&#x308B;&#xFF0E;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">store</span><span class="hljs-params">(ExampleRequest $request)</span> 
+</span>{
+    <span class="hljs-comment">// &#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x6E08;&#x307F;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x3044;&#x304D;&#x306A;&#x308A;&#x53D6;&#x5F97;</span>
+    $validated = $request-&gt;validated();
+
+    ExampleRepository::update($validated);
+}
+</code></pre>
+<h4 id="&#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;">&#x30FB;<code>validate</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
+<pre><code class="lang-Illuminate\Http\Request```&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;```validate```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30EB;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;validation&#x30EB;&#x30FC;&#x30EB;&#x306B;&#x53CD;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x4E00;&#x3064;&#x76EE;&#x306E;&#x30EB;&#x30FC;&#x30EB;&#x540D;&#xFF08;&#x4F8B;&#x3048;&#x3070;```required```&#xFF09;&#x306B;&#x57FA;&#x3065;&#x304D;&#xFF0C;```validation.php```&#x304B;&#x3089;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+/**
+ *
+ * @param Request $request
+ * @return Response
+ */
+public
+function store(Request $request)
+{
+    $validatedData = $request-&gt;validate([
+        &apos;title&apos; =&gt; &apos;required|unique:posts|max:255&apos;,
+        &apos;body&apos;  =&gt; &apos;required&apos;,
+    ]);
+}
+</code></pre>
+<p>validation&#x30EB;&#x30FC;&#x30EB;&#x306F;&#xFF0C;&#x914D;&#x5217;&#x3067;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x3088;&#x3044;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php">$validatedData = $request-&gt;validate([
+    <span class="hljs-string">&apos;title&apos;</span> =&gt; [<span class="hljs-string">&apos;required&apos;</span>, <span class="hljs-string">&apos;unique:posts&apos;</span>, <span class="hljs-string">&apos;max:255&apos;</span>],
+    <span class="hljs-string">&apos;body&apos;</span> =&gt; [<span class="hljs-string">&apos;required&apos;</span>],
+]);
+</code></pre>
+<h4 id="&#x30FB;validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;">&#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;</h4>
+<pre><code class="lang-Illuminate\Support\Facades\Validator```&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306E;```make```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30EB;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x7B2C;&#x4E00;&#x5F15;&#x6570;&#x3067;&#xFF0C;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x884C;&#x3046;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6E21;&#x3059;&#xFF0E;validation&#x30EB;&#x30FC;&#x30EB;&#x306B;&#x53CD;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x4E00;&#x3064;&#x76EE;&#x306E;&#x30EB;&#x30FC;&#x30EB;&#x540D;&#xFF08;&#x4F8B;&#x3048;&#x3070;```required```&#xFF09;&#x306B;&#x57FA;&#x3065;&#x304D;&#xFF0C;```validation.php```&#x304B;&#x3089;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+&lt;?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+
+class ExampleController extends Controller
+{
+    /**
+     * &#x65B0;&#x3057;&#x3044;&#x30D6;&#x30ED;&#x30B0;&#x30DD;&#x30B9;&#x30C8;&#x306E;&#x4FDD;&#x5B58;
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function store(Request $request)
+    {
+        $validator = Validator::make($request-&gt;all(), [
+            &apos;title&apos; =&gt; &apos;required|unique:posts|max:255&apos;,
+            &apos;body&apos; =&gt; &apos;required&apos;,
+        ]);
+
+        if ($validator-&gt;fails()) {
+            return redirect(&apos;example/create&apos;)
+                        -&gt;withErrors($validator)
+                        -&gt;withInput();
+        }
+
+        // &#x30D6;&#x30ED;&#x30B0;&#x30DD;&#x30B9;&#x30C8;&#x306E;&#x4FDD;&#x5B58;&#x51E6;&#x7406;&#x2026;
+    }
+}
+</code></pre>
+<h3 id="&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;">&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</h3>
+<h4 id="&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;">&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;</h4>
+<pre><code class="lang-Illuminate\Http\Request```&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;```session```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+&lt;?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    /**
+     * &#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x30D7;&#x30ED;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x3092;&#x8868;&#x793A;
+     *
+     * @param  Request  $request
+     * @param  int  $id
+     * @return Response
+     */
+    public function show(Request $request, $id)
+    {
+        $value = $request-&gt;session()-&gt;get(&apos;key&apos;);
+    }
+}
+</code></pre>
+<p>&#x5168;&#x3066;&#x306E;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php">$data = $request-&gt;session()-&gt;all();
+</code></pre>
+<h4 id="&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;">&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;</h4>
+<p>&#x73FE;&#x5728;&#x306E;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x304A;&#x3044;&#x3066;&#xFF0C;&#x4ECA;&#x56DE;&#x3068;&#x6B21;&#x56DE;&#x306E;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3060;&#x3051;&#x3067;&#x6709;&#x52B9;&#x306A;&#x4E00;&#x6642;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php">$request-&gt;session()-&gt;flash(<span class="hljs-string">&apos;status&apos;</span>, <span class="hljs-string">&apos;Task was successful!&apos;</span>);
+</code></pre>
+<h3 id="request&#x306E;&#x8A8D;&#x8A3C;">Request&#x306E;&#x8A8D;&#x8A3C;</h3>
+<h4 id="&#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;">&#x30FB;<code>authorize</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
+<p>&#x30E6;&#x30FC;&#x30B6;&#x304C;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x306B;&#x5BFE;&#x3057;&#x3066;CRUD&#x64CD;&#x4F5C;&#x3092;&#x884C;&#x3046;&#x6A29;&#x9650;&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x308B;&#x304B;&#x3092;&#xFF0C;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x524D;&#x306B;&#xFF0C;&#x5224;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-comment">/**
+ * &#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x304C;&#x3053;&#x306E;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x6A29;&#x9650;&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x308B;&#x304B;&#x3092;&#x5224;&#x65AD;&#x3059;&#x308B;
+ *
+ * <span class="hljs-doctag">@return</span> bool
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">authorize</span><span class="hljs-params">()</span>
+</span>{
+    $comment = Comment::find($this-&gt;route(<span class="hljs-string">&apos;comment&apos;</span>));
+
+    <span class="hljs-keyword">return</span> $comment &amp;&amp; $this-&gt;user()-&gt;can(<span class="hljs-string">&apos;update&apos;</span>, $comment);
+}
+</code></pre>
+<h2 id="http&#xFF5C;controller">HTTP&#xFF5C;Controller</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x81EA;&#x52D5;&#x4F5C;&#x6210;</span>
+$ php artisan make:controller {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
+</code></pre>
+<h3 id="request&#x306E;&#x30B3;&#x30FC;&#x30EB;">Request&#x306E;&#x30B3;&#x30FC;&#x30EB;</h3>
+<h4 id="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;">&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</h4>
+<pre><code class="lang-input```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x7528;&#x3044;&#x3066;&#xFF0C;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30DC;&#x30C7;&#x30A3;&#x306B;&#x542B;&#x307E;&#x308C;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+&lt;?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    /**
+     * &#x65B0;&#x3057;&#x3044;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x3092;&#x4FDD;&#x5B58;
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function store(Request $request)
+    {
+        $name = $request-&gt;input(&apos;name&apos;);
+    }
+}
+</code></pre>
+<h4 id="&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;">&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</h4>
+<p>&#x7B2C;&#x4E8C;&#x5F15;&#x6570;&#x306B;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x540D;&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#xFF0C;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x5024;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Request</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+    <span class="hljs-comment">/**
+     * &#x6307;&#x5B9A;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x66F4;&#x65B0;
+     *
+     * <span class="hljs-doctag">@param</span>  Request  $request
+     * <span class="hljs-doctag">@param</span>  string  $id
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span><span class="hljs-params">(Request $request, $id)</span>
+    </span>{
+        <span class="hljs-comment">//</span>
+    }
+</code></pre>
+<h3 id="response&#x306E;&#x30B3;&#x30FC;&#x30EB;">Response&#x306E;&#x30B3;&#x30FC;&#x30EB;</h3>
+<h4 id="&#x30FB;json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;">&#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</h4>
+<pre><code class="lang-Symfony\Component\HttpFoundation\Response```&#x3092;&#x7D99;&#x627F;&#x3057;&#x3066;&#x3044;&#x308B;&#xFF0E;">
+**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+
+```php
+return response()-&gt;json([
+    &apos;name&apos; =&gt; &apos;Abigail&apos;,
+    &apos;state&apos; =&gt; &apos;CA&apos;
+]);
+</code></pre>
+<h4 id="&#x30FB;view&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;">&#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</h4>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-comment">// &#x30C7;&#x30FC;&#x30BF;&#xFF0C;&#x30B9;&#x30C6;&#x30FC;&#x30BF;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#xFF0C;&#x30D8;&#x30C3;&#x30C0;&#x30FC;&#x306A;&#x3069;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5834;&#x5408;</span>
+<span class="hljs-keyword">return</span> response()
+  -&gt;view(<span class="hljs-string">&apos;hello&apos;</span>, $data, <span class="hljs-number">200</span>)
+  -&gt;header(<span class="hljs-string">&apos;Content-Type&apos;</span>, $type);
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">// &#x30B9;&#x30C6;&#x30FC;&#x30BF;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x307F;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5834;&#x5408;</span>
+<span class="hljs-keyword">return</span> response()
+  -&gt;view(<span class="hljs-string">&apos;hello&apos;</span>)
+  -&gt;setStatusCode(<span class="hljs-number">200</span>);
+</code></pre>
+<h2 id="http&#xFF5C;auth">HTTP&#xFF5C;Auth</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">&#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x3053;&#x3053;&#x306B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x4F8B;</span>
+</code></pre>
+<h4 id="&#x30FB;oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">&#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h4>
+<p><code>/storage/oauth</code>&#x30AD;&#x30FC;&#xFF0C;Personal Access Client&#xFF0C;Password Grant Client&#x3092;&#x751F;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-bash">$ php artisan passport:install
+
+Personal access client created successfully.
+Client ID: 3
+Client secret: xxxxxxxxxxxx
+Password grant client created successfully.
+Client ID: 4
+Client secret: xxxxxxxxxxxx
+</code></pre>
+<p>&#x305F;&#x3060;&#x3057;&#xFF0C;&#x751F;&#x6210;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x500B;&#x5225;&#x306B;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3082;&#x3088;&#x3044;&#xFF0E;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x6697;&#x53F7;&#x30AD;&#x30FC;&#x3092;&#x751F;&#x6210;</span>
+$ php artisan passport:keys
+
+<span class="hljs-comment"># &#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x3092;&#x751F;&#x6210;</span>
+<span class="hljs-comment">## Persinal Access Token&#x306E;&#x5834;&#x5408;</span>
+$ php artisan passport:client --personal
+<span class="hljs-comment">## Password Grant Token&#x306E;&#x5834;&#x5408;</span>
+$ php artisan passport:client --password
+</code></pre>
+<h3 id="auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;digest&#x8A8D;&#x8A3C;">Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;</h3>
+<pre><code class="lang-attempt```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x7528;&#x3044;&#x3066;&#xFF0C;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x5316;&#x3057;&#xFF0C;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x5024;&#x3068;&#x7167;&#x5408;&#x3059;&#x308B;&#xFF0E;&#x8A8D;&#x8A3C;&#x304C;&#x7D42;&#x308F;&#x308B;&#x3068;&#xFF0C;&#x8A8D;&#x8A3C;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x958B;&#x59CB;&#x3059;&#x308B;&#xFF0E;```intended```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#xFF0C;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x5F8C;&#x306E;&#x521D;&#x671F;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x30EA;&#x30C0;&#x30A4;&#x30EC;&#x30AF;&#x30C8;&#x3059;&#x308B;&#xFF0E;">
+```php
+&lt;?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+class LoginController extends Controller
+{
+    /**
+     * &#x8A8D;&#x8A3C;&#x3092;&#x51E6;&#x7406;&#x3059;&#x308B;
+     *
+     * @param  \Illuminate\Http\Request $request
+     *
+     * @return Response
+     */
+    public function authenticate(Request $request)
+    {
+        $credentials = $request-&gt;only(&apos;email&apos;, &apos;password&apos;);
+
+        if (Auth::attempt($credentials)) {
+            // &#x8A8D;&#x8A3C;&#x306B;&#x6210;&#x529F;&#x3057;&#x305F;
+            return redirect()-&gt;intended(&apos;dashboard&apos;);
+        }
+    }
+}
+</code></pre>
+<h3 id="passport&#x306B;&#x3088;&#x308B;api&#x306E;oauth&#x8A8D;&#x8A3C;">Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;</h3>
+<h4 id="&#x30FB;personal-access-token">&#x30FB;Personal Access Token</h4>
+<p>&#x958B;&#x767A;&#x74B0;&#x5883;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#xFF0E;</p>
+<ol>
+<li>&#x6697;&#x53F7;&#x30AD;&#x30FC;&#x3068;&#x30E6;&#x30FC;&#x30B6;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<pre><code class="lang-bash">$ php artisan passport:keys
+
+$ php artisan passport:client --personal
+</code></pre>
+<ol>
+<li>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x306B;&#xFF0C;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;ID&#x3092;&#x4ED8;&#x4E0E;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<pre><code class="lang-php"><span class="hljs-comment">/**
+ * &#x5168;&#x8A8D;&#x8A3C;&#xFF0F;&#x8A8D;&#x53EF;&#x306E;&#x767B;&#x9332;
+ *
+ * <span class="hljs-doctag">@return</span> void
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boot</span><span class="hljs-params">()</span>
+</span>{
+    $this-&gt;registerPolicies();
+
+    Passport::routes();
+
+    Passport::personalAccessClientId(<span class="hljs-string">&apos;client-id&apos;</span>);
+}
+</code></pre>
+<ol>
+<li>&#x30E6;&#x30FC;&#x30B6;&#x304B;&#x3089;&#x306E;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x6642;&#xFF0C;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;ID&#x3092;&#x5143;&#x306B;&#x300E;&#x8A8D;&#x8A3C;&#x300F;&#x3092;&#x884C;&#x3044;&#xFF0C;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<pre><code class="lang-php">$user = App\User::find(<span class="hljs-number">1</span>);
+
+<span class="hljs-comment">// &#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x7121;&#x3057;&#x306E;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</span>
+$token = $user-&gt;createToken(<span class="hljs-string">&apos;Token Name&apos;</span>)-&gt;accessToken;
+
+<span class="hljs-comment">// &#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x4ED8;&#x304D;&#x306E;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</span>
+$token = $user-&gt;createToken(<span class="hljs-string">&apos;My Token&apos;</span>, [<span class="hljs-string">&apos;place-orders&apos;</span>])-&gt;accessToken;
+</code></pre>
+<h4 id="&#x30FB;password-grant-token">&#x30FB;Password Grant Token</h4>
+<p>&#x672C;&#x756A;&#x74B0;&#x5883;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#xFF0E;</p>
+<ol>
+<li>API&#x5074;&#x3067;&#x306F;&#xFF0C;Oauth&#x8A8D;&#x8A3C;&#xFF08;&#x8A8D;&#x8A3C;&#x30D5;&#x30A7;&#x30FC;&#x30BA;&#xFF0B;&#x8A8D;&#x53EF;&#x30D5;&#x30A7;&#x30FC;&#x30BA;&#xFF09;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;&#x306B;&#xFF0C;auth.php&#x3067;&#xFF0C;<code>driver</code>&#x3092;<code>passport</code>&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;&#x307E;&#x305F;&#xFF0C;&#x8A8D;&#x8A3C;&#x30D5;&#x30A7;&#x30FC;&#x30BA;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3092;<code>provider</code>&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// &#x4E00;&#x90E8;&#x7701;&#x7565;</span>
+
+<span class="hljs-string">&apos;guards&apos;</span> =&gt; [
+    <span class="hljs-string">&apos;web&apos;</span> =&gt; [
+        <span class="hljs-string">&apos;driver&apos;</span>   =&gt; <span class="hljs-string">&apos;session&apos;</span>,
+        <span class="hljs-string">&apos;provider&apos;</span> =&gt; <span class="hljs-string">&apos;users&apos;</span>,
+    ],
+
+    <span class="hljs-string">&apos;api&apos;</span> =&gt; [
+        <span class="hljs-string">&apos;driver&apos;</span>   =&gt; <span class="hljs-string">&apos;passport&apos;</span>,
+        <span class="hljs-string">&apos;provider&apos;</span> =&gt; <span class="hljs-string">&apos;users&apos;</span>,
+        <span class="hljs-string">&apos;hash&apos;</span>     =&gt; <span class="hljs-keyword">false</span>,
+    ],
+],
+</code></pre>
+<ol>
+<li>API&#x5074;&#x3067;&#x306F;&#xFF0C;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x306B;&#x5BFE;&#x3057;&#x3066;&#xFF0C;<code>middleware</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x3088;&#x308B;&#x8A8D;&#x8A3C;&#x30AC;&#x30FC;&#x30C9;&#x3092;&#x884C;&#x3046;&#xFF0E;&#x3053;&#x308C;&#x306B;&#x3088;&#x308A;&#xFF0C;Oauth&#x8A8D;&#x8A3C;&#x306B;&#x6210;&#x529F;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x307F;&#x304C;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x884C;&#x3048;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;</li>
+</ol>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">&apos;user&apos;</span>, <span class="hljs-string">&apos;UserController@index&apos;</span>)-&gt;middleware(<span class="hljs-string">&apos;auth:api&apos;</span>);
+</code></pre>
+<ol>
+<li>API&#x5074;&#x3067;&#x306F;&#xFF0C;&#x8A8D;&#x8A3C;&#x30AC;&#x30FC;&#x30C9;&#x3092;&#x884C;&#x3063;&#x305F;&#x30E2;&#x30C7;&#x30EB;&#x306B;&#x5BFE;&#x3057;&#x3066;&#xFF0C;HasAPIToken&#xFF0C;Notifiable&#x306E;&#x30C8;&#x30EC;&#x30A4;&#x30C8;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Notifications</span>\<span class="hljs-title">Notifiable</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Foundation</span>\<span class="hljs-title">Auth</span>\<span class="hljs-title">User</span> <span class="hljs-title">as</span> <span class="hljs-title">Authenticatable</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Laravel</span>\<span class="hljs-title">Passport</span>\<span class="hljs-title">HasApiTokens</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Authenticatable</span>
+</span>{
+    <span class="hljs-keyword">use</span> <span class="hljs-title">HasApiTokens</span>, <span class="hljs-title">Notifiable</span>;
+
+    <span class="hljs-comment">// &#x4E00;&#x90E8;&#x7701;&#x7565;</span>
+}
+</code></pre>
+<ol>
+<li>API&#x5074;&#x3067;&#x306F;&#xFF0C;Passport&#x306E;<code>routes</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#xFF0E;&#x3053;&#x308C;&#x306B;&#x3088;&#x308A;&#xFF0C;&#x8A8D;&#x8A3C;&#x30D5;&#x30A7;&#x30FC;&#x30BA;&#x3067;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x5168;&#x3066;&#x306E;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#xFF08;<code>/oauth/xxx</code>&#xFF09;&#x304C;&#x6709;&#x52B9;&#x306B;&#x306A;&#x308B;&#xFF0E;&#x307E;&#x305F;&#xFF0C;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x767A;&#x884C;&#x3067;&#x304D;&#x308B;&#x3088;&#x306B;&#x306A;&#x308B;&#xFF0E;</li>
+</ol>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Laravel</span>\<span class="hljs-title">Passport</span>\<span class="hljs-title">Passport</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+    <span class="hljs-comment">// &#x4E00;&#x90E8;&#x7701;&#x7565;</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boot</span><span class="hljs-params">()</span>
+    </span>{
+        $this-&gt;registerPolicies();
+
+        Passport::routes();
+    }
+}
+</code></pre>
+<ol>
+<li>API&#x5074;&#x3067;&#x306F;&#xFF0C;&#x6697;&#x53F7;&#x30AD;&#x30FC;&#x3068;&#x30E6;&#x30FC;&#x30B6;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<pre><code class="lang-bash">$ php artisan passport:keys
+
+$ php artisan passport:client --password
+</code></pre>
+<ol>
+<li>&#x4EE5;&#x964D;&#xFF0C;&#x30E6;&#x30FC;&#x30B6;&#x5074;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x306E;&#x4F5C;&#x696D;&#x3068;&#x306A;&#x308B;&#xFF0E;&#x300E;&#x8A8D;&#x8A3C;&#x300F;&#x306E;&#x305F;&#x3081;&#x306B;&#xFF0C;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306E;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x9001;&#x4FE1;&#x3059;&#x308B;&#xFF0E;&#x30E6;&#x30FC;&#x30B6;&#x5074;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306F;&#xFF0C;<code>/oauth/authorize</code>&#x3078;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x9001;&#x4FE1;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#xFF0E;&#x3053;&#x3053;&#x3067;&#x306F;&#xFF0C;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;Guzzle&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x9001;&#x4FE1;&#x3059;&#x308B;&#x3082;&#x306E;&#x3068;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+$http = <span class="hljs-keyword">new</span> GuzzleHttp\Client;
+
+$response = $http-&gt;post(<span class="hljs-string">&apos;http://your-app.com/oauth/token&apos;</span>, [
+    <span class="hljs-string">&apos;form_params&apos;</span> =&gt; [
+        <span class="hljs-string">&apos;grant_type&apos;</span>    =&gt; <span class="hljs-string">&apos;password&apos;</span>,
+        <span class="hljs-string">&apos;client_id&apos;</span>     =&gt; <span class="hljs-string">&apos;client-id&apos;</span>,
+        <span class="hljs-string">&apos;client_secret&apos;</span> =&gt; <span class="hljs-string">&apos;client-secret&apos;</span>,
+        <span class="hljs-string">&apos;username&apos;</span>      =&gt; <span class="hljs-string">&apos;taylor@laravel.com&apos;</span>,
+        <span class="hljs-string">&apos;password&apos;</span>      =&gt; <span class="hljs-string">&apos;my-password&apos;</span>,
+        <span class="hljs-string">&apos;scope&apos;</span>         =&gt; <span class="hljs-string">&apos;&apos;</span>,
+    ],
+]);
+</code></pre>
+<ol>
+<li>&#x30E6;&#x30FC;&#x30B6;&#x5074;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x306F;&#xFF0C;&#x30E6;&#x30FC;&#x30B6;&#x5074;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x542B;&#x3080;JSON&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x53D7;&#x4FE1;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;token_type&quot;</span>:<span class="hljs-string">&quot;Bearer&quot;</span>,
+  <span class="hljs-string">&quot;expires_in&quot;</span>:<span class="hljs-number">31536000</span>,
+  <span class="hljs-string">&quot;access_token&quot;</span>:<span class="hljs-string">&quot;xxxxx&quot;</span>
+}
+</code></pre>
+<ol>
+<li>&#x30E6;&#x30FC;&#x30B6;&#x5074;&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x306F;&#xFF0C;&#x30D8;&#x30C3;&#x30C0;&#x30FC;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x542B;&#x3081;&#x3066;&#xFF0C;&#x8A8D;&#x8A3C;&#x30AC;&#x30FC;&#x30C9;&#x306E;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x305F;API&#x5074;&#x306E;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x306B;&#x5BFE;&#x3057;&#x3066;&#xFF0C;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3092;&#x9001;&#x4FE1;&#x3059;&#x308B;&#xFF0E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x306E;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30DC;&#x30C7;&#x30A3;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#xFF0E;</li>
+</ol>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+$response = $client-&gt;request(<span class="hljs-string">&apos;GET&apos;</span>, <span class="hljs-string">&apos;/api/user&apos;</span>, [
+    <span class="hljs-string">&apos;headers&apos;</span> =&gt; [
+        <span class="hljs-string">&apos;Accept&apos;</span>        =&gt; <span class="hljs-string">&apos;application/json&apos;</span>,
+        <span class="hljs-string">&apos;Authorization&apos;</span> =&gt; <span class="hljs-string">&apos;Bearer xxxxx&apos;</span>,
+    ]
+]);
+
+<span class="hljs-keyword">return</span> (string)$response-&gt;getBody();
+</code></pre>
+<h2 id="views">Views</h2>
+<h3 id="arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;">&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x30D3;&#x30E5;&#x30FC;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
+$ php artisan view:clear
+
+<span class="hljs-comment"># &#x5168;&#x3066;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
+$ php artisan optimize:clear
+</code></pre>
+<h3 id="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;">&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</h3>
+<h4 id="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;">&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</h4>
+<p>Response&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x304B;&#x3089;&#x6E21;&#x3055;&#x308C;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#xFF0C;<code>`{{ &#x5909;&#x6570;&#x540D; }}</code>&#x3067;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;`</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello!! {{ $data }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;">&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;</h4>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- /resources/views/example/create.blade.php --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x30DD;&#x30B9;&#x30C8;&#x4F5C;&#x6210;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+@if ($errors-&gt;any())
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;alert alert-danger&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+
+            @foreach ($errors-&gt;all() as $error)
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{{ $error }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            @endforeach
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+@endif
+
+<span class="hljs-comment">&lt;!-- &#x30DD;&#x30B9;&#x30C8;&#x4F5C;&#x6210;&#x30D5;&#x30A9;&#x30FC;&#x30E0; --&gt;</span>
+</code></pre>
+<h3 id="&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;">&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;</h3>
+<h4 id="&#x30FB;extends&#xFF0C;parent&#xFF0C;show">&#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show</h4>
+<p>&#x4E09;&#x3064;&#x30BB;&#x30C3;&#x30C8;&#x3067;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x304C;&#x591A;&#x3044;&#x306E;&#x3067;&#xFF0C;&#x540C;&#x6642;&#x306B;&#x8AAC;&#x660E;&#x3059;&#x308B;&#xFF0E;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x9593;&#x304C;&#x89AA;&#x5B50;&#x95A2;&#x4FC2;&#x306B;&#x3042;&#x308B;&#x6642;&#xFF0C;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x3067;&#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x5168;&#x4F53;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;<code>@extends</code>&#x3092;&#x7528;&#x3044;&#x308B;&#xFF0E;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;<code>@section</code>&#x3092;&#x7D99;&#x627F;&#x3057;&#x3064;&#x3064;&#xFF0C;&#x8981;&#x7D20;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x5834;&#x5408;&#xFF0C;<code>@endsection</code>&#x3067;&#x306F;&#x306A;&#x304F;<code>@show</code>&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x5171;&#x901A;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3068;&#x306A;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+        @section(&apos;sidebar&apos;)
+            &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30B5;&#x30A4;&#x30C9;&#x30D0;&#x30FC;&#x3068;&#x306A;&#x308B;&#x8981;&#x7D20;
+        @show
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+            &#x5171;&#x901A;&#x306E;&#x8981;&#x7D20;
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-@parent```&#x3067;&#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;```@section```&#x3092;&#x7D99;&#x627F;&#x3059;&#x308B;&#xFF0E;">
+```html
+&lt;!-- &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;
+
+@extends(&apos;layouts.app&apos;)
+
+@section(&apos;sidebar&apos;)
+    @parent
+    &lt;p&gt;&#x5B50;&#x30C6;&#x30F3;&#x30EC;&#x30D7;&#x30FC;&#x30C8;&#x306E;&#x30B5;&#x30A4;&#x30C9;&#x30D0;&#x30FC;&#x306B;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x8981;&#x7D20;&lt;/p&gt;
+@endsection
+</code></pre>
+<h4 id="&#x30FB;include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;">&#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;</h4>
+<p>&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3060;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5168;&#x4F53;&#x3092;&#x51FA;&#x529B;&#x3059;&#x308B;&#xFF0E;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x5BFE;&#x3057;&#x3066;&#xFF0C;&#x5909;&#x6570;&#x3092;&#x6E21;&#x3059;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x308B;&#xFF0E;<code>@extentds</code>&#x3068;&#x306E;&#x4F7F;&#x3044;&#x5206;&#x3051;&#x3068;&#x3057;&#x3066;&#xFF0C;&#x89AA;&#x5B50;&#x95A2;&#x4FC2;&#x306E;&#x306A;&#x3044;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x9593;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x306E;&#x304C;&#x3088;&#x3044;&#xFF0E;&#x4E21;&#x8005;&#x306F;&#xFF0C;PHP&#x3067;&#x3044;&#x3046;<code>extends</code>&#xFF08;&#x30AF;&#x30E9;&#x30B9;&#x30C1;&#x30A7;&#x30FC;&#x30F3;&#xFF09;&#x3068;<code>require</code>&#xFF08;&#x5358;&#x306A;&#x308B;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#xFF09;&#x306E;&#x95A2;&#x4FC2;&#x306B;&#x8FD1;&#x3044;&#xFF0E;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    @include(&apos;shared.errors&apos;)
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span><span class="hljs-comment">&lt;!-- &#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x306E;&#x5185;&#x5BB9; --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h3 id="&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;">&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;</h3>
+<h4 id="&#x30FB;yield&#xFF0C;section">&#x30FB;@yield&#xFF0C;@section</h4>
+<p>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;HTML&#x306E;&#x8981;&#x7D20;&#x3092;&#x52D5;&#x7684;&#x306B;&#x51FA;&#x529B;&#x3059;&#x308B;&#x5834;&#x5408;&#x306B;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x3066;&#xFF0C;<code>@yield(&apos;example&apos;)</code>&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x3053;&#x308C;&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;<code>@section(&apos;example&apos;)</code>-<code>@endsection</code>&#x3067;&#x5B9A;&#x7FA9;&#x3057;&#x305F;&#x8981;&#x7D20;&#x304C;&#xFF0C;<code>@yieid()</code>&#x90E8;&#x5206;&#x306B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x30BF;&#x30A4;&#x30C8;&#x30EB;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>        
+        @yield(&apos;content&apos;)
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+@extends(&apos;layouts.parent&apos;)
+
+@section(&apos;content&apos;)
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;yield&#x306B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+@endsection
+</code></pre>
+<p>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306F;&#xFF0C;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x30BF;&#x30A4;&#x30C8;&#x30EB;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;yield&#x306B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="&#x30FB;stack&#xFF0C;push">&#x30FB;@stack&#xFF0C;@push</h4>
+<p>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;CSS&#x3068;JavaScript&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x52D5;&#x7684;&#x306B;&#x51FA;&#x529B;&#x3059;&#x308B;&#x5834;&#x5408;&#x306B;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x3066;&#xFF0C;<code>@stack(&apos;example&apos;)</code>&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x3053;&#x308C;&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;<code>@push(&apos;example&apos;)</code>-<code>@endpush</code>&#x3067;&#x5B9A;&#x7FA9;&#x3057;&#x305F;&#x8981;&#x7D20;&#x304C;&#xFF0C;<code>@stack()</code>&#x90E8;&#x5206;&#x306B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Head&#x306E;&#x5185;&#x5BB9; --&gt;</span>
+
+    @stack(&apos;scripts&apos;)
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+@push(&apos;scripts&apos;)
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/example.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+@endpush
+</code></pre>
+<h3 id="twig&#x3068;&#x306E;&#x4E92;&#x63DB;">Twig&#x3068;&#x306E;&#x4E92;&#x63DB;</h3>
+<h4 id="&#x30FB;blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;">&#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</h4>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>@yield(&apos;title&apos;)<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+        @section(&apos;sidebar&apos;)
+            &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30B5;&#x30A4;&#x30C9;&#x30D0;&#x30FC;&#x3068;&#x306A;&#x308B;&#x8981;&#x7D20;
+        @show
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+            @yield(&apos;content&apos;)
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+@extends(&apos;layouts.master&apos;)
+
+@section(&apos;title&apos;, &apos;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306B;&#x306A;&#x308B;&#x8981;&#x7D20;&apos;)
+
+@section(&apos;sidebar&apos;)
+    @parent
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30EC;&#x30D7;&#x30FC;&#x30C8;&#x306E;&#x30B5;&#x30A4;&#x30C9;&#x30D0;&#x30FC;&#x306B;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+@endsection
+
+@section(&apos;content&apos;)
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306B;&#x306A;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+@endsection
+</code></pre>
+<h4 id="&#x30FB;twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;">&#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</h4>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>{% block title %}{% endblock %}<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+        {% block sidebar %} <span class="hljs-comment">&lt;!-- @section(&apos;sidebar&apos;) &#x306B;&#x76F8;&#x5F53; --&gt;</span>
+            &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30B5;&#x30A4;&#x30C9;&#x30D0;&#x30FC;&#x3068;&#x306A;&#x308B;&#x8981;&#x7D20;
+        {% endblock %}
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+            {% block content %}<span class="hljs-comment">&lt;!-- @yield(&apos;content&apos;) &#x306B;&#x76F8;&#x5F53; --&gt;</span>
+            {% endblock %}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
+
+{% extends &quot;layouts.master&quot; %} <span class="hljs-comment">&lt;!-- @extends(&apos;layouts.master&apos;) &#x306B;&#x76F8;&#x5F53; --&gt;</span>
+
+{% block title %} <span class="hljs-comment">&lt;!-- @section(&apos;title&apos;, &apos;Page Title&apos;) &#x306B;&#x76F8;&#x5F53; --&gt;</span>
+    &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306B;&#x306A;&#x308B;&#x8981;&#x7D20;
+{% endblock %}
+
+{% block sidebar %} <span class="hljs-comment">&lt;!-- @section(&apos;sidebar&apos;) &#x306B;&#x76F8;&#x5F53; --&gt;</span>
+    {{ parent() }} <span class="hljs-comment">&lt;!-- @parent &#x306B;&#x76F8;&#x5F53; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30EC;&#x30D7;&#x30FC;&#x30C8;&#x306E;&#x30B5;&#x30A4;&#x30C9;&#x30D0;&#x30FC;&#x306B;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+{% endblock %}
+
+{% block content %} <span class="hljs-comment">&lt;!-- @section(&apos;content&apos;) &#x306B;&#x76F8;&#x5F53; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306B;&#x306A;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+{% endblock %}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="backend_framework_symfony.html" class="navigation navigation-prev " aria-label="Previous page: Symfony">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="backend_testing.html" class="navigation navigation-next " aria-label="Next page: テストフレームワークとテスト仕様書">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-10-20T19:50:11.024Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-20T19:54:37.127Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
