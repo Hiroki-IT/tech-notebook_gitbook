@@ -17,15 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-navigator/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
@@ -38,10 +38,6 @@
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
                 
             
         
@@ -1349,12 +1345,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Laravel"><a name="Laravel" class="plugin-anchor" href="#Laravel"><i class="fa fa-link" aria-hidden="true"></i></a>Laravel</h1>
-<h2 id="Facade"><a name="Facade" class="plugin-anchor" href="#Facade"><i class="fa fa-link" aria-hidden="true"></i></a>1. Facade</h2>
-<h3 id="&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;"><a name="&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;" class="plugin-anchor" href="#&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;</h3>
-<h4 id="&#x30FB;Facade&#x3068;&#x306F;"><a name="&#x30FB;Facade&#x3068;&#x306F;" class="plugin-anchor" href="#&#x30FB;Facade&#x3068;&#x306F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x30FB;Facade&#x3068;&#x306F;</h4>
+                                <h1 id="laravel">Laravel</h1>
+<h2 id="facade">Facade</h2>
+<h3 id="&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;">&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;</h3>
+<h4 id="&#x30FB;facade&#x3068;&#x306F;">&#x30FB;Facade&#x3068;&#x306F;</h4>
 <p>Facade&#x306B;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#xFF08;Facade&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3068;ServiceContainer&#x3092;&#x7E4B;&#x3050;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x3068;&#x3057;&#x3066;&#x50CD;&#x304F;&#xFF0E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;</p>
-<h4 id="&#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;"><a name="&#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;" class="plugin-anchor" href="#&#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;</h4>
+<h4 id="&#x30FB;facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;">&#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;</h4>
 <p>new&#x6F14;&#x7B97;&#x5B50;&#x3067;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -1375,7 +1371,7 @@
 $example = <span class="hljs-keyword">new</span> Example();
 $example-&gt;method();
 </code></pre>
-<h4 id="&#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;"><a name="&#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;" class="plugin-anchor" href="#&#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;</h4>
+<h4 id="&#x30FB;facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;">&#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;</h4>
 <p>&#x9759;&#x7684;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x8A18;&#x6CD5;&#x3067;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#xFF0E;&#x305F;&#x3060;&#x3057;&#xFF0C;&#x81EA;&#x4F5C;&#x30AF;&#x30E9;&#x30B9;&#x3092;Facade&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5316;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x30B9;&#x30D1;&#x30B2;&#x30C3;&#x30C6;&#x30A3;&#x306A;&#x300C;Composition&#xFF08;&#x5408;&#x6210;&#xFF09;&#x300D;&#x306E;&#x4F9D;&#x5B58;&#x95A2;&#x4FC2;&#x3092;&#x751F;&#x3058;&#x3055;&#x305B;&#x3066;&#x3057;&#x307E;&#x3046;&#xFF0E;&#x4F8B;&#x3048;&#x3070;&#xFF0C;Facade&#x306E;&#x4E2D;&#x3067;&#x3082;&#xFF0C;<code>Route</code>&#x306E;&#x3088;&#x3046;&#x306A;&#xFF0C;&#x4EE3;&#x66FF;&#x3059;&#x308B;&#x3088;&#x308A;&#x3082;Facade&#x3092;&#x4F7F;&#x3063;&#x305F;&#x307B;&#x3046;&#x304C;&#x65AD;&#x7136;&#x4FBF;&#x5229;&#x3067;&#x3042;&#x308B;&#x90E8;&#x5206;&#x4EE5;&#x5916;&#x306F;&#xFF0C;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x307B;&#x3046;&#x304C;&#x3088;&#x3044;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <p>Facade&#x3068;&#x3057;&#x3066;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x3044;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;</p>
@@ -1407,7 +1403,7 @@ $example-&gt;method();
 <span class="hljs-comment">// Facade&#x5229;&#x7528;</span>
 $result = Example::method();
 </code></pre>
-<h4 id="&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;"><a name="&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;" class="plugin-anchor" href="#&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. &#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;</h4>
+<h4 id="&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;">&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;</h4>
 <p>&#x4EE5;&#x4E0B;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#xFF0C;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3067;&#x767B;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;Facade&#x3067;&#x3042;&#x308B;&#xFF0E;</p>
 <table>
 <thead>
@@ -1645,14 +1641,14 @@ $result = Example::method();
 </tbody>
 </table>
 <p><br></p>
-<h2 id="ServiceProvider"><a name="ServiceProvider" class="plugin-anchor" href="#ServiceProvider"><i class="fa fa-link" aria-hidden="true"></i></a>2. ServiceProvider</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><a name="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<h2 id="serviceprovider">ServiceProvider</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
 <pre><code class="lang-bash">$ php artisan make:provider {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
 </code></pre>
 <p><br></p>
-<h3 id="ServiceProvider"><a name="ServiceProvider" class="plugin-anchor" href="#ServiceProvider"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. ServiceProvider</h3>
-<h4 id="&#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;"><a name="&#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;" class="plugin-anchor" href="#&#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1. &#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;</h4>
+<h3 id="serviceprovider">ServiceProvider</h3>
+<h4 id="&#x30FB;serviceprovider&#x306E;&#x7528;&#x9014;">&#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;</h4>
 <table>
 <thead>
 <tr>
@@ -1679,7 +1675,7 @@ $result = Example::method();
 </tr>
 </tbody>
 </table>
-<h4 id="&#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;"><a name="&#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;" class="plugin-anchor" href="#&#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.2. &#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;</h4>
+<h4 id="&#x30FB;serviceprovider&#x306E;&#x30B3;&#x30FC;&#x30EB;">&#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;</h4>
 <pre><code class="lang-config/app.php```&#x306E;```providers```&#x914D;&#x5217;&#x306B;&#xFF0C;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x540D;&#x524D;&#x7A7A;&#x9593;&#x3092;&#x767B;&#x9332;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x8D77;&#x52D5;&#x6642;&#x306B;ServiceProvider&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#x305F;&#x3081;&#xFF0C;ServiceContainer&#x3078;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x304C;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x5B8C;&#x4E86;&#x3059;&#x308B;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -1694,8 +1690,8 @@ $result = Example::method();
 ],
 </code></pre>
 <p><br></p>
-<h3 id="AppServiceProvider"><a name="AppServiceProvider" class="plugin-anchor" href="#AppServiceProvider"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. AppServiceProvider</h3>
-<h4 id="&#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;"><a name="&#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;" class="plugin-anchor" href="#&#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1. &#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</h4>
+<h3 id="appserviceprovider">AppServiceProvider</h3>
+<h4 id="&#x30FB;servicecontainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;">&#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</h4>
 <p>&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF08;&#x767B;&#x9332;&#xFF09;&#x3057;&#x305F;&#x3060;&#x3051;&#x3067;&#x65B0;&#x3057;&#x3044;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x30EA;&#x30BE;&#x30EB;&#x30D6;&#xFF08;&#x751F;&#x6210;&#xFF09;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x300E;ServiceContainer&#x300F;&#x3068;&#x3044;&#x3046;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -1727,7 +1723,7 @@ $result = Example::method();
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">singleton</span><span class="hljs-params">($abstract, $concrete = null)</span></span>;
 }
 </code></pre>
-<h4 id="&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;"><a name="&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;" class="plugin-anchor" href="#&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.2. &#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
+<h4 id="&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
 <p>AppSeriveProvider&#x306B;&#x3066;&#xFF0C;ServiceContainer&#x306B;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;ServiceContainer&#x304C;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x751F;&#x6210;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;Laravel&#x3067;&#x306F;&#xFF0C;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x306F;ServiceContainer&#x306B;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3055;&#x308C;&#x3066;&#x304A;&#x308A;&#xFF0C;&#x4EE5;&#x4E0B;&#x306E;&#x5B9F;&#x88C5;&#x3092;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x306F;&#x306A;&#x3044;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -1752,7 +1748,7 @@ $result = Example::method();
     }
 }
 </code></pre>
-<h4 id="&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;"><a name="&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;" class="plugin-anchor" href="#&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.3. &#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
+<h4 id="&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -1808,7 +1804,7 @@ $result = Example::method();
     }
 }
 </code></pre>
-<h4 id="&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;"><a name="&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;" class="plugin-anchor" href="#&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.4. &#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
+<h4 id="&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</h4>
 <p>&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3055;&#x308C;&#x308B;&#x304C;&#xFF0C;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x306F;&#xFF0C;&#x624B;&#x52D5;&#x3067;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#xFF0E;&#x3053;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3068;&#x5B9F;&#x88C5;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x751F;&#x6210;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -1836,7 +1832,7 @@ $result = Example::method();
     }
 }
 </code></pre>
-<h4 id="&#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;"><a name="&#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;" class="plugin-anchor" href="#&#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.5. &#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</h4>
+<h4 id="&#x30FB;servicecontainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;">&#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</h4>
 <p>&#x30B3;&#x30F3;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30BF;&#x306E;&#x5F15;&#x6570;&#x306B;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x6E21;&#x3057;&#x3066;&#x304A;&#x304F;&#xFF0E;App&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x5BA3;&#x8A00;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#xFF0C;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x884C;&#x3046;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -1879,7 +1875,7 @@ $example = App::make(Example::class);
 $result = $example-&gt;method();
 </code></pre>
 <p><br></p>
-<h3 id="MacroServiceProvider"><a name="MacroServiceProvider" class="plugin-anchor" href="#MacroServiceProvider"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. MacroServiceProvider</h3>
+<h3 id="macroserviceprovider">MacroServiceProvider</h3>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">declare</span>(strict_types=<span class="hljs-number">1</span>);
@@ -1919,7 +1915,7 @@ $result = $example-&gt;method();
 }
 </code></pre>
 <p><br></p>
-<h3 id="RouteServiceProvider"><a name="RouteServiceProvider" class="plugin-anchor" href="#RouteServiceProvider"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. RouteServiceProvider</h3>
+<h3 id="routeserviceprovider">RouteServiceProvider</h3>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
@@ -1982,15 +1978,15 @@ $result = $example-&gt;method();
 }
 </code></pre>
 <p><br></p>
-<h3 id="EventServiceProvider"><a name="EventServiceProvider" class="plugin-anchor" href="#EventServiceProvider"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. EventServiceProvider</h3>
+<h3 id="eventserviceprovider">EventServiceProvider</h3>
 <p><br></p>
-<h2 id="Routes"><a name="Routes" class="plugin-anchor" href="#Routes"><i class="fa fa-link" aria-hidden="true"></i></a>3. Routes</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;"><a name="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;" class="plugin-anchor" href="#&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.1. &#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;</h4>
+<h2 id="routes">Routes</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;">&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x4E00;&#x89A7;&#x3067;&#x8868;&#x793A;</span>
 $ php artisan route:list
 </code></pre>
-<h4 id="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;"><a name="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;" class="plugin-anchor" href="#&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.2. &#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;</h4>
+<h4 id="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;">&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
 $ php artisan route:clear
 
@@ -1998,14 +1994,14 @@ $ php artisan route:clear
 $ php artisan optimize:clear
 </code></pre>
 <p><br></p>
-<h3 id="&#x7A2E;&#x985E;"><a name="&#x7A2E;&#x985E;" class="plugin-anchor" href="#&#x7A2E;&#x985E;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x7A2E;&#x985E;</h3>
-<h4 id="&#x30FB;api_php"><a name="&#x30FB;api_php" class="plugin-anchor" href="#&#x30FB;api_php"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.1. &#x30FB;api.php</h4>
+<h3 id="&#x7A2E;&#x985E;">&#x7A2E;&#x985E;</h3>
+<h4 id="&#x30FB;apiphp">&#x30FB;api.php</h4>
 <p>RESTfulAPI&#x3068;&#x3057;&#x3066;&#x6271;&#x3046;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;</p>
-<h4 id="&#x30FB;web_php"><a name="&#x30FB;web_php" class="plugin-anchor" href="#&#x30FB;web_php"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.2. &#x30FB;web.php</h4>
+<h4 id="&#x30FB;webphp">&#x30FB;web.php</h4>
 <p>API&#x4EE5;&#x5916;&#x306E;&#x5834;&#x5408;&#xFF0C;&#x3053;&#x3061;&#x3089;&#x306B;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x51E6;&#x7406;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;&#xFF0E;&#x7B2C;&#x4E00;&#x5F15;&#x6570;&#x306B;URL&#xFF0C;&#x7B2C;&#x4E8C;&#x5F15;&#x6570;&#x306B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;</p>
 <p><br></p>
-<h3 id="&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;"><a name="&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;" class="plugin-anchor" href="#&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;</h3>
-<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;"><a name="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;" class="plugin-anchor" href="#&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.1. &#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;</h4>
+<h3 id="&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;">&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;</h3>
+<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;">&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;</h4>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2022,7 +2018,7 @@ Route::options($uri, $callback);
 ```php
 Route::get(&apos;/user&apos;, &apos;UserController@index&apos;);
 </code></pre>
-<h4 id="&#x30FB;namespace"><a name="&#x30FB;namespace" class="plugin-anchor" href="#&#x30FB;namespace"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.2. &#x30FB;namespace</h4>
+<h4 id="&#x30FB;namespace">&#x30FB;namespace</h4>
 <pre><code class="lang-group```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3068;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x6642;&#x306B;&#xFF0C;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5185;&#x3067;&#x540C;&#x3058;&#x540D;&#x524D;&#x7A7A;&#x9593;&#x3092;&#x6307;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -2035,7 +2031,7 @@ Route::namespace(&apos;Admin&apos;)-&gt;group(function () {
     Route::post(&apos;/user/{userId}&apos;, &apos;UserController@createUser&apos;);
 });
 </code></pre>
-<h4 id="&#x30FB;where"><a name="&#x30FB;where" class="plugin-anchor" href="#&#x30FB;where"><i class="fa fa-link" aria-hidden="true"></i></a>3.3.3. &#x30FB;where</h4>
+<h4 id="&#x30FB;where">&#x30FB;where</h4>
 <p>&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x5F62;&#x5F0F;&#x306E;&#x5236;&#x7D04;&#x3092;&#xFF0C;&#x6B63;&#x898F;&#x8868;&#x73FE;&#x3067;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -2073,8 +2069,8 @@ Route::namespace(<span class="hljs-string">&apos;Admin&apos;</span>)-&gt;group(<
 }
 </code></pre>
 <p><br></p>
-<h3 id="&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;"><a name="&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;" class="plugin-anchor" href="#&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. &#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;</h3>
-<h4 id="&#x30FB;CSRF&#x5BFE;&#x7B56;"><a name="&#x30FB;CSRF&#x5BFE;&#x7B56;" class="plugin-anchor" href="#&#x30FB;CSRF&#x5BFE;&#x7B56;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.1. &#x30FB;CSRF&#x5BFE;&#x7B56;</h4>
+<h3 id="&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;">&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;</h3>
+<h4 id="&#x30FB;csrf&#x5BFE;&#x7B56;">&#x30FB;CSRF&#x5BFE;&#x7B56;</h4>
 <p>Laravel&#x3067;&#x306F;&#xFF0C;CSRF&#x5BFE;&#x7B56;&#x306E;&#x305F;&#x3081;&#xFF0C;POST&#xFF0C;PUT&#xFF0C;DELETE&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3067;CSRF&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306B;&#x3088;&#x308B;&#x7167;&#x5408;&#x3092;&#x884C;&#x3046;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#xFF0E;&#x305D;&#x306E;&#x305F;&#x3081;&#x306B;&#xFF0C;View&#x5074;&#x3067;CSRF&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;&#xFF0E;&#x3053;&#x306E;&#x5B9F;&#x88C5;&#x306B;&#x3088;&#x308A;&#xFF0C;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x3054;&#x3068;&#x306B;&#xFF0C;&#x767B;&#x9332;&#x30E6;&#x30FC;&#x30B6;&#x306B;CSRF&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x4ED8;&#x4E0E;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;/profile&quot;</span>&gt;</span>
@@ -2082,41 +2078,41 @@ Route::namespace(<span class="hljs-string">&apos;Admin&apos;</span>)-&gt;group(<
     ...
 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
 </code></pre>
-<h4 id="&#x30FB;XSS&#x5BFE;&#x7B56;"><a name="&#x30FB;XSS&#x5BFE;&#x7B56;" class="plugin-anchor" href="#&#x30FB;XSS&#x5BFE;&#x7B56;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.2. &#x30FB;XSS&#x5BFE;&#x7B56;</h4>
-<h4 id="&#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;"><a name="&#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;" class="plugin-anchor" href="#&#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4.3. &#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;</h4>
+<h4 id="&#x30FB;xss&#x5BFE;&#x7B56;">&#x30FB;XSS&#x5BFE;&#x7B56;</h4>
+<h4 id="&#x30FB;&#x5E38;&#x6642;https&#x5316;">&#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;</h4>
 <p><br></p>
-<h2 id="Migration"><a name="Migration" class="plugin-anchor" href="#Migration"><i class="fa fa-link" aria-hidden="true"></i></a>4. Migration</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;"><a name="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.1. &#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;</h4>
+<h2 id="migration">Migration</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;">&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;</h4>
 <pre><code class="lang-bash">$ php artisan make:migrate create_{&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;}_table
 </code></pre>
-<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;"><a name="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.2. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;</h4>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;</h4>
 <p>&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x5143;&#x306B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-bash">$ php artisan migrate
 </code></pre>
-<h4 id="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;"><a name="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;" class="plugin-anchor" href="#&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.3. &#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;</h4>
+<h4 id="&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;">&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;</h4>
 <pre><code class="lang-bash">$ php artisan migrate:status
 </code></pre>
-<h4 id="&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;"><a name="&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;" class="plugin-anchor" href="#&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.4. &#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</h4>
+<h4 id="&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;">&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</h4>
 <p>&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#xFF0C;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;</p>
 <pre><code class="lang-bash">$ php artisan migrate:rollback --step={&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x6570;}
 </code></pre>
-<h4 id="&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;"><a name="&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;" class="plugin-anchor" href="#&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.5. &#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</h4>
+<h4 id="&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;">&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</h4>
 <p>&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;</p>
 <pre><code class="lang-bash">$ php artisan migrate:reset
 </code></pre>
-<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;"><a name="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.6. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</h4>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</h4>
 <pre><code class="lang-migrate:reset```&#x3068;```migrate```&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#xFF0E;">
 ```bash
 $ php artisan migrate:refresh
 </code></pre>
-<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;"><a name="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.7. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</h4>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</h4>
 <p>&#x5168;&#x3066;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3068;<code>migrate</code>&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#xFF0E;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x69CB;&#x6587;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x308F;&#x305A;&#x306B;&#xFF0C;&#x5F37;&#x5236;&#x7684;&#x306B;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-bash">$ php artisan migrate:fresh
 </code></pre>
 <p><br></p>
-<h3 id="&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;"><a name="&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;" class="plugin-anchor" href="#&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. &#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;</h3>
-<h4 id="&#x30FB;up&#xFF0C;down"><a name="&#x30FB;up&#xFF0C;down" class="plugin-anchor" href="#&#x30FB;up&#xFF0C;down"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.1. &#x30FB;up&#xFF0C;down</h4>
+<h3 id="&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;">&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;</h3>
+<h4 id="&#x30FB;up&#xFF0C;down">&#x30FB;up&#xFF0C;down</h4>
 <pre><code class="lang-up```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#xFF0C;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x306E;CREATE&#x3092;&#x884C;&#x3046;&#xFF0E;```down```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;CREATE&#x306E;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -2154,20 +2150,20 @@ class CreateExampleTable extends Migration
     }
 }
 </code></pre>
-<h4 id="&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;"><a name="&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;" class="plugin-anchor" href="#&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.2. &#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;</h4>
+<h4 id="&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;">&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;</h4>
 <pre><code>
 
 </code></pre><p><br></p>
-<h2 id="Factory&#xFF0C;Seeder"><a name="Factory&#xFF0C;Seeder" class="plugin-anchor" href="#Factory&#xFF0C;Seeder"><i class="fa fa-link" aria-hidden="true"></i></a>5. Factory&#xFF0C;Seeder</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;Factory&#x306E;&#x751F;&#x6210;"><a name="&#x30FB;Factory&#x306E;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x30FB;Factory&#x306E;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1.1. &#x30FB;Factory&#x306E;&#x751F;&#x6210;</h4>
+<h2 id="factory&#xFF0C;seeder">Factory&#xFF0C;Seeder</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;factory&#x306E;&#x751F;&#x6210;">&#x30FB;Factory&#x306E;&#x751F;&#x6210;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># --model={&#x30E2;&#x30C7;&#x30EB;&#x540D;}</span>
 $ php artisan make:factory ExampleFactory --model=Example
 </code></pre>
-<h4 id="&#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;"><a name="&#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1.2. &#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;</h4>
+<h4 id="&#x30FB;&#x500B;&#x5225;seeder&#x306E;&#x751F;&#x6210;">&#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;</h4>
 <pre><code class="lang-bash">$ php artisan make:seeder UserSeeder
 </code></pre>
-<h4 id="&#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;"><a name="&#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;" class="plugin-anchor" href="#&#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1.3. &#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;</h4>
+<h4 id="&#x30FB;databaseseeder&#x306E;&#x5B9F;&#x884C;">&#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x4E8B;&#x524D;&#x306B;&#xFF0C;Composer&#x306E;&#x30AA;&#x30FC;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3092;&#x518D;&#x751F;&#x6210;</span>
 $ composer dump-autoload
 
@@ -2175,8 +2171,8 @@ $ composer dump-autoload
 $ php artisan db:seed --class=DatabaseSeeder
 </code></pre>
 <p><br></p>
-<h3 id="&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;"><a name="&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;" class="plugin-anchor" href="#&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. &#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;</h3>
-<h4 id="&#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;"><a name="&#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;" class="plugin-anchor" href="#&#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.1. &#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;</h4>
+<h3 id="&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;">&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;</h3>
+<h4 id="&#x30FB;factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;">&#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;</h4>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2199,7 +2195,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     ];
 });
 </code></pre>
-<h4 id="&#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;"><a name="&#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;" class="plugin-anchor" href="#&#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.2. &#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;</h4>
+<h4 id="&#x30FB;seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;">&#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;</h4>
 <p>Factory&#x306B;&#x304A;&#x3051;&#x308B;&#x5B9A;&#x7FA9;&#x3092;&#x57FA;&#x306B;&#x3057;&#x3066;&#xFF0C;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x6570;&#x3060;&#x3051;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -2240,16 +2236,16 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     }
 }
 </code></pre>
-<h2 id="Eloquent&#xFF5C;Model"><a name="Eloquent&#xFF5C;Model" class="plugin-anchor" href="#Eloquent&#xFF5C;Model"><i class="fa fa-link" aria-hidden="true"></i></a>6. Eloquent&#xFF5C;Model</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><a name="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<h2 id="eloquent&#xFF5C;model">Eloquent&#xFF5C;Model</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
 <pre><code class="lang-bash">$ php artisan make:model Example
 </code></pre>
 <p><br></p>
-<h3 id="Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;"><a name="Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;" class="plugin-anchor" href="#Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;</h3>
-<h4 id="&#x30FB;Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;"><a name="&#x30FB;Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;" class="plugin-anchor" href="#&#x30FB;Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.1. &#x30FB;Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;</h4>
+<h3 id="active-record&#x30D1;&#x30BF;&#x30FC;&#x30F3;">Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;</h3>
+<h4 id="&#x30FB;active-record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;">&#x30FB;Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;</h4>
 <p><img src="https://raw.githubusercontent.com/Hiroki-IT/tech-notebook/master/images/ActiveRecord.png" alt="ActiveRecord"></p>
-<h4 id="&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;"><a name="&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;" class="plugin-anchor" href="#&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.2. &#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;</h4>
+<h4 id="&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;">&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;</h4>
 <table>
 <thead>
 <tr>
@@ -2281,7 +2277,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
 </tr>
 </tbody>
 </table>
-<h4 id="&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;"><a name="&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;" class="plugin-anchor" href="#&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.3. &#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;</h4>
+<h4 id="&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;">&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;</h4>
 <table>
 <thead>
 <tr>
@@ -2312,8 +2308,8 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
 </tbody>
 </table>
 <p><br></p>
-<h3 id="Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;"><a name="Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;" class="plugin-anchor" href="#Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3. Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;</h3>
-<h4 id="&#x30FB;Model&#x306E;&#x7D99;&#x627F;"><a name="&#x30FB;Model&#x306E;&#x7D99;&#x627F;" class="plugin-anchor" href="#&#x30FB;Model&#x306E;&#x7D99;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.1. &#x30FB;Model&#x306E;&#x7D99;&#x627F;</h4>
+<h3 id="model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;">Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;</h3>
+<h4 id="&#x30FB;model&#x306E;&#x7D99;&#x627F;">&#x30FB;Model&#x306E;&#x7D99;&#x627F;</h4>
 <p>Model&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#xFF0C;<code>INSERT</code>&#x6587;&#x3084;<code>UPDATE</code>&#x6587;&#x306A;&#x3069;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x4F7F;&#x7528;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2326,7 +2322,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     <span class="hljs-comment">// &#x30AF;&#x30E9;&#x30B9;&#x30C1;&#x30A7;&#x30FC;&#x30F3;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;&#x30C7;&#x30FC;&#x30BF;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x3092;&#x30B3;&#x30FC;&#x30EB;</span>
 }
 </code></pre>
-<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;"><a name="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;" class="plugin-anchor" href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.2. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
+<h4 id="&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
 <p>Eloquent&#x306F;&#xFF0C;Model&#x81EA;&#x8EAB;&#x306E;<code>table</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x4EE3;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x540D;&#x524D;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#xFF0C;Model&#x3092;&#x95A2;&#x9023;&#x4ED8;&#x3051;&#x308B;&#xFF0E;&#x305F;&#x3060;&#x3057;&#xFF0C;<code>table</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3092;&#x4EE3;&#x5165;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x306F;&#x306A;&#x3044;&#xFF0E;Eloquent&#x304C;&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x306E;&#x8907;&#x6570;&#x5F62;&#x3092;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3068;&#x898B;&#x306A;&#x3057;&#xFF0C;&#x3053;&#x308C;&#x3092;&#x30B9;&#x30CD;&#x30FC;&#x30AF;&#x30B1;&#x30FC;&#x30B9;&#x306B;&#x3057;&#x305F;&#x6587;&#x5B57;&#x5217;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x4EE3;&#x5165;&#x3059;&#x308B;&#xFF0E;&#x307E;&#x305F;&#xFF0C;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3092;&#x72EC;&#x81EA;&#x3067;&#x547D;&#x540D;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#xFF0C;&#x4EE3;&#x5165;&#x306B;&#x3088;&#x308B;Override&#x3092;&#x884C;&#x3063;&#x3066;&#x3082;&#x826F;&#x3044;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2344,7 +2340,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     <span class="hljs-keyword">protected</span> $table = <span class="hljs-string">&apos;examples&apos;</span>;
 }
 </code></pre>
-<h4 id="&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;"><a name="&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;" class="plugin-anchor" href="#&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.3. &#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
+<h4 id="&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
 <p>Eloquent&#x306F;&#xFF0C;<code>primaryKey</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306E;&#x5024;&#x3092;&#x4E3B;&#x30AD;&#x30FC;&#x306E;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3068;&#x898B;&#x306A;&#x3059;&#xFF0E;<code>keyType</code>&#x3067;&#x4E3B;&#x30AD;&#x30FC;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#xFF0C;&#x307E;&#x305F;<code>$incrementing</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3067;&#x4E3B;&#x30AD;&#x30FC;&#x306E;AutoIncrement&#x3092;&#x6709;&#x52B9;&#x5316;&#x3059;&#x308B;&#x304B;&#x5426;&#x304B;&#xFF0C;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2376,7 +2372,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     <span class="hljs-keyword">public</span> $incrementing = <span class="hljs-keyword">true</span>;
 }
 </code></pre>
-<h4 id="&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;"><a name="&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;" class="plugin-anchor" href="#&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.4. &#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
+<h4 id="&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</h4>
 <p>Eloquent&#x306F;&#xFF0C;<code>timestamps</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306E;&#x5024;&#x304C;<code>true</code>&#x306E;&#x6642;&#x306B;&#xFF0C;Model&#x306B;&#x95A2;&#x9023;&#x4ED8;&#x304F;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;<code>created_at</code>&#x3068;<code>updated_at</code>&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x66F4;&#x65B0;&#x3059;&#x308B;&#xFF0E;&#x307E;&#x305F;&#xFF0C;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3092;&#x72EC;&#x81EA;&#x3067;&#x547D;&#x540D;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#xFF0C;&#x4EE3;&#x5165;&#x306B;&#x3088;&#x308B;Overide&#x3092;&#x884C;&#x3063;&#x3066;&#x3082;&#x826F;&#x3044;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2397,7 +2393,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     <span class="hljs-keyword">protected</span> $timestamps = <span class="hljs-keyword">true</span>; <span class="hljs-comment">// false&#x3067;&#x7121;&#x52B9;&#x5316;</span>
 }
 </code></pre>
-<h4 id="&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;"><a name="&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;" class="plugin-anchor" href="#&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.5. &#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;</h4>
+<h4 id="&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;datetime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;">&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;</h4>
 <p>&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x304B;&#x3089;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3092;&#x8AAD;&#x307F;&#x51FA;&#x3059;&#x3068;&#x540C;&#x6642;&#x306B;&#xFF0C;Carbon&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x306B;&#x5909;&#x63DB;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#xFF0C;<code>data</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x3066;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2419,7 +2415,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     ];
 }
 </code></pre>
-<h4 id="&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;"><a name="&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;" class="plugin-anchor" href="#&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.6. &#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;</h4>
+<h4 id="&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;">&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;</h4>
 <p>&#x7279;&#x5B9A;&#x306E;&#x30AB;&#x30E9;&#x30E0;&#x306E;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#xFF0C;<code>attributes</code>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x3066;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3068;&#x5024;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2440,14 +2436,14 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
 }
 </code></pre>
 <p><br></p>
-<h2 id="Eloquent&#xFF5C;Data_Access"><a name="Eloquent&#xFF5C;Data_Access" class="plugin-anchor" href="#Eloquent&#xFF5C;Data_Access"><i class="fa fa-link" aria-hidden="true"></i></a>7. Eloquent&#xFF5C;Data Access</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>7.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h2 id="eloquent&#xFF5C;data-access">Eloquent&#xFF5C;Data Access</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
 <pre><code class="lang-bash">
 
 </code></pre>
 <p><br></p>
-<h3 id="CREATE"><a name="CREATE" class="plugin-anchor" href="#CREATE"><i class="fa fa-link" aria-hidden="true"></i></a>7.2. CREATE</h3>
-<h4 id="&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;"><a name="&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;" class="plugin-anchor" href="#&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>7.2.1. &#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<h3 id="create">CREATE</h3>
+<h4 id="&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
@@ -2472,8 +2468,8 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
 }
 </code></pre>
 <p><br></p>
-<h3 id="READ"><a name="READ" class="plugin-anchor" href="#READ"><i class="fa fa-link" aria-hidden="true"></i></a>7.3. READ</h3>
-<h4 id="&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;"><a name="&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;" class="plugin-anchor" href="#&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>7.3.1. &#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<h3 id="read">READ</h3>
+<h4 id="&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
 <p>&#x5185;&#x90E8;&#x3067;select&#x6587;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;<code>all</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x307E;&#x305F;&#x306F;<code>get</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x8FD4;&#x5374;&#x5024;&#x306E;&#x578B;&#x306F;&#xFF0C;Collection&#x3067;&#x3042;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2512,7 +2508,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
     }
 }
 </code></pre>
-<h4 id="&#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;"><a name="&#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;" class="plugin-anchor" href="#&#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;"><i class="fa fa-link" aria-hidden="true"></i></a>7.3.2. &#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;</h4>
+<h4 id="&#x30FB;collection&#x30AF;&#x30E9;&#x30B9;">&#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;</h4>
 <p>List&#x578B;&#x3067;&#xFF0C;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4FDD;&#x6301;&#x3067;&#x304D;&#x308B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x3053;&#x3068;&#xFF0E;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x5909;&#x63DB;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2531,8 +2527,8 @@ $collection = collect([
 $collection-&gt;toArray();
 </code></pre>
 <p><br></p>
-<h3 id="UPDATE"><a name="UPDATE" class="plugin-anchor" href="#UPDATE"><i class="fa fa-link" aria-hidden="true"></i></a>7.4. UPDATE</h3>
-<h4 id="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;"><a name="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;" class="plugin-anchor" href="#&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>7.4.1. &#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<h3 id="update">UPDATE</h3>
+<h4 id="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
@@ -2568,8 +2564,8 @@ $collection-&gt;toArray();
 }
 </code></pre>
 <p><br></p>
-<h3 id="DELETE"><a name="DELETE" class="plugin-anchor" href="#DELETE"><i class="fa fa-link" aria-hidden="true"></i></a>7.5. DELETE</h3>
-<h4 id="&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;"><a name="&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;" class="plugin-anchor" href="#&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>7.5.1. &#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;</h4>
+<h3 id="delete">DELETE</h3>
+<h4 id="&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;">&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;</h4>
 <pre><code class="lang-find```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x305F;&#x30E2;&#x30C7;&#x30EB;&#x304B;&#x3089;&#xFF0C;```delete```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3057;&#xFF0C;&#x3053;&#x306E;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;&#xFF0E;">
 ```php
 &lt;?php
@@ -2629,7 +2625,7 @@ class ExampleRepository extends Repository
     }
 }
 </code></pre>
-<h4 id="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;"><a name="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;" class="plugin-anchor" href="#&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>7.5.2. &#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;</h4>
+<h4 id="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;">&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;</h4>
 <p>&#x8AD6;&#x7406;&#x524A;&#x9664;&#x3092;&#x884C;&#x3044;&#x305F;&#x3044;&#x5834;&#x5408;&#xFF0C;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30E2;&#x30C7;&#x30EB;&#x306B;&#x3066;&#xFF0C;SoftDeletes&#x30C8;&#x30EC;&#x30A4;&#x30C8;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
@@ -2685,18 +2681,18 @@ class ExampleRepository extends Repository
 }
 </code></pre>
 <p><br></p>
-<h2 id="HTTP&#xFF5C;Middleware"><a name="HTTP&#xFF5C;Middleware" class="plugin-anchor" href="#HTTP&#xFF5C;Middleware"><i class="fa fa-link" aria-hidden="true"></i></a>8. HTTP&#xFF5C;Middleware</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>8.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><a name="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>8.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<h2 id="http&#xFF5C;middleware">HTTP&#xFF5C;Middleware</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># Middleware&#x3092;&#x81EA;&#x52D5;&#x751F;&#x6210;</span>
 $ php artisan make:middleware {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
 </code></pre>
 <p><br></p>
-<h3 id="Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;"><a name="Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;" class="plugin-anchor" href="#Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;"><i class="fa fa-link" aria-hidden="true"></i></a>8.2. Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;</h3>
-<h4 id="&#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;"><a name="&#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;" class="plugin-anchor" href="#&#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;"><i class="fa fa-link" aria-hidden="true"></i></a>8.2.1. &#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;</h4>
+<h3 id="middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;">Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;</h3>
+<h4 id="&#x30FB;middleware&#x306E;&#x7A2E;&#x985E;">&#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;</h4>
 <p>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5F8C;&#x306B;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x524D;&#x306B;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;BeforeMiddle&#x3068;&#xFF0C;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x306E;&#x5B9F;&#x884C;&#x6642;&#x306B;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;AfterMiddleware&#x304C;&#x3042;&#x308B;</p>
 <p><img src="https://raw.githubusercontent.com/Hiroki-IT/tech-notebook/master/images/Laravel&#x306E;Middleware&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x4ED5;&#x7D44;&#x307F;.png" alt="Laravel&#x306E;&#x30DF;&#x30C8;&#x3099;&#x30EB;&#x30A6;&#x30A7;&#x30A2;"></p>
-<h4 id="&#x30FB;BeforeMiddleware"><a name="&#x30FB;BeforeMiddleware" class="plugin-anchor" href="#&#x30FB;BeforeMiddleware"><i class="fa fa-link" aria-hidden="true"></i></a>8.2.2. &#x30FB;BeforeMiddleware</h4>
+<h4 id="&#x30FB;beforemiddleware">&#x30FB;BeforeMiddleware</h4>
 <p>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x6642;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x30B3;&#x30FC;&#x30EB;&#x524D;&#x306B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x51E6;&#x7406;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;<code>$request</code>&#x306B;&#x306F;&#xFF0C;<code>Illuminate\Http\Request</code>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x4EE3;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -2715,7 +2711,7 @@ $ php artisan make:middleware {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
     }
 }
 </code></pre>
-<h4 id="&#x30FB;AfterMiddleware"><a name="&#x30FB;AfterMiddleware" class="plugin-anchor" href="#&#x30FB;AfterMiddleware"><i class="fa fa-link" aria-hidden="true"></i></a>8.2.3. &#x30FB;AfterMiddleware</h4>
+<h4 id="&#x30FB;aftermiddleware">&#x30FB;AfterMiddleware</h4>
 <p>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x306E;&#x5B9F;&#x884C;&#x5F8C;&#xFF08;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x3092;&#x542B;&#x3080;&#xFF09;&#x306B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x51E6;&#x7406;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;<code>$response</code>&#x306B;&#x306F;&#xFF0C;<code>Illuminate\Http\Response</code>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x4EE3;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -2737,15 +2733,15 @@ $ php artisan make:middleware {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
 }
 </code></pre>
 <p><br></p>
-<h2 id="HTTP&#xFF5C;Request"><a name="HTTP&#xFF5C;Request" class="plugin-anchor" href="#HTTP&#xFF5C;Request"><i class="fa fa-link" aria-hidden="true"></i></a>9. HTTP&#xFF5C;Request</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>9.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><a name="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>9.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<h2 id="http&#xFF5C;request">HTTP&#xFF5C;Request</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x81EA;&#x52D5;&#x4F5C;&#x6210;</span>
 $ php artisan make:request {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
 </code></pre>
 <p><br></p>
-<h3 id="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;"><a name="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;" class="plugin-anchor" href="#&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;"><i class="fa fa-link" aria-hidden="true"></i></a>9.2. &#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;</h3>
-<h4 id="&#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;"><a name="&#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;" class="plugin-anchor" href="#&#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;"><i class="fa fa-link" aria-hidden="true"></i></a>9.2.1. &#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
+<h3 id="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;">&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;</h3>
+<h4 id="&#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;">&#x30FB;<code>rules</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>validated</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
 <p>FormRequest&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#x306B;&#x3066;&#xFF0C;<code>rules</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30EB;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306B;&#x53CD;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x4E00;&#x3064;&#x76EE;&#x306E;&#x30EB;&#x30FC;&#x30EB;&#x540D;&#xFF08;&#x4F8B;&#x3048;&#x3070;<code>required</code>&#xFF09;&#x306B;&#x57FA;&#x3065;&#x304D;&#xFF0C;<code>validation.php</code>&#x304B;&#x3089;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -2787,7 +2783,7 @@ $ php artisan make:request {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
     ExampleRepository::update($validated);
 }
 </code></pre>
-<h4 id="&#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;"><a name="&#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;" class="plugin-anchor" href="#&#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;"><i class="fa fa-link" aria-hidden="true"></i></a>9.2.2. &#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
+<h4 id="&#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;">&#x30FB;<code>validate</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
 <pre><code class="lang-Illuminate\Http\Request```&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;```validate```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30EB;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;validation&#x30EB;&#x30FC;&#x30EB;&#x306B;&#x53CD;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x4E00;&#x3064;&#x76EE;&#x306E;&#x30EB;&#x30FC;&#x30EB;&#x540D;&#xFF08;&#x4F8B;&#x3048;&#x3070;```required```&#xFF09;&#x306B;&#x57FA;&#x3065;&#x304D;&#xFF0C;```validation.php```&#x304B;&#x3089;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -2813,7 +2809,7 @@ function store(Request $request)
     <span class="hljs-string">&apos;body&apos;</span> =&gt; [<span class="hljs-string">&apos;required&apos;</span>],
 ]);
 </code></pre>
-<h4 id="&#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;"><a name="&#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;" class="plugin-anchor" href="#&#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;"><i class="fa fa-link" aria-hidden="true"></i></a>9.2.3. &#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;</h4>
+<h4 id="&#x30FB;validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;">&#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;</h4>
 <pre><code class="lang-Illuminate\Support\Facades\Validator```&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306E;```make```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30EB;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x7B2C;&#x4E00;&#x5F15;&#x6570;&#x3067;&#xFF0C;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x884C;&#x3046;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6E21;&#x3059;&#xFF0E;validation&#x30EB;&#x30FC;&#x30EB;&#x306B;&#x53CD;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x4E00;&#x3064;&#x76EE;&#x306E;&#x30EB;&#x30FC;&#x30EB;&#x540D;&#xFF08;&#x4F8B;&#x3048;&#x3070;```required```&#xFF09;&#x306B;&#x57FA;&#x3065;&#x304D;&#xFF0C;```validation.php```&#x304B;&#x3089;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -2852,8 +2848,8 @@ class ExampleController extends Controller
 }
 </code></pre>
 <p><br></p>
-<h3 id="&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;"><a name="&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;" class="plugin-anchor" href="#&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;"><i class="fa fa-link" aria-hidden="true"></i></a>9.3. &#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</h3>
-<h4 id="&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;"><a name="&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;" class="plugin-anchor" href="#&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;"><i class="fa fa-link" aria-hidden="true"></i></a>9.3.1. &#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;</h4>
+<h3 id="&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;">&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</h3>
+<h4 id="&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;">&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;</h4>
 <pre><code class="lang-Illuminate\Http\Request```&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;```session```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -2883,13 +2879,13 @@ class UserController extends Controller
 <p>&#x5168;&#x3066;&#x306E;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php">$data = $request-&gt;session()-&gt;all();
 </code></pre>
-<h4 id="&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;"><a name="&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;" class="plugin-anchor" href="#&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>9.3.2. &#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;</h4>
+<h4 id="&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;">&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;</h4>
 <p>&#x73FE;&#x5728;&#x306E;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x304A;&#x3044;&#x3066;&#xFF0C;&#x4ECA;&#x56DE;&#x3068;&#x6B21;&#x56DE;&#x306E;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3060;&#x3051;&#x3067;&#x6709;&#x52B9;&#x306A;&#x4E00;&#x6642;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php">$request-&gt;session()-&gt;flash(<span class="hljs-string">&apos;status&apos;</span>, <span class="hljs-string">&apos;Task was successful!&apos;</span>);
 </code></pre>
 <p><br></p>
-<h3 id="Request&#x306E;&#x8A8D;&#x8A3C;"><a name="Request&#x306E;&#x8A8D;&#x8A3C;" class="plugin-anchor" href="#Request&#x306E;&#x8A8D;&#x8A3C;"><i class="fa fa-link" aria-hidden="true"></i></a>9.4. Request&#x306E;&#x8A8D;&#x8A3C;</h3>
-<h4 id="&#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;"><a name="&#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;" class="plugin-anchor" href="#&#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;"><i class="fa fa-link" aria-hidden="true"></i></a>9.4.1. &#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
+<h3 id="request&#x306E;&#x8A8D;&#x8A3C;">Request&#x306E;&#x8A8D;&#x8A3C;</h3>
+<h4 id="&#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;">&#x30FB;<code>authorize</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h4>
 <p>&#x30E6;&#x30FC;&#x30B6;&#x304C;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x306B;&#x5BFE;&#x3057;&#x3066;CRUD&#x64CD;&#x4F5C;&#x3092;&#x884C;&#x3046;&#x6A29;&#x9650;&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x308B;&#x304B;&#x3092;&#xFF0C;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x524D;&#x306B;&#xFF0C;&#x5224;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-comment">/**
@@ -2905,15 +2901,15 @@ class UserController extends Controller
 }
 </code></pre>
 <p><br></p>
-<h2 id="HTTP&#xFF5C;Controller"><a name="HTTP&#xFF5C;Controller" class="plugin-anchor" href="#HTTP&#xFF5C;Controller"><i class="fa fa-link" aria-hidden="true"></i></a>10. HTTP&#xFF5C;Controller</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>10.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><a name="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;" class="plugin-anchor" href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>10.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
+<h2 id="http&#xFF5C;controller">HTTP&#xFF5C;Controller</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x81EA;&#x52D5;&#x4F5C;&#x6210;</span>
 $ php artisan make:controller {&#x30AF;&#x30E9;&#x30B9;&#x540D;}
 </code></pre>
 <p><br></p>
-<h3 id="Request&#x306E;&#x30B3;&#x30FC;&#x30EB;"><a name="Request&#x306E;&#x30B3;&#x30FC;&#x30EB;" class="plugin-anchor" href="#Request&#x306E;&#x30B3;&#x30FC;&#x30EB;"><i class="fa fa-link" aria-hidden="true"></i></a>10.2. Request&#x306E;&#x30B3;&#x30FC;&#x30EB;</h3>
-<h4 id="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;"><a name="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;" class="plugin-anchor" href="#&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;"><i class="fa fa-link" aria-hidden="true"></i></a>10.2.1. &#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</h4>
+<h3 id="request&#x306E;&#x30B3;&#x30FC;&#x30EB;">Request&#x306E;&#x30B3;&#x30FC;&#x30EB;</h3>
+<h4 id="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;">&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</h4>
 <pre><code class="lang-input```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x7528;&#x3044;&#x3066;&#xFF0C;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30DC;&#x30C7;&#x30A3;&#x306B;&#x542B;&#x307E;&#x308C;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -2938,7 +2934,7 @@ class UserController extends Controller
     }
 }
 </code></pre>
-<h4 id="&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;"><a name="&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;" class="plugin-anchor" href="#&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;"><i class="fa fa-link" aria-hidden="true"></i></a>10.2.2. &#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</h4>
+<h4 id="&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;">&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</h4>
 <p>&#x7B2C;&#x4E8C;&#x5F15;&#x6570;&#x306B;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x540D;&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#xFF0C;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x5024;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
@@ -2962,8 +2958,8 @@ class UserController extends Controller
     }
 </code></pre>
 <p><br></p>
-<h3 id="Response&#x306E;&#x30B3;&#x30FC;&#x30EB;"><a name="Response&#x306E;&#x30B3;&#x30FC;&#x30EB;" class="plugin-anchor" href="#Response&#x306E;&#x30B3;&#x30FC;&#x30EB;"><i class="fa fa-link" aria-hidden="true"></i></a>10.3. Response&#x306E;&#x30B3;&#x30FC;&#x30EB;</h3>
-<h4 id="&#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;"><a name="&#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;" class="plugin-anchor" href="#&#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;"><i class="fa fa-link" aria-hidden="true"></i></a>10.3.1. &#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</h4>
+<h3 id="response&#x306E;&#x30B3;&#x30FC;&#x30EB;">Response&#x306E;&#x30B3;&#x30FC;&#x30EB;</h3>
+<h4 id="&#x30FB;json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;">&#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</h4>
 <pre><code class="lang-Symfony\Component\HttpFoundation\Response```&#x3092;&#x7D99;&#x627F;&#x3057;&#x3066;&#x3044;&#x308B;&#xFF0E;">
 **&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
 
@@ -2973,7 +2969,7 @@ return response()-&gt;json([
     &apos;state&apos; =&gt; &apos;CA&apos;
 ]);
 </code></pre>
-<h4 id="&#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;"><a name="&#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;" class="plugin-anchor" href="#&#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;"><i class="fa fa-link" aria-hidden="true"></i></a>10.3.2. &#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</h4>
+<h4 id="&#x30FB;view&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;">&#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</h4>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-php"><span class="hljs-comment">// &#x30C7;&#x30FC;&#x30BF;&#xFF0C;&#x30B9;&#x30C6;&#x30FC;&#x30BF;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#xFF0C;&#x30D8;&#x30C3;&#x30C0;&#x30FC;&#x306A;&#x3069;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5834;&#x5408;</span>
 <span class="hljs-keyword">return</span> response()
@@ -2986,12 +2982,12 @@ return response()-&gt;json([
   -&gt;setStatusCode(<span class="hljs-number">200</span>);
 </code></pre>
 <p><br></p>
-<h2 id="HTTP&#xFF5C;Auth"><a name="HTTP&#xFF5C;Auth" class="plugin-anchor" href="#HTTP&#xFF5C;Auth"><i class="fa fa-link" aria-hidden="true"></i></a>11. HTTP&#xFF5C;Auth</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>11.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;"><a name="&#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;" class="plugin-anchor" href="#&#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;"><i class="fa fa-link" aria-hidden="true"></i></a>11.1.1. &#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h4>
+<h2 id="http&#xFF5C;auth">HTTP&#xFF5C;Auth</h2>
+<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">&#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x3053;&#x3053;&#x306B;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x4F8B;</span>
 </code></pre>
-<h4 id="&#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;"><a name="&#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;" class="plugin-anchor" href="#&#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;"><i class="fa fa-link" aria-hidden="true"></i></a>11.1.2. &#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h4>
+<h4 id="&#x30FB;oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">&#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h4>
 <p><code>/storage/oauth</code>&#x30AD;&#x30FC;&#xFF0C;Personal Access Client&#xFF0C;Password Grant Client&#x3092;&#x751F;&#x6210;&#x3059;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-bash">$ php artisan passport:install
 
@@ -3013,7 +3009,7 @@ $ php artisan passport:client --personal
 $ php artisan passport:client --password
 </code></pre>
 <p><br></p>
-<h3 id="Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;"><a name="Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;" class="plugin-anchor" href="#Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;"><i class="fa fa-link" aria-hidden="true"></i></a>11.2. Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;</h3>
+<h3 id="auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;digest&#x8A8D;&#x8A3C;">Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;</h3>
 <pre><code class="lang-attempt```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x7528;&#x3044;&#x3066;&#xFF0C;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x5316;&#x3057;&#xFF0C;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x5024;&#x3068;&#x7167;&#x5408;&#x3059;&#x308B;&#xFF0E;&#x8A8D;&#x8A3C;&#x304C;&#x7D42;&#x308F;&#x308B;&#x3068;&#xFF0C;&#x8A8D;&#x8A3C;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x958B;&#x59CB;&#x3059;&#x308B;&#xFF0E;```intended```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#xFF0C;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x5F8C;&#x306E;&#x521D;&#x671F;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x30EA;&#x30C0;&#x30A4;&#x30EC;&#x30AF;&#x30C8;&#x3059;&#x308B;&#xFF0E;">
 ```php
 &lt;?php
@@ -3044,8 +3040,8 @@ class LoginController extends Controller
 }
 </code></pre>
 <p><br></p>
-<h3 id="Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;"><a name="Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;" class="plugin-anchor" href="#Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;"><i class="fa fa-link" aria-hidden="true"></i></a>11.3. Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;</h3>
-<h4 id="&#x30FB;Personal_Access_Token"><a name="&#x30FB;Personal_Access_Token" class="plugin-anchor" href="#&#x30FB;Personal_Access_Token"><i class="fa fa-link" aria-hidden="true"></i></a>11.3.1. &#x30FB;Personal Access Token</h4>
+<h3 id="passport&#x306B;&#x3088;&#x308B;api&#x306E;oauth&#x8A8D;&#x8A3C;">Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;</h3>
+<h4 id="&#x30FB;personal-access-token">&#x30FB;Personal Access Token</h4>
 <p>&#x958B;&#x767A;&#x74B0;&#x5883;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#xFF0E;</p>
 <ol>
 <li>&#x6697;&#x53F7;&#x30AD;&#x30FC;&#x3068;&#x30E6;&#x30FC;&#x30B6;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;</li>
@@ -3082,7 +3078,7 @@ $token = $user-&gt;createToken(<span class="hljs-string">&apos;Token Name&apos;<
 <span class="hljs-comment">// &#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x4ED8;&#x304D;&#x306E;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</span>
 $token = $user-&gt;createToken(<span class="hljs-string">&apos;My Token&apos;</span>, [<span class="hljs-string">&apos;place-orders&apos;</span>])-&gt;accessToken;
 </code></pre>
-<h4 id="&#x30FB;Password_Grant_Token"><a name="&#x30FB;Password_Grant_Token" class="plugin-anchor" href="#&#x30FB;Password_Grant_Token"><i class="fa fa-link" aria-hidden="true"></i></a>11.3.2. &#x30FB;Password Grant Token</h4>
+<h4 id="&#x30FB;password-grant-token">&#x30FB;Password Grant Token</h4>
 <p>&#x672C;&#x756A;&#x74B0;&#x5883;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#xFF0E;</p>
 <ol>
 <li>API&#x5074;&#x3067;&#x306F;&#xFF0C;Oauth&#x8A8D;&#x8A3C;&#xFF08;&#x8A8D;&#x8A3C;&#x30D5;&#x30A7;&#x30FC;&#x30BA;&#xFF0B;&#x8A8D;&#x53EF;&#x30D5;&#x30A7;&#x30FC;&#x30BA;&#xFF09;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;&#x306B;&#xFF0C;auth.php&#x3067;&#xFF0C;<code>driver</code>&#x3092;<code>passport</code>&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;&#x307E;&#x305F;&#xFF0C;&#x8A8D;&#x8A3C;&#x30D5;&#x30A7;&#x30FC;&#x30BA;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3092;<code>provider</code>&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;</li>
@@ -3202,9 +3198,9 @@ $response = $client-&gt;request(<span class="hljs-string">&apos;GET&apos;</span>
 <span class="hljs-keyword">return</span> (string)$response-&gt;getBody();
 </code></pre>
 <p><br></p>
-<h2 id="Views"><a name="Views" class="plugin-anchor" href="#Views"><i class="fa fa-link" aria-hidden="true"></i></a>12. Views</h2>
-<h3 id="arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><a name="arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>12.1. arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;"><a name="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;" class="plugin-anchor" href="#&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>12.1.1. &#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;</h4>
+<h2 id="views">Views</h2>
+<h3 id="arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;">&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;</h4>
 <pre><code class="lang-bash"><span class="hljs-comment"># &#x30D3;&#x30E5;&#x30FC;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
 $ php artisan view:clear
 
@@ -3212,8 +3208,8 @@ $ php artisan view:clear
 $ php artisan optimize:clear
 </code></pre>
 <p><br></p>
-<h3 id="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;"><a name="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;" class="plugin-anchor" href="#&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;"><i class="fa fa-link" aria-hidden="true"></i></a>12.2. &#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</h3>
-<h4 id="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;"><a name="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;" class="plugin-anchor" href="#&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;"><i class="fa fa-link" aria-hidden="true"></i></a>12.2.1. &#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</h4>
+<h3 id="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;">&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</h3>
+<h4 id="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;">&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</h4>
 <p>Response&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x304B;&#x3089;&#x6E21;&#x3055;&#x308C;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x306F;&#xFF0C;<code>`{{ &#x5909;&#x6570;&#x540D; }}</code>&#x3067;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;`</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
@@ -3222,7 +3218,7 @@ $ php artisan optimize:clear
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h4 id="&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;"><a name="&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;" class="plugin-anchor" href="#&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;"><i class="fa fa-link" aria-hidden="true"></i></a>12.2.2. &#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;</h4>
+<h4 id="&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;">&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;</h4>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- /resources/views/example/create.blade.php --&gt;</span>
 
@@ -3243,8 +3239,8 @@ $ php artisan optimize:clear
 <span class="hljs-comment">&lt;!-- &#x30DD;&#x30B9;&#x30C8;&#x4F5C;&#x6210;&#x30D5;&#x30A9;&#x30FC;&#x30E0; --&gt;</span>
 </code></pre>
 <p><br></p>
-<h3 id="&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;"><a name="&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;" class="plugin-anchor" href="#&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>12.3. &#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;</h3>
-<h4 id="&#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show"><a name="&#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show" class="plugin-anchor" href="#&#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show"><i class="fa fa-link" aria-hidden="true"></i></a>12.3.1. &#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show</h4>
+<h3 id="&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;">&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;</h3>
+<h4 id="&#x30FB;extends&#xFF0C;parent&#xFF0C;show">&#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show</h4>
 <p>&#x4E09;&#x3064;&#x30BB;&#x30C3;&#x30C8;&#x3067;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x304C;&#x591A;&#x3044;&#x306E;&#x3067;&#xFF0C;&#x540C;&#x6642;&#x306B;&#x8AAC;&#x660E;&#x3059;&#x308B;&#xFF0E;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x9593;&#x304C;&#x89AA;&#x5B50;&#x95A2;&#x4FC2;&#x306B;&#x3042;&#x308B;&#x6642;&#xFF0C;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x3067;&#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x5168;&#x4F53;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;<code>@extends</code>&#x3092;&#x7528;&#x3044;&#x308B;&#xFF0E;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;<code>@section</code>&#x3092;&#x7D99;&#x627F;&#x3057;&#x3064;&#x3064;&#xFF0C;&#x8981;&#x7D20;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x5834;&#x5408;&#xFF0C;<code>@endsection</code>&#x3067;&#x306F;&#x306A;&#x304F;<code>@show</code>&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
@@ -3276,7 +3272,7 @@ $ php artisan optimize:clear
     &lt;p&gt;&#x5B50;&#x30C6;&#x30F3;&#x30EC;&#x30D7;&#x30FC;&#x30C8;&#x306E;&#x30B5;&#x30A4;&#x30C9;&#x30D0;&#x30FC;&#x306B;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x8981;&#x7D20;&lt;/p&gt;
 @endsection
 </code></pre>
-<h4 id="&#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;"><a name="&#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;" class="plugin-anchor" href="#&#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>12.3.2. &#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;</h4>
+<h4 id="&#x30FB;include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;">&#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;</h4>
 <p>&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3060;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5168;&#x4F53;&#x3092;&#x51FA;&#x529B;&#x3059;&#x308B;&#xFF0E;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x5BFE;&#x3057;&#x3066;&#xFF0C;&#x5909;&#x6570;&#x3092;&#x6E21;&#x3059;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x308B;&#xFF0E;<code>@extentds</code>&#x3068;&#x306E;&#x4F7F;&#x3044;&#x5206;&#x3051;&#x3068;&#x3057;&#x3066;&#xFF0C;&#x89AA;&#x5B50;&#x95A2;&#x4FC2;&#x306E;&#x306A;&#x3044;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x9593;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x306E;&#x304C;&#x3088;&#x3044;&#xFF0E;&#x4E21;&#x8005;&#x306F;&#xFF0C;PHP&#x3067;&#x3044;&#x3046;<code>extends</code>&#xFF08;&#x30AF;&#x30E9;&#x30B9;&#x30C1;&#x30A7;&#x30FC;&#x30F3;&#xFF09;&#x3068;<code>require</code>&#xFF08;&#x5358;&#x306A;&#x308B;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#xFF09;&#x306E;&#x95A2;&#x4FC2;&#x306B;&#x8FD1;&#x3044;&#xFF0E;</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
     @include(&apos;shared.errors&apos;)
@@ -3285,8 +3281,8 @@ $ php artisan optimize:clear
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 <p><br></p>
-<h3 id="&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;"><a name="&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;" class="plugin-anchor" href="#&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;"><i class="fa fa-link" aria-hidden="true"></i></a>12.4. &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;</h3>
-<h4 id="&#x30FB;@yield&#xFF0C;@section"><a name="&#x30FB;@yield&#xFF0C;@section" class="plugin-anchor" href="#&#x30FB;@yield&#xFF0C;@section"><i class="fa fa-link" aria-hidden="true"></i></a>12.4.1. &#x30FB;@yield&#xFF0C;@section</h4>
+<h3 id="&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;">&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;</h3>
+<h4 id="&#x30FB;yield&#xFF0C;section">&#x30FB;@yield&#xFF0C;@section</h4>
 <p>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;HTML&#x306E;&#x8981;&#x7D20;&#x3092;&#x52D5;&#x7684;&#x306B;&#x51FA;&#x529B;&#x3059;&#x308B;&#x5834;&#x5408;&#x306B;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x3066;&#xFF0C;<code>@yield(&apos;example&apos;)</code>&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x3053;&#x308C;&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;<code>@section(&apos;example&apos;)</code>-<code>@endsection</code>&#x3067;&#x5B9A;&#x7FA9;&#x3057;&#x305F;&#x8981;&#x7D20;&#x304C;&#xFF0C;<code>@yieid()</code>&#x90E8;&#x5206;&#x306B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
@@ -3327,7 +3323,7 @@ $ php artisan optimize:clear
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 <p><br></p>
-<h4 id="&#x30FB;@stack&#xFF0C;@push"><a name="&#x30FB;@stack&#xFF0C;@push" class="plugin-anchor" href="#&#x30FB;@stack&#xFF0C;@push"><i class="fa fa-link" aria-hidden="true"></i></a>12.4.2. &#x30FB;@stack&#xFF0C;@push</h4>
+<h4 id="&#x30FB;stack&#xFF0C;push">&#x30FB;@stack&#xFF0C;@push</h4>
 <p>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;CSS&#x3068;JavaScript&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x52D5;&#x7684;&#x306B;&#x51FA;&#x529B;&#x3059;&#x308B;&#x5834;&#x5408;&#x306B;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x3066;&#xFF0C;<code>@stack(&apos;example&apos;)</code>&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x3053;&#x308C;&#x3092;&#x7D99;&#x627F;&#x3057;&#x305F;&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6642;&#x306B;&#xFF0C;<code>@push(&apos;example&apos;)</code>-<code>@endpush</code>&#x3067;&#x5B9A;&#x7FA9;&#x3057;&#x305F;&#x8981;&#x7D20;&#x304C;&#xFF0C;<code>@stack()</code>&#x90E8;&#x5206;&#x306B;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#xFF0E;</p>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
@@ -3345,8 +3341,8 @@ $ php artisan optimize:clear
 @endpush
 </code></pre>
 <p><br></p>
-<h3 id="Twig&#x3068;&#x306E;&#x4E92;&#x63DB;"><a name="Twig&#x3068;&#x306E;&#x4E92;&#x63DB;" class="plugin-anchor" href="#Twig&#x3068;&#x306E;&#x4E92;&#x63DB;"><i class="fa fa-link" aria-hidden="true"></i></a>12.5. Twig&#x3068;&#x306E;&#x4E92;&#x63DB;</h3>
-<h4 id="&#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;"><a name="&#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;" class="plugin-anchor" href="#&#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>12.5.1. &#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</h4>
+<h3 id="twig&#x3068;&#x306E;&#x4E92;&#x63DB;">Twig&#x3068;&#x306E;&#x4E92;&#x63DB;</h3>
+<h4 id="&#x30FB;blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;">&#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</h4>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
 
@@ -3381,7 +3377,7 @@ $ php artisan optimize:clear
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306B;&#x306A;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 @endsection
 </code></pre>
-<h4 id="&#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;"><a name="&#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;" class="plugin-anchor" href="#&#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>12.5.2. &#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</h4>
+<h4 id="&#x30FB;twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;">&#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</h4>
 <p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x89AA;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8; --&gt;</span>
 
@@ -3419,7 +3415,7 @@ $ php artisan optimize:clear
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306B;&#x306A;&#x308B;&#x8981;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 {% endblock %}
 </code></pre>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Laravel">Laravel</a></p><li><a href="#Facade">1. Facade</a></li><ul><li><a href="#&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;">1.1. &#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;</a></li><ul><li><a href="#&#x30FB;Facade&#x3068;&#x306F;">1.1.1. &#x30FB;Facade&#x3068;&#x306F;</a></li><li><a href="#&#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;">1.1.2. &#x30FB;Facade&#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;</a></li><li><a href="#&#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;">1.1.3. &#x30FB;Facade&#x306E;&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;</a></li><li><a href="#&#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;">1.1.4. &#x30FB;&#x6A19;&#x6E96;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;Facade&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x7A2E;&#x985E;</a></li></ul></ul><li><a href="#ServiceProvider">2. ServiceProvider</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">2.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">2.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</a></li></ul><li><a href="#ServiceProvider">2.2. ServiceProvider</a></li><ul><li><a href="#&#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;">2.2.1. &#x30FB;ServiceProvider&#x306E;&#x7528;&#x9014;</a></li><li><a href="#&#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;">2.2.2. &#x30FB;ServiceProvider&#x306E;&#x30B3;&#x30FC;&#x30EB;</a></li></ul><li><a href="#AppServiceProvider">2.3. AppServiceProvider</a></li><ul><li><a href="#&#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;">2.3.1. &#x30FB;ServiceContainer&#xFF0C;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#xFF0C;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</a></li><li><a href="#&#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">2.3.2. &#x30FB;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</a></li><li><a href="#&#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">2.3.3. &#x30FB;&#x8907;&#x6570;&#x306E;&#x5177;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</a></li><li><a href="#&#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;">2.3.4. &#x30FB;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#xFF08;&#x307E;&#x305F;&#x306F;&#x62BD;&#x8C61;&#x30AF;&#x30E9;&#x30B9;&#xFF09;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;</a></li><li><a href="#&#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;">2.3.5. &#x30FB;ServiceContainer&#x304B;&#x3089;&#x306E;&#x30EA;&#x30BE;&#x30EB;&#x30D6;</a></li></ul><li><a href="#MacroServiceProvider">2.4. MacroServiceProvider</a></li><li><a href="#RouteServiceProvider">2.5. RouteServiceProvider</a></li><li><a href="#EventServiceProvider">2.6. EventServiceProvider</a></li></ul><li><a href="#Routes">3. Routes</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">3.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;">3.1.1. &#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;</a></li><li><a href="#&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;">3.1.2. &#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;</a></li></ul><li><a href="#&#x7A2E;&#x985E;">3.2. &#x7A2E;&#x985E;</a></li><ul><li><a href="#&#x30FB;api_php">3.2.1. &#x30FB;api.php</a></li><li><a href="#&#x30FB;web_php">3.2.2. &#x30FB;web.php</a></li></ul><li><a href="#&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;">3.3. &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;</a></li><ul><li><a href="#&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;">3.3.1. &#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;</a></li><li><a href="#&#x30FB;namespace">3.3.2. &#x30FB;namespace</a></li><li><a href="#&#x30FB;where">3.3.3. &#x30FB;where</a></li></ul><li><a href="#&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;">3.4. &#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;</a></li><ul><li><a href="#&#x30FB;CSRF&#x5BFE;&#x7B56;">3.4.1. &#x30FB;CSRF&#x5BFE;&#x7B56;</a></li><li><a href="#&#x30FB;XSS&#x5BFE;&#x7B56;">3.4.2. &#x30FB;XSS&#x5BFE;&#x7B56;</a></li><li><a href="#&#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;">3.4.3. &#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;</a></li></ul></ul><li><a href="#Migration">4. Migration</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">4.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;">4.1.1. &#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;</a></li><li><a href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;">4.1.2. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x4F5C;&#x6210;</a></li><li><a href="#&#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;">4.1.3. &#x30FB;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x7D50;&#x679C;&#x3092;&#x78BA;&#x8A8D;</a></li><li><a href="#&#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;">4.1.4. &#x30FB;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C65;&#x6B74;&#x6570;&#x3060;&#x3051;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</a></li><li><a href="#&#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;">4.1.5. &#x30FB;&#x521D;&#x671F;&#x306E;&#x72B6;&#x614B;&#x307E;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3059;</a></li><li><a href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;">4.1.6. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5143;&#x306B;&#x623B;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</a></li><li><a href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;">4.1.7. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304B;&#x3089;&#x518D;&#x4F5C;&#x6210;</a></li></ul><li><a href="#&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;">4.2. &#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;</a></li><ul><li><a href="#&#x30FB;up&#xFF0C;down">4.2.1. &#x30FB;up&#xFF0C;down</a></li><li><a href="#&#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;">4.2.2. &#x30FB;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x30BF;&#x30A4;&#x30D7;</a></li></ul></ul><li><a href="#Factory&#xFF0C;Seeder">5. Factory&#xFF0C;Seeder</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">5.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;Factory&#x306E;&#x751F;&#x6210;">5.1.1. &#x30FB;Factory&#x306E;&#x751F;&#x6210;</a></li><li><a href="#&#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;">5.1.2. &#x30FB;&#x500B;&#x5225;Seeder&#x306E;&#x751F;&#x6210;</a></li><li><a href="#&#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;">5.1.3. &#x30FB;DatabaseSeeder&#x306E;&#x5B9F;&#x884C;</a></li></ul><li><a href="#&#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;">5.2. &#x30C6;&#x30B9;&#x30C8;&#x30C7;&#x30FC;&#x30BF;</a></li><ul><li><a href="#&#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;">5.2.1. &#x30FB;Factory&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x5B9A;&#x7FA9;</a></li><li><a href="#&#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;">5.2.2. &#x30FB;Seeder&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x4F5C;&#x6210;</a></li></ul></ul><li><a href="#Eloquent&#xFF5C;Model">6. Eloquent&#xFF5C;Model</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">6.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">6.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</a></li></ul><li><a href="#Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;">6.2. Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;</a></li><ul><li><a href="#&#x30FB;Active_Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;">6.2.1. &#x30FB;Active Record&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306F;</a></li><li><a href="#&#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;">6.2.2. &#x30FB;&#x4ED6;&#x306E;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x306E;&#x6BD4;&#x8F03;</a></li><li><a href="#&#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;">6.2.3. &#x30FB;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3068;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;</a></li></ul><li><a href="#Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;">6.3. Model&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x5BFE;&#x5FDC;</a></li><ul><li><a href="#&#x30FB;Model&#x306E;&#x7D99;&#x627F;">6.3.1. &#x30FB;Model&#x306E;&#x7D99;&#x627F;</a></li><li><a href="#&#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">6.3.2. &#x30FB;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</a></li><li><a href="#&#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">6.3.3. &#x30FB;&#x4E3B;&#x30AD;&#x30FC;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</a></li><li><a href="#&#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;">6.3.4. &#x30FB;&#x30BF;&#x30A4;&#x30E0;&#x30B9;&#x30BF;&#x30F3;&#x30D7;&#x578B;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x306E;&#x95A2;&#x9023;&#x4ED8;&#x3051;</a></li><li><a href="#&#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;">6.3.5. &#x30FB;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x6642;&#x306E;DateTime&#x30AF;&#x30E9;&#x30B9;&#x81EA;&#x52D5;&#x5909;&#x63DB;</a></li><li><a href="#&#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;">6.3.6. &#x30FB;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x306E;&#x8A2D;&#x5B9A;</a></li></ul></ul><li><a href="#Eloquent&#xFF5C;Data_Access">7. Eloquent&#xFF5C;Data Access</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">7.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><li><a href="#CREATE">7.2. CREATE</a></li><ul><li><a href="#&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;">7.2.1. &#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;</a></li></ul><li><a href="#READ">7.3. READ</a></li><ul><li><a href="#&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;">7.3.1. &#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;</a></li><li><a href="#&#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;">7.3.2. &#x30FB;Collection&#x30AF;&#x30E9;&#x30B9;</a></li></ul><li><a href="#UPDATE">7.4. UPDATE</a></li><ul><li><a href="#&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;">7.4.1. &#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;</a></li></ul><li><a href="#DELETE">7.5. DELETE</a></li><ul><li><a href="#&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;">7.5.1. &#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;</a></li><li><a href="#&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;">7.5.2. &#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x8AD6;&#x7406;&#x524A;&#x9664;&#xFF09;</a></li></ul></ul><li><a href="#HTTP&#xFF5C;Middleware">8. HTTP&#xFF5C;Middleware</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">8.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">8.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</a></li></ul><li><a href="#Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;">8.2. Middleware&#x306E;&#x4ED5;&#x7D44;&#x307F;</a></li><ul><li><a href="#&#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;">8.2.1. &#x30FB;Middleware&#x306E;&#x7A2E;&#x985E;</a></li><li><a href="#&#x30FB;BeforeMiddleware">8.2.2. &#x30FB;BeforeMiddleware</a></li><li><a href="#&#x30FB;AfterMiddleware">8.2.3. &#x30FB;AfterMiddleware</a></li></ul></ul><li><a href="#HTTP&#xFF5C;Request">9. HTTP&#xFF5C;Request</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">9.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">9.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</a></li></ul><li><a href="#&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;">9.2. &#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x5B9A;&#x7FA9;</a></li><ul><li><a href="#&#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;">9.2.1. &#x30FB;rules&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;validated&#x30E1;&#x30BD;&#x30C3;&#x30C9;</a></li><li><a href="#&#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;">9.2.2. &#x30FB;validate&#x30E1;&#x30BD;&#x30C3;&#x30C9;</a></li><li><a href="#&#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;">9.2.3. &#x30FB;Validator&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;</a></li></ul><li><a href="#&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;">9.3. &#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;</a></li><ul><li><a href="#&#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;">9.3.1. &#x30FB;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x5909;&#x6570;&#x306E;&#x53D6;&#x5F97;</a></li><li><a href="#&#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;">9.3.2. &#x30FB;&#x30D5;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8A2D;&#x5B9A;</a></li></ul><li><a href="#Request&#x306E;&#x8A8D;&#x8A3C;">9.4. Request&#x306E;&#x8A8D;&#x8A3C;</a></li><ul><li><a href="#&#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;">9.4.1. &#x30FB;authorize&#x30E1;&#x30BD;&#x30C3;&#x30C9;</a></li></ul></ul><li><a href="#HTTP&#xFF5C;Controller">10. HTTP&#xFF5C;Controller</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">10.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;">10.1.1. &#x30FB;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x81EA;&#x52D5;&#x751F;&#x6210;</a></li></ul><li><a href="#Request&#x306E;&#x30B3;&#x30FC;&#x30EB;">10.2. Request&#x306E;&#x30B3;&#x30FC;&#x30EB;</a></li><ul><li><a href="#&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;">10.2.1. &#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</a></li><li><a href="#&#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;">10.2.2. &#x30FB;&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x53D6;&#x5F97;</a></li></ul><li><a href="#Response&#x306E;&#x30B3;&#x30FC;&#x30EB;">10.3. Response&#x306E;&#x30B3;&#x30FC;&#x30EB;</a></li><ul><li><a href="#&#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;">10.3.1. &#x30FB;Json&#x578B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</a></li><li><a href="#&#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;">10.3.2. &#x30FB;View&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;</a></li></ul></ul><li><a href="#HTTP&#xFF5C;Auth">11. HTTP&#xFF5C;Auth</a></li><ul><li><a href="#artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">11.1. artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">11.1.1. &#x30FB;Digest&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</a></li><li><a href="#&#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">11.1.2. &#x30FB;Oauth&#x8A8D;&#x8A3C;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</a></li></ul><li><a href="#Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;">11.2. Auth&#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306B;&#x3088;&#x308B;Digest&#x8A8D;&#x8A3C;</a></li><li><a href="#Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;">11.3. Passport&#x306B;&#x3088;&#x308B;API&#x306E;Oauth&#x8A8D;&#x8A3C;</a></li><ul><li><a href="#&#x30FB;Personal_Access_Token">11.3.1. &#x30FB;Personal Access Token</a></li><li><a href="#&#x30FB;Password_Grant_Token">11.3.2. &#x30FB;Password Grant Token</a></li></ul></ul><li><a href="#Views">12. Views</a></li><ul><li><a href="#arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">12.1. arisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;">12.1.1. &#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x306E;&#x524A;&#x9664;</a></li></ul><li><a href="#&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;">12.2. &#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</a></li><ul><li><a href="#&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;">12.2.1. &#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x51FA;&#x529B;</a></li><li><a href="#&#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;">12.2.2. &#x30FB;validation&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x51FA;&#x529B;</a></li></ul><li><a href="#&#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;">12.3. &#x8981;&#x7D20;&#x306E;&#x5171;&#x901A;&#x5316;</a></li><ul><li><a href="#&#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show">12.3.1. &#x30FB;@extends&#xFF0C;@parent&#xFF0C;@show</a></li><li><a href="#&#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;">12.3.2. &#x30FB;@include&#xFF08;&#x30B5;&#x30D6;&#x30D3;&#x30E5;&#x30FC;&#xFF09;</a></li></ul><li><a href="#&#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;">12.4. &#x5B50;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x51FA;&#x529B;</a></li><ul><li><a href="#&#x30FB;@yield&#xFF0C;@section">12.4.1. &#x30FB;@yield&#xFF0C;@section</a></li><li><a href="#&#x30FB;@stack&#xFF0C;@push">12.4.2. &#x30FB;@stack&#xFF0C;@push</a></li></ul><li><a href="#Twig&#x3068;&#x306E;&#x4E92;&#x63DB;">12.5. Twig&#x3068;&#x306E;&#x4E92;&#x63DB;</a></li><ul><li><a href="#&#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;">12.5.1. &#x30FB;Blade&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</a></li><li><a href="#&#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;">12.5.2. &#x30FB;Twig&#x3067;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#x5834;&#x5408;</a></li></ul></ul></ul></div><a href="#Facade" id="goTop"><i class="fa fa-arrow-up"></i></a>
+
                                 
                                 </section>
                             
@@ -3445,14 +3441,24 @@ $ php artisan optimize:clear
             </div>
 
             
-
+                
+                <a href="backend_framework_symfony.html" class="navigation navigation-prev " aria-label="Previous page: Symfony">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="backend_testing.html" class="navigation navigation-next " aria-label="Next page: テストフレームワークとテスト仕様書">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","navigator","anchors","copy-code-button","advanced-emoji"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"navigator":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-10-22T16:19:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-24T11:23:26.469Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":false,"label":{"ja":"この記事の目次"},"maxDepth":3,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-10-22T16:19:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-24T11:48:16.992Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3462,7 +3468,27 @@ $ php artisan optimize:clear
     <script src="../gitbook/theme.js"></script>
     
         
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
@@ -3487,10 +3513,6 @@ $ php artisan optimize:clear
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 
