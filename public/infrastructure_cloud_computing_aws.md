@@ -42,11 +42,111 @@ $ openssl pkcs8 -in <秘密鍵>.pem -inform PEM -outform DER -topk8 -nocrypt | o
 
 Lambdaを軸に他のFaaSと連携させることによって，ユーザ側は関数プログラムを作成しさえすれば，これを実行することができる．この方法を，『サーバレスアーキテクチャ』という．
 
-![サーバレスアーキテクチャとは](https://raw.githubusercontent.com/Hiroki-IT/tech-notebook/master/images/サーバレスアーキテクチャとは.png)
+| 設定項目                   | 説明                                                         | 備考 |
+| -------------------------- | ------------------------------------------------------------ | ---- |
+| 関数                       | 与えられた引数を元に何らかの計算や処理を行い、結果を呼び出し元に返すもののこと． |      |
+| サーバレスアプリケーション | 関数、イベントソース、およびその他のリソースを組み合わせたもののこと． |      |
 
+<br>
 
+### 関数
 
-## 01-02. コンピューティングに付随する設定
+#### ・関数の詳細項目
+
+| 設定項目     | 説明                                                         | 備考                                                         |
+| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ランタイム   | 関数の実装に使用する言語を設定する．                         |                                                              |
+| ハンドラ     | 関数の実行時にコールしたい具体的メソッド名を設定する．       | ・Node.js：```index.js``` というファイル名で ```exports.handler``` メソッドを呼び出したい場合，ハンドラ名を```index.handler```とする |
+| メモリ       |                                                              |                                                              |
+| タイムアウト |                                                              |                                                              |
+| 実行ロール   | Lambda内のメソッドが実行される時に必要なポリシーをもつロールを設定する． |                                                              |
+
+#### ・テストとデバッグ
+
+lambdaで関数を作成すると，CloudWatchLogsのロググループに，「```/aws/lambda/<関数名>```」というグループが自動的に作成される．Lambdaの関数内で発生したエラーや```console.log```メソッドのログはここに出力されるため，都度確認すること．
+
+<br>
+
+### Node.jsによる関数
+
+#### ・AWS-SDKの読み込み
+
+**＊実装例＊**
+
+```javascript
+// AWS SDK for JavaScript を読み込む
+const aws = require('aws-sdk');
+```
+
+#### ・メソッド
+
+```event```，```context```，```callback```の引数にもつメソッドを定義する．初期名は```handler```であるが別名でもよい．
+
+```javascript
+exports.MyHandler = (event, context, callback) => {
+  // なんらかの処理
+}
+```
+
+| 引数     | 説明 | 備考 |
+| -------- | ---- | ---- |
+| event    |      |      |
+| context  |      |      |
+| callback |      |      |
+
+#### ・S3へのファイルの保存
+
+**＊実装例＊**
+
+```javascript
+const aws = require('aws-sdk');
+
+const s3 = new aws.S3();
+
+exports.handler = (event, context, callback) => {
+  
+  s3.putObject({
+      Bucket: '<バケット名>',
+      Key: '<パスを含む保存先ファイル>',
+      Body: '<保存データ>',
+    },
+    (err, data) => {
+      if (err) {
+          // エラーだった時の処理
+    }
+      // エラー出なかった時の処理
+    });
+}
+```
+
+また，LambdaがS3に対してアクションを実行できるように，事前に```AWSLambdaExecute```ロールをLambdaにアタッチしておく必要がある．
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:*"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::*"
+        }
+    ]
+}
+```
+
+<br>
+
+## 01-03. コンピューティングに付随する設定
 
 ### Region，Availability Zone
 
@@ -305,7 +405,11 @@ $ aws s3 ls s3://<バケット名>
 
 <br>
 
-### バケットポリシー
+### バケットポリシーの例
+
+#### ・S3のARNについて
+
+ポリシーにおいて，S3のARでは，「```arn:aws:s3:::<バケット名>/*```」のように，最後にバックスラッシュアスタリスクが必要．
 
 #### ・ALBのアクセスログの保存を許可
 
@@ -359,6 +463,31 @@ $ aws s3 ls s3://<バケット名>
 
 ```json
 // ポリシーは不要
+```
+
+#### ・特定のIPアドレスからのアクセスを許可
+
+パブリックネットワーク上の特定のIPアドレスからのアクセスを許可したい場合，そのIPアドレスをポリシーに設定する必要がある．
+
+```json
+{
+  "Version": "2012-10-17",
+  "Id": "S3PolicyId1",
+  "Statement": [
+    {
+      "Sid": "IPAllow",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::<バケット名>/*",
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "<IPアドレス>/32"
+        }
+      }
+    }
+  ]
+}
 ```
 
 <br>
@@ -430,7 +559,7 @@ xxxxx-cluster.cluster-ro-abcde12345.ap-northeast-1.rds.amazonaws.com
 | **CRUD制限**       | 制限なし．ユーザ権限に依存する．                             | ユーザ権限の権限に関係なく，READしか実行できない．           |
 | **エンドポイント** | 各インスタンスに，リージョンのイニシャルに合わせたエンヂポイントが割り振られる． | 各インスタンスに，リージョンのイニシャルに合わせたエンヂポイントが割り振られる． |
 
-
+<br>
 
 ### ElastiCache
 
