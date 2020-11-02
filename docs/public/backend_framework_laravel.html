@@ -2113,40 +2113,38 @@ $ php artisan migrate:refresh
 <p><br></p>
 <h3 id="&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;">4.2. &#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x524A;&#x9664;</h3>
 <h4 id="&#x30FB;up&#xFF0C;down">4.2.1. &#x30FB;up&#xFF0C;down</h4>
-<pre><code class="lang-up```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#xFF0C;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x306E;CREATE&#x3092;&#x884C;&#x3046;&#xFF0E;```down```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;CREATE&#x306E;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;&#xFF0E;">
-**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
+<p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306B;&#x3088;&#x308B;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x6642;&#x306B;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;&#xFF0E;<code>up</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#xFF0C;&#x30AB;&#x30E9;&#x30E0;&#xFF0C;&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x306E;CREATE&#x3092;&#x884C;&#x3046;&#xFF0E;<code>down</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;CREATE&#x306E;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;&#xFF0E;</p>
+<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
-```php
-&lt;?php
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Migrations</span>\<span class="hljs-title">Migration</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Schema</span>\<span class="hljs-title">Blueprint</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Facades</span>\<span class="hljs-title">Schema</span>;
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-class CreateExampleTable extends Migration
-{
-    /**
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CreateExampleTable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Migration</span>
+</span>{
+    <span class="hljs-comment">/**
      * &#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30C8;
      *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create(&apos;example&apos;, function (Blueprint $table) {
-            $table-&gt;bigIncrements(&apos;id&apos;);
-            $table-&gt;string(&apos;name&apos;);
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">up</span><span class="hljs-params">()</span>
+    </span>{
+        Schema::create(<span class="hljs-string">&apos;example&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Blueprint $table)</span> </span>{
+            $table-&gt;bigIncrements(<span class="hljs-string">&apos;id&apos;</span>);
+            $table-&gt;string(<span class="hljs-string">&apos;name&apos;</span>);
             $table-&gt;timestamps();
         });
     }
 
-    /**
+    <span class="hljs-comment">/**
      * &#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;
      *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::drop(&apos;example&apos;);
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">down</span><span class="hljs-params">()</span>
+    </span>{
+        Schema::drop(<span class="hljs-string">&apos;example&apos;</span>);
     }
 }
 </code></pre>
@@ -3556,7 +3554,7 @@ return [
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["navigator","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"navigator":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-10-26T19:14:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-31T19:16:48.205Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["navigator","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"navigator":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-11-02T19:20:41.343Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-02T19:23:25.067Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
