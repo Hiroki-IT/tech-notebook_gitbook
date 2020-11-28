@@ -1473,6 +1473,36 @@ Date:   Sat Sep 12 00:00:00 2020 +0900
 
     add &#x25EF;&#x25EF;&#x3092;&#x5B9F;&#x88C5;&#x3057;&#x305F;&#xFF0E;
 </code></pre>
+<h4 id="&#x30FB;config---global-coreautocrlf">&#x30FB;<code>config --global core.autocrlf</code></h4>
+<p>&#x6539;&#x884C;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#xFF0C;&#x7279;&#x5B9A;&#x306E;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x81EA;&#x52D5;&#x5909;&#x63DB;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#xFF0E;<code>input</code>&#x3068;&#x3057;&#x3066;&#x304A;&#x304F;&#x306E;&#x304C;&#x826F;&#x3044;&#xFF0E;</p>
+<pre><code class="lang-bash">$ git config --global core.autocrlf &lt;&#x5024;&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x8A2D;&#x5B9A;&#x5024;</th>
+<th style="text-align:center">&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30A2;&#x30A6;&#x30C8;&#x6642;</th>
+<th style="text-align:center">&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x6642;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">input</td>
+<td style="text-align:center">&#x5909;&#x63DB;&#x3057;&#x306A;&#x3044;</td>
+<td style="text-align:center">CRLF -&gt; LF</td>
+</tr>
+<tr>
+<td style="text-align:center">true</td>
+<td style="text-align:center">LF -&gt; CRLF</td>
+<td style="text-align:center">CRLF -&gt; LF</td>
+</tr>
+<tr>
+<td style="text-align:center">false</td>
+<td style="text-align:center">&#x5909;&#x63DB;&#x3057;&#x306A;&#x3044;</td>
+<td style="text-align:center">&#x5909;&#x63DB;&#x3057;&#x306A;&#x3044;</td>
+</tr>
+</tbody>
+</table>
 <p><br></p>
 <h2 id="03-git&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E1;&#x30E2;">03. Git&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30E1;&#x30E2;</h2>
 <h3 id="add&#xFF1A;"><code>add</code>&#xFF1A;</h3>
@@ -1875,7 +1905,7 @@ $
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gitの豆知識","level":"1.28.1","depth":2,"next":{"title":"アルゴリズム","level":"1.29","depth":1,"ref":"","articles":[{"title":"アルゴリズムのロジック","level":"1.29.1","depth":2,"path":"public/backend_logic_algorithm.md","ref":"public/backend_logic_algorithm.md","articles":[]}]},"previous":{"title":"git","level":"1.28","depth":1,"ref":"","articles":[{"title":"Gitの豆知識","level":"1.28.1","depth":2,"path":"public/git.md","ref":"public/git.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":"","visible":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/git.md","mtime":"2020-11-22T12:23:09.406Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-25T13:37:03.133Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gitの豆知識","level":"1.28.1","depth":2,"next":{"title":"アルゴリズム","level":"1.29","depth":1,"ref":"","articles":[{"title":"アルゴリズムのロジック","level":"1.29.1","depth":2,"path":"public/backend_logic_algorithm.md","ref":"public/backend_logic_algorithm.md","articles":[]}]},"previous":{"title":"git","level":"1.28","depth":1,"ref":"","articles":[{"title":"Gitの豆知識","level":"1.28.1","depth":2,"path":"public/git.md","ref":"public/git.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":"","visible":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/git.md","mtime":"2020-11-26T12:15:25.164Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-28T12:11:42.250Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
