@@ -1114,7 +1114,33 @@
                 <a href="infrastructure_ci_cd.html">
             
                     
-                    CircleCI，Capistrano
+                    CI & CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="infrastructure_circleci.html">
+            
+                <a href="infrastructure_circleci.html">
+            
+                    
+                    CircleCI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="infrastructure_capistrano.html">
+            
+                <a href="infrastructure_capistrano.html">
+            
+                    
+                    Capistrano
             
                 </a>
             
@@ -2080,6 +2106,62 @@ Route::namespace(<span class="hljs-string">&apos;Admin&apos;</span>)-&gt;group(<
 </code></pre>
 <h4 id="&#x30FB;xss&#x5BFE;&#x7B56;">&#x30FB;XSS&#x5BFE;&#x7B56;</h4>
 <h4 id="&#x30FB;&#x5E38;&#x6642;https&#x5316;">&#x30FB;&#x5E38;&#x6642;HTTPS&#x5316;</h4>
+<p><br></p>
+<h2 id="logging">Logging</h2>
+<h3 id="log--channels">Log  Channels</h3>
+<h4 id="&#x30FB;stack">&#x30FB;stack</h4>
+<pre><code class="lang-php"><span class="hljs-keyword">return</span> [
+    <span class="hljs-string">&apos;default&apos;</span> =&gt; env(<span class="hljs-string">&apos;LOG_CHANNEL&apos;</span>, <span class="hljs-string">&apos;stack&apos;</span>),
+    <span class="hljs-string">&apos;channels&apos;</span> =&gt; [
+        <span class="hljs-string">&apos;stack&apos;</span> =&gt; [
+            <span class="hljs-string">&apos;driver&apos;</span>            =&gt; <span class="hljs-string">&apos;stack&apos;</span>,
+            <span class="hljs-string">&apos;channels&apos;</span>          =&gt; [<span class="hljs-string">&apos;single&apos;</span>],
+            <span class="hljs-string">&apos;ignore_exceptions&apos;</span> =&gt; <span class="hljs-keyword">false</span>,
+        ],
+]
+</code></pre>
+<h4 id="&#x30FB;single">&#x30FB;single</h4>
+<p>&#x5168;&#x3066;&#x306E;&#x30ED;&#x30B0;&#x3092;<code>/storage/logs/laravel.log</code>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x51FA;&#x529B;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-keyword">return</span> [
+    <span class="hljs-string">&apos;default&apos;</span> =&gt; env(<span class="hljs-string">&apos;LOG_CHANNEL&apos;</span>, <span class="hljs-string">&apos;stack&apos;</span>),
+    <span class="hljs-string">&apos;channels&apos;</span> =&gt; [
+        <span class="hljs-string">&apos;daily&apos;</span> =&gt; [
+            <span class="hljs-string">&apos;driver&apos;</span> =&gt; <span class="hljs-string">&apos;daily&apos;</span>,
+            <span class="hljs-string">&apos;path&apos;</span>   =&gt; storage_path(<span class="hljs-string">&apos;logs/laravel.log&apos;</span>),
+            <span class="hljs-string">&apos;level&apos;</span>  =&gt; env(<span class="hljs-string">&apos;LOG_LEVEL&apos;</span>, <span class="hljs-string">&apos;debug&apos;</span>),
+            <span class="hljs-string">&apos;days&apos;</span>   =&gt; <span class="hljs-number">14</span>,
+        ],
+]
+</code></pre>
+<h4 id="&#x30FB;daily">&#x30FB;daily</h4>
+<p>&#x5168;&#x3066;&#x306E;&#x30ED;&#x30B0;&#x3092;<code>/storage/logs/laravel-&lt;&#x65E5;&#x4ED8;&gt;.log</code>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x51FA;&#x529B;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code>return [
+    &apos;default&apos; =&gt; env(&apos;LOG_CHANNEL&apos;, &apos;stack&apos;),
+    &apos;channels&apos; =&gt; [
+        &apos;stderr&apos; =&gt; [
+            &apos;driver&apos;    =&gt; &apos;monolog&apos;,
+            &apos;handler&apos;   =&gt; StreamHandler::class,
+            &apos;formatter&apos; =&gt; env(&apos;LOG_STDERR_FORMATTER&apos;),
+            &apos;with&apos;      =&gt; [
+                &apos;stream&apos; =&gt; &apos;php://stderr&apos;,
+            ],
+        ],
+]
+</code></pre><h4 id="&#x30FB;stderr">&#x30FB;stderr</h4>
+<p>&#x5168;&#x3066;&#x306E;&#x30ED;&#x30B0;&#x3092;&#x6A19;&#x6E96;&#x30A8;&#x30E9;&#x30FC;&#x51FA;&#x529B;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x51FA;&#x529B;&#x3059;&#x308B;&#xFF0E;Docker&#x4E0A;&#x3067;Laravel&#x3092;&#x7A3C;&#x50CD;&#x3055;&#x305B;&#x308B;&#x5834;&#x5408;&#x306F;&#xFF0C;&#x3053;&#x308C;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-keyword">return</span> [
+    <span class="hljs-string">&apos;default&apos;</span> =&gt; env(<span class="hljs-string">&apos;LOG_CHANNEL&apos;</span>, <span class="hljs-string">&apos;stack&apos;</span>),
+    <span class="hljs-string">&apos;channels&apos;</span> =&gt; [
+        <span class="hljs-string">&apos;stderr&apos;</span> =&gt; [
+            <span class="hljs-string">&apos;driver&apos;</span>    =&gt; <span class="hljs-string">&apos;monolog&apos;</span>,
+            <span class="hljs-string">&apos;handler&apos;</span>   =&gt; StreamHandler::class,
+            <span class="hljs-string">&apos;formatter&apos;</span> =&gt; env(<span class="hljs-string">&apos;LOG_STDERR_FORMATTER&apos;</span>),
+            <span class="hljs-string">&apos;with&apos;</span>      =&gt; [
+                <span class="hljs-string">&apos;stream&apos;</span> =&gt; <span class="hljs-string">&apos;php://stderr&apos;</span>,
+            ],
+        ],
+]
+</code></pre>
 <p><br></p>
 <h2 id="migration">Migration</h2>
 <h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
@@ -3554,7 +3636,7 @@ return [
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":"","visible":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-11-01T10:25:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-04T12:37:59.613Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":"","visible":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-12-06T18:29:16.486Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-06T18:30:26.105Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
