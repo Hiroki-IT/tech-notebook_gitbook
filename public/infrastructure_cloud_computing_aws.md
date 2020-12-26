@@ -280,18 +280,15 @@ exports.handler = (event, context, callback) => {
 
     const request = event.Records[0].cf.request;
     // ログストリームに変数を出力する．
-    console.dir({request});
+    console.log(JSON.stringify({request}, null, 2));
 
     const headers = request.headers;
-    // ログストリームに変数を出力する．
-    console.dir({headers});
-
-    const s3Backet = getBacketBasedOnUserAgent(headers);
+    const s3Backet = getBacketBasedOnDeviceType(headers);
 
     request.origin.s3.domainName = s3Backet
     request.headers.host[0].value = s3Backet
     // ログストリームに変数を出力する．
-    console.dir({request});
+    console.log(JSON.stringify({request}, null, 2));
 
     return callback(null, request);
 };
@@ -299,13 +296,14 @@ exports.handler = (event, context, callback) => {
 /**
  * デバイスタイプに基づいて、オリジンを切り替える．
  * 
- * @param   headers
- * @returns string
+ * @param   {Object} headers
+ * @param   {string} env
+ * @returns {string} pcBucket|spBucket
  */
 const getBacketBasedOnDeviceType = (headers) => {
 
-    const pcBucket = 'pc-bucket.s3.amazonaws.com';
-    const spBucket = 'sp-bucket.s3.amazonaws.com';
+    const pcBucket = env + '-bucket.s3.amazonaws.com';
+    const spBucket = env + '-bucket.s3.amazonaws.com';
 
     if (headers['cloudfront-is-desktop-viewer']
         && headers['cloudfront-is-desktop-viewer'][0].value === 'true') {
@@ -340,12 +338,12 @@ const getBacketBasedOnDeviceType = (headers) => {
             "encoding": "base64",
             "inputTruncated": false
           },
-          "clientIp": "203.0.113.178",
+          "clientIp": "nnn.n.nnn.nnn",
           "headers": {
             "host": [
               {
                 "key": "Host",
-                "value": "example-bucket.s3.ap-northeast-1.amazonaws.com"
+                "value": "prd-sp-bucket.s3.ap-northeast-1.amazonaws.com"
               }
             ],
             "cloudfront-is-mobile-viewer": [
@@ -382,17 +380,24 @@ const getBacketBasedOnDeviceType = (headers) => {
           "method": "GET",
           "origin": {
             "s3": {
-              "customHeaders": {},
-              "domainName": "example-bucket.s3.amazonaws.com",
-              "path": "/images/12345",
+              "authMethod": "origin-access-identity",                
+              "customHeaders": {
+                  "env": [
+                      {
+                          "key": "env",
+                          "value": "prd"
+                      }
+                  ]
+              },
+              "domainName": "prd-sp-bucket.s3.amazonaws.com",
+              "path": "",
               "port": 443,
               "protocol": "https",
-              "authMethod": "origin-access-identity",
               "region": "ap-northeast-1"
             }
           },
           "querystring": "",
-          "uri": "/"
+          "uri": "/images/12345"
         }
       }
     }
@@ -1059,11 +1064,11 @@ Amazon RDSでは，DBMS，RDBを選べる．
 
 #### ・データベースインスタンスの種類
 
-|                    | 読み出し／書き込みインスタンス                               | 読み出しオンリーインスタンス                                 |
-| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **別名**           | プライマリインスタンス                                       | リードレプリカインスタンス                                   |
-| **CRUD制限**       | 制限なし．ユーザ権限に依存する．                             | ユーザ権限の権限に関係なく，READしか実行できない．           |
-| **エンドポイント** | 各インスタンスに，リージョンのイニシャルに合わせたエンヂポイントが割り振られる． | 各インスタンスに，リージョンのイニシャルに合わせたエンヂポイントが割り振られる． |
+|                | 読み出し／書き込みインスタンス                               | 読み出しオンリーインスタンス                                 |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 別名           | プライマリインスタンス                                       | リードレプリカインスタンス                                   |
+| CRUD制限       | 制限なし．ユーザ権限に依存する．                             | ユーザ権限の権限に関係なく，READしか実行できない．           |
+| エンドポイント | 各インスタンスに，リージョンのイニシャルに合わせたエンヂポイントが割り振られる． | 各インスタンスに，リージョンのイニシャルに合わせたエンヂポイントが割り振られる． |
 
 #### ・データベースクラスターのエンドポイント
 
@@ -1480,9 +1485,9 @@ $ nslookup <割り当てられた文字列>.cloudfront.net
 
 #### ・Behaviorの詳細項目
 
-何に基づいたCacheを行うかについては，★マークの項目で制御できる．★マークで，各項目の全て値が，過去のリクエストに合致した時のみ，そのリクエストと過去のものが同一であると見なす仕組みになっている．HIT率改善の方法は以下リンクを参照せよ．
+何に基づいたCacheを行うかについては，★マークの項目で制御できる．★マークで，各項目の全て値が，過去のリクエストに合致した時のみ，そのリクエストと過去のものが同一であると見なす仕組みになっている．キャッシュ判定時のパターンを減らし，HIT率を改善するために，★マークで可能な限り「None」を選択した方が良い．その他の改善方法は，以下リンクを参照せよ．
 
-https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/cache-hit-ratio.html#cache-hit-ratio-query-string-parameters
+参考：https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/cache-hit-ratio.html#cache-hit-ratio-query-string-parameters
 
 | 設定項目                                                     | 説明                                                         | 備考                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -1494,7 +1499,7 @@ https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/cache-h
 | ★Cache Based on Selected Request Headers<br>（★については表上部参照） | リクエストヘッダーのうち，オリジンへの転送を許可し，またCacheの対象とするものを設定する． | ・各ヘッダー転送の全拒否，一部許可，全許可を設定できる．<br>・全拒否：全てのヘッダーの転送を拒否し，Cacheの対象としない．動的になりやすい値をもつヘッダー（Accept-Datetimeなど）を一切使用せずに，それ以外のクエリ文字やCookieでCacheを判定するようになるため，同一と見なすリクエストが増え，HIT率改善につながる．<br>・一部転送：指定したヘッダーのみ転送を許可し，Cacheの対象とする．<br>・全許可：全てのヘッダーがCacheの対象となる．しかし，日付に関するヘッダーなどの動的な値をCacheの対象としてしまうと．同一と見なすリクエストがほとんどなくなり，HITしなくなる．そのため，この設定でCacheは実質無効となり，「対象としない」に等しい． |
 | Whitelist Header                                             | Cache Based on Selected Request Headers を参照せよ．         | ・```Accept-xxxxx```：アプリケーションにレスポンスして欲しいデータの種類（データ型など）を指定．<br/>・ ```CloudFront-Is-xxxxx-Viewer```：デバイスタイプのBool値が格納されている．<br>・レスポンスのヘッダーに含まれる「```X-Cache:```」が「```Hit from cloudfront```」，「```Miss from cloudfront```」のどちらで，Cacheの使用の有無を判断できる．<br/> |
 | Object Caching                                               | CloudFrontにコンテンツのCacheを保存しておく秒数を設定する．  | ・Origin Cache ヘッダーを選択した場合，アプリケーションからのレスポンスヘッダーのCache-Controlの値が適用される．<br>・カスタマイズを選択した場合，ブラウザのTTLとは別に設定できる． |
-| TTL                                                          | CloudFrontにCacheを保存しておく秒数を詳細に設定する．        | ・Min，Max，Default，の全てを0秒とすると，Cacheを無効化できる．<br>・リクエストヘッダーにCache-Control Max-Ageが指定されている場合はMinとMaxが適用され，設定されていない場合はDefault TTLが適用される．<br>・「Cache Based on Selected Request Headers = All」としている場合，Cacheが実質無効となるため，最小TTLはゼロでなければならない． |
+| TTL                                                          | CloudFrontにCacheを保存しておく秒数を詳細に設定する．        | ・Min，Max，Default，の全てを0秒とすると，Cacheを無効化できる．<br>・「Cache Based on Selected Request Headers = All」としている場合，Cacheが実質無効となるため，最小TTLはゼロでなければならない． |
 | ★Farward Cookies<br/>（★については表上部参照）               | Cookie情報のキー名のうち，オリジンへの転送を許可し，Cacheの対象とするものを設定する． | ・Cookie情報キー名転送の全拒否，一部許可，全許可を設定できる．<br>・全拒否：全てのCookieの転送を拒否し，Cacheの対象としない．Cookieはユーザごとに一意になることが多く，動的であるが，それ以外のヘッダーやクエリ文字でCacheを判定するようになるため，同一と見なすリクエストが増え，HIT率改善につながる．<br/>・リクエストのヘッダーに含まれるCookie情報（キー名／値）が変動していると，CloudFrontに保存されたCacheがHITしない．CloudFrontはキー名／値を保持するため，変化しやすいキー名／値は，オリジンに転送しないように設定する．例えば，GoogleAnalyticsのキー名（```_ga```）の値は，ブラウザによって異なるため，１ユーザがブラウザを変えるたびに，異なるCacheが生成されることになる．そのため，ユーザを一意に判定することが難しくなってしまう．<br>・セッションIDはCookieヘッダーに設定されているため，フォーム送信に関わるパスパターンでは，セッションIDのキー名を許可する必要がある． |
 | ★Query String Forwarding and Caching<br/>（★については表上部参照） | クエリストリングのうち，オリジンへの転送を許可し，Cacheの対象とするものを設定する． | ・クエリストリング転送とCacheの，全拒否，一部許可，全許可を選択できる．全拒否にすると，Webサイトにクエリストリングをリクエストできなくなるので注意．<br>・異なるクエリパラメータを，別々のCacheとして保存するかどうかを設定できる． |
 | Restrict Viewer Access                                       | リクエストの送信元を制限するかどうかを設定できる．           | セキュリティグループで制御できるため，ここでは設定しなくてよい． |
@@ -1534,6 +1539,12 @@ CloudFront-Is-Desktop-Viewer: false
 CloudFront-Viewer-Country: JP
 CloudFront-Forwarded-Proto: https
 ```
+
+#### ・キャッシュの時間の決まり方
+
+キャッシュの時間は，リクエストヘッダー（```Cache-Control```，```Expires```）の値とCloudFrontの設定（最大最小デフォルトTTL）の組み合わせによって決まる．ちなみに，CloudFrontの最大最小デフォルトTTLを全て０秒にすると，キャッシュを完全に無効化できる．
+
+参照：https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/Expiration.html#ExpirationDownloadDist
 
 <br>
 
@@ -2197,7 +2208,7 @@ Resources:
 <br>
 
 
-## 09. カスタマーエンゲージメント
+## 09. カスタマーエンゲージメント｜SES
 
 ### SES：Simple Email Service
 
@@ -2216,6 +2227,17 @@ Resources:
 | Rule Sets          | メールの受信したトリガーとして実行するアクションを設定できる． |                                                              |
 | IP Address Filters |                                                              |                                                              |
 
+#### ・Rule Sets
+
+| 設定項目 | 説明                                                         |
+| -------- | ------------------------------------------------------------ |
+| Recipiet | 受信したメールアドレスで，何の宛先の時にこれを許可するかを設定する． |
+| Actions  | 受信を許可した後に，これをトリガーとして実行するアクションを設定する． |
+
+<br>
+
+### 仕様上の制約
+
 #### ・構築リージョンの制約
 
 SESは連携するAWSリソースと同じリージョンに構築しなければならない．
@@ -2229,16 +2251,13 @@ SESはデフォルトではSandboxモードになっている．Sandboxモード
 | 送信制限 | SESで認証したメールアドレスのみに送信できる． |
 | 受信制限 | 1日に200メールのみ受信できる．                |
 
+<br>
+
+### SMTP-AUTH
+
 #### ・AWSにおけるSMTP-AUTHの仕組み
 
 一般的なSMTP-AUTHでは，クライアントユーザの認証が必要である．同様にして，AWSにおいてもこれが必要であり，IAMユーザを用いてこれを実現する．送信元となるアプリケーションにIAMユーザを紐付け，アプリケーションがSESを介してメールを送信する時，IAMユーザがもつユーザ名とパスワードを認証に用いる．ユーザ名とパスワードは後から確認できないため，メモしておくこと．SMTP-AUTHの仕組みについては，別ノートを参照せよ．
-
-#### ・Rule Sets
-
-| 設定項目 | 説明                                                         |
-| -------- | ------------------------------------------------------------ |
-| Recipiet | 受信したメールアドレスで，何の宛先の時にこれを許可するかを設定する． |
-| Actions  | 受信を許可した後に，これをトリガーとして実行するアクションを設定する． |
 
 <br>
 
@@ -2258,7 +2277,7 @@ AWSから提供されている．Gmail，サンダーバード，Yahooメール�
 
 <br>
 
-## 11. 暗号化とPKI
+## 11. 暗号化とPKI｜Certificate Manager
 
 ### Certificate Manager
 
@@ -2275,6 +2294,18 @@ AWSから提供されている．Gmail，サンダーバード，Yahooメール�
 | ドメイン名 | 認証をリクエストするドメイン名を設定する． |
 | 検証の方法 | DNS検証かEmail検証かを設定する．           |
 
+<br>
+
+### ドメインの承認方法
+
+#### ・DNS検証
+
+CNAMEレコードランダムトークンを用いて，ドメイン名の所有者であることを証明する方法．ACMによって生成されたCNAMEレコードランダムトークンが提供されるので，これをRoute53に設定しておけば，ACMがこれを検証し，証明書を発行してくれる．
+
+<br>
+
+### 証明書
+
 #### ・セキュリティポリシー
 
 許可するプロトコルを定義したルールこと．SSL/TLSプロトコルを許可しており，対応できるバージョンが異なるため，ブラウザがそのバージョンのSSL/TLSプロトコルを使用できるかを認識しておく必要がある．
@@ -2284,10 +2315,6 @@ AWSから提供されている．Gmail，サンダーバード，Yahooメール�
 | **Protocol-TLSv1**   |       〇       |       ✕        |       ✕        |
 | **Protocol-TLSv1.1** |       〇       |       〇       |       ✕        |
 | **Protocol-TLSv1.2** |       〇       |       〇       |       〇       |
-
-#### ・DNS検証
-
-CNAMEレコードランダムトークンを用いて，ドメイン名の所有者であることを証明する方法．ACMによって生成されたCNAMEレコードランダムトークンが提供されるので，これをRoute53に設定しておけば，ACMがこれを検証し，証明書を発行してくれる．
 
 #### ・SSLサーバ証明書の種類
 
@@ -2314,7 +2341,7 @@ AWSの使用上，ACM証明書を設置できないAWSリソースに対して�
 
 <br>
 
-## 12. セキュリティ
+## 12. セキュリティ｜WAF
 
 ### AWSリソース vs. サイバー攻撃
 
@@ -2344,9 +2371,11 @@ AWSの使用上，ACM証明書を設置できないAWSリソースに対して�
 | Rule groups                       |                                                              |                                                              |
 | AWS Markets                       |                                                              |                                                              |
 
-#### ・Web ACLsにおけるルール
+<br>
 
-特定のリクエストを許可／拒否するためのルールを設定する．
+### Web ACLs
+
+#### ・Web ACLsの詳細項目
 
 | 設定項目                 | 説明                                                         | 備考                                  |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------- |
@@ -2355,9 +2384,37 @@ AWSの使用上，ACM証明書を設置できないAWSリソースに対して�
 | Associated AWS resources | WAFをアタッチするAWSリソースを設定する．                     | CloudFront，ALBなどにアタッチできる． |
 | Logging and metrics      | アクセスログをKinesis Data Firehoseに出力するように設定する． |                                       |
 
-#### ・ルールの設定例
+#### ・OverviewにおけるSampled requestsの見方
+
+「全てのルール」または「個別のルール」におけるアクセス許可／拒否の履歴を確認できる．ALBやCloudFrontのアクセスログよりも解りやすく，様々なデバッグに役立つ．ただし，３時間分しか残らない．一例として，CloudFrontにアタッチしたWAFで取得できるログを以下に示す．
+
+```http
+GET /example/
+# ホスト
+host: example.jp
+upgrade-insecure-requests: 1
+# ユーザエージェント
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+sec-fetch-site: none
+sec-fetch-mode: navigate
+sec-fetch-user: ?1
+sec-fetch-dest: document
+accept-encoding: gzip, deflate, br
+accept-language: ja,en;q=0.9
+# Cookieヘッダー
+cookie: PHPSESSID=xxxxx; ___ua=1787709890.1608200633; accessId=xxxxx; style=null; bookmark=45; _gid=GA1.2.1643243662.1608715225; __ulfpc=202012231820255572; _ga=GA1.1.859191015.1558955663; _a1_f=8bd85d6d-0f18-41f1-a65d-ac6607316f6e; _a1_u=966b06f3-d387-476a-9a02-49192641c0f2; _td=5fd55a8a-1602-45ec-bbf7-96d75974f37a; _fbp=fb.1.1608715230439.1917315302; _ts_yjad=1608715232002; _ga_68HTFJXME5=GS1.1.1608722059.2.0.1608722059.60
+```
+
+<br>
+
+### Rulesの例
+
+#### ・ルールの粒度
 
 わかりやすさの観点から，可能な限り設定するステートメントを少なくし，一つのルールに一つの意味合いだけを持たせるように命名する．
+
+#### ・ユーザエージェント拒否
 
 **＊具体例＊**
 
@@ -2373,6 +2430,8 @@ AWSの使用上，ACM証明書を設置できないAWSリソースに対して�
 | -------------- | ------------------------------------------------------------ |
 | Allow          | 指定したユーザエージェントでない場合に，全てのファイルパスにアクセスすることを許可する． |
 
+#### ・CI/CDツールのアクセスを許可
+
 **＊具体例＊**
 
 社内の送信元IPアドレスのみ許可した状態で，CircleCIなどのサービスが社内サービスにアクセスできるようにする．
@@ -2386,6 +2445,8 @@ AWSの使用上，ACM証明書を設置できないAWSリソースに対して�
 | Default Action | 説明                                                         |
 | -------------- | ------------------------------------------------------------ |
 | Block          | 正しいトークンを持たないアクセスの場合に，全てのファイルパスにアクセスすることを拒否する． |
+
+#### ・特定のパスを社内アクセスに限定
 
 **＊具体例＊**
 
@@ -2408,6 +2469,8 @@ AWSの使用上，ACM証明書を設置できないAWSリソースに対して�
 | -------------- | ------------------------------------------------------------ |
 | Allow          | 指定したURLパス以外のアクセスの場合に，そのパスにアクセスすることを許可する． |
 
+#### ・社内アクセスに限定
+
 **＊具体例＊**
 
 アプリケーション全体にアクセスできる送信元IPアドレスを，特定のIPアドレスだけに制限する．
@@ -2425,9 +2488,9 @@ AWSの使用上，ACM証明書を設置できないAWSリソースに対して�
 
 <br>
 
-## 12-02. セキュリティ｜IAM：Identify and Access Management
+## 12-02. セキュリティ｜IAM
 
-### IAMポリシー，IAMステートメント
+### IAMポリシー，IAMステートメント：Identify and Access Management
 
 #### ・IAMポリシーとは
 
@@ -2766,9 +2829,9 @@ IAMポリシーのセットを持つ
 
 <br>
 
-## 12-03. セキュリティ｜STS：Security Token Service
+## 12-03. セキュリティ｜STS
 
-### STS
+### STS：Security Token Service
 
 #### ・STSとは
 
