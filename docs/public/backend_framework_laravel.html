@@ -1372,6 +1372,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="laravel">Laravel</h1>
+<h2 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;</h2>
+<p>Laravel&#x306E;&#x5404;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306B;&#x306F;&#xFF0C;&#x4F3C;&#x305F;&#x3088;&#x3046;&#x306A;&#x540D;&#x524D;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x591A;&#x304F;&#x5185;&#x8535;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#xFF0E;&#x305D;&#x306E;&#x305F;&#x3081;&#xFF0C;&#x540C;&#x69D8;&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x5B9F;&#x73FE;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#xFF0C;&#x5404;&#x3005;&#x304C;&#x7570;&#x306A;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x304C;&#x3061;&#x306B;&#x306A;&#x308B;&#xFF0E;&#x305D;&#x306E;&#x6642;&#xFF0C;&#x5404;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x30D6;&#x30E9;&#x30C3;&#x30AF;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x306B;&#x306A;&#x3089;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#xFF0C;&#x51E6;&#x7406;&#x306E;&#x9055;&#x3044;&#x3092;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x78BA;&#x8A8D;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#xFF0E;</p>
+<p>&#x53C2;&#x8003;&#x30EA;&#x30F3;&#x30AF;&#xFF1A;<a href="https://laravel.com/api/6.x/Illuminate.html" target="_blank">https://laravel.com/api/6.x/Illuminate.html</a></p>
+<p><br></p>
 <h2 id="facade">Facade</h2>
 <h3 id="&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;">&#x9759;&#x7684;&#x30D7;&#x30ED;&#x30AD;&#x30B7;</h3>
 <h4 id="&#x30FB;facade&#x3068;&#x306F;">&#x30FB;Facade&#x3068;&#x306F;</h4>
@@ -1931,10 +1935,10 @@ $result = $example-&gt;method();
             $this-&gt;string(<span class="hljs-string">&apos;updated_by&apos;</span>)
                 -&gt;comment(<span class="hljs-string">&apos;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x6700;&#x7D42;&#x66F4;&#x65B0;&#x8005;&apos;</span>)
                 -&gt;nullable();
-            $this-&gt;string(<span class="hljs-string">&apos;created_at&apos;</span>)
+            $this-&gt;timestamp(<span class="hljs-string">&apos;created_at&apos;</span>)
                 -&gt;comment(<span class="hljs-string">&apos;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4F5C;&#x6210;&#x65E5;&apos;</span>)
                 -&gt;nullable();
-            $this-&gt;string(<span class="hljs-string">&apos;updated_at&apos;</span>)
+            $this-&gt;timestamp(<span class="hljs-string">&apos;updated_at&apos;</span>)
                 -&gt;comment(<span class="hljs-string">&apos;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x6700;&#x7D42;&#x66F4;&#x65B0;&#x65E5;&apos;</span>)
                 -&gt;nullable();
         });
@@ -2007,101 +2011,50 @@ $result = $example-&gt;method();
      */</span>  
     <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapApiRoutes</span><span class="hljs-params">()</span>
     </span>{
-        Route::prefix(<span class="hljs-string">&apos;api&apos;</span>)
-             -&gt;middleware(<span class="hljs-string">&apos;api&apos;</span>)
+        <span class="hljs-comment"># API&#x8A8D;&#x8A3C;&#x7528;&#x306E;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF0E;&#x7279;&#x5B9A;&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x306E;&#x307F;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x53EF;&#x80FD;&#xFF0E;</span>
+        Route::middleware([<span class="hljs-string">&apos;api&apos;</span>, <span class="hljs-string">&apos;auth:api&apos;</span>])
              -&gt;namespace($this-&gt;namespace)
              -&gt;group(base_path(<span class="hljs-string">&apos;routes/api.php&apos;</span>));
+
+        <span class="hljs-comment"># API&#x8A8D;&#x8A3C;&#x4E0D;&#x8981;&#x306E;&#x30D8;&#x30EB;&#x30B9;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x7528;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;</span>
+        Route::middleware(<span class="hljs-string">&apos;api&apos;</span>)
+             -&gt;namespace($this-&gt;namespace)
+             -&gt;group(base_path(<span class="hljs-string">&apos;routes/guest.php&apos;</span>));
     }
 }
 </code></pre>
 <p><br></p>
 <h3 id="eventserviceprovider">EventServiceProvider</h3>
-<p><br></p>
-<h2 id="routes">Routes</h2>
-<h3 id="artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;">artisan&#x306B;&#x3088;&#x308B;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;">&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x4E00;&#x89A7;</h4>
-<pre><code class="lang-bash"><span class="hljs-comment"># &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x4E00;&#x89A7;&#x3067;&#x8868;&#x793A;</span>
-$ php artisan route:list
-</code></pre>
-<h4 id="&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;">&#x30FB;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x524A;&#x9664;</h4>
-<pre><code class="lang-bash"><span class="hljs-comment"># &#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
-$ php artisan route:clear
-
-<span class="hljs-comment"># &#x5168;&#x3066;&#x306E;&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;</span>
-$ php artisan optimize:clear
-</code></pre>
-<p><br></p>
-<h3 id="&#x7A2E;&#x985E;">&#x7A2E;&#x985E;</h3>
-<h4 id="&#x30FB;apiphp">&#x30FB;api.php</h4>
-<p>RESTfulAPI&#x3068;&#x3057;&#x3066;&#x6271;&#x3046;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;</p>
-<h4 id="&#x30FB;webphp">&#x30FB;web.php</h4>
-<p>API&#x4EE5;&#x5916;&#x306E;&#x5834;&#x5408;&#xFF0C;&#x3053;&#x3061;&#x3089;&#x306B;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x51E6;&#x7406;&#x3092;&#x5B9F;&#x88C5;&#x3059;&#x308B;&#xFF0E;&#x7B2C;&#x4E00;&#x5F15;&#x6570;&#x306B;URL&#xFF0C;&#x7B2C;&#x4E8C;&#x5F15;&#x6570;&#x306B;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;</p>
-<p><br></p>
-<h3 id="&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;">&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;</h3>
-<h4 id="&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;">&#x30FB;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x5B9A;&#x7FA9;</h4>
-<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
-<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
-
-Route::get($uri, $callback);
-Route::post($uri, $callback);
-Route::put($uri, $callback);
-Route::patch($uri, $callback);
-Route::delete($uri, $callback);
-Route::options($uri, $callback);
-</code></pre>
-<pre><code class="lang-{&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x540D;}@{&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x540D;}```&#x3067;&#xFF0C;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306B;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x3042;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3067;&#x304D;&#x308B;&#xFF0E;">
-**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
-
-```php
-Route::get(&apos;/user&apos;, &apos;UserController@index&apos;);
-</code></pre>
-<h4 id="&#x30FB;namespace">&#x30FB;namespace</h4>
-<pre><code class="lang-group```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3068;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x6642;&#x306B;&#xFF0C;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5185;&#x3067;&#x540C;&#x3058;&#x540D;&#x524D;&#x7A7A;&#x9593;&#x3092;&#x6307;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;">
-**&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;**
-
-```php
-&lt;?php
-
-Route::namespace(&apos;Admin&apos;)-&gt;group(function () {
-    // &quot;App\Http\Controllers\Admin\&quot; &#x4E0B;&#x306B;&#x3042;&#x308B;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;
-    Route::get(&apos;/user&apos;, &apos;UserController@index&apos;);
-    Route::post(&apos;/user/{userId}&apos;, &apos;UserController@createUser&apos;);
-});
-</code></pre>
-<h4 id="&#x30FB;where">&#x30FB;where</h4>
-<p>&#x30D1;&#x30B9;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306E;&#x5F62;&#x5F0F;&#x306E;&#x5236;&#x7D04;&#x3092;&#xFF0C;&#x6B63;&#x898F;&#x8868;&#x73FE;&#x3067;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#xFF0E;</p>
-<p><strong>&#xFF0A;&#x5B9F;&#x88C5;&#x4F8B;&#xFF0A;</strong></p>
-<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
-
-Route::namespace(<span class="hljs-string">&apos;Admin&apos;</span>)-&gt;group(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
-
-    Route::get(<span class="hljs-string">&apos;/user&apos;</span>, <span class="hljs-string">&apos;UserController@index&apos;</span>)
-
-    <span class="hljs-comment">// userId&#x306E;&#x5F62;&#x5F0F;&#x3092;&#x300C;0&#x301C;9&#x304C;&#x4E00;&#x3064;&#x4EE5;&#x4E0A;&#x300D;&#x306B;&#x8A2D;&#x5B9A;</span>
-    Route::post(<span class="hljs-string">&apos;/user/{userId}&apos;</span>, <span class="hljs-string">&apos;UserController@createUser&apos;</span>)
-        -&gt;where(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;[0-9]+&apos;</span>);
-});
-</code></pre>
-<p>RouteServiceProvider&#x306E;<code>boot</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x3066;&#xFF0C;<code>pattern</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x5236;&#x7D04;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#xFF0C;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x6642;&#x306B;where&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x306A;&#x304F;&#x306A;&#x308B;&#xFF0E;</p>
+<h4 id="&#x30FB;event&#x3068;listener&#x306E;&#x767B;&#x9332;">&#x30FB;Event&#x3068;Listener&#x306E;&#x767B;&#x9332;</h4>
+<p>Event&#x3068;Listener&#x306E;&#x5BFE;&#x5FDC;&#x95A2;&#x4FC2;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#xFF0E;&#x306A;&#x304A;&#xFF0C;Event&#x3092;&#x767A;&#x706B;&#x3055;&#x305B;&#x3066;Listener&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x65B9;&#x6CD5;&#x306F;&#xFF0C;Event&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x53C2;&#x7167;&#x305B;&#x3088;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
 
-<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Foundation</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Providers</span>\<span class="hljs-title">RouteServiceProvider</span> <span class="hljs-title">as</span> <span class="hljs-title">ServiceProvider</span>;
-<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Facades</span>\<span class="hljs-title">Route</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Events</span>\<span class="hljs-title">UpdatedModelEvent</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Listeners</span>\<span class="hljs-title">UpdatedModelListener</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Foundation</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Providers</span>\<span class="hljs-title">EventServiceProvider</span> <span class="hljs-title">as</span> <span class="hljs-title">ServiceProvider</span>;
 
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RouteServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EventServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
 </span>{
     <span class="hljs-comment">/**
-     * &#x30EB;&#x30FC;&#x30C8;&#x30E2;&#x30C7;&#x30EB;&#x7D50;&#x5408;&#x3001;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x306A;&#x3069;&#x306E;&#x5B9A;&#x7FA9;
+     * &#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3068;&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x306E;&#x5BFE;&#x5FDC;&#x95A2;&#x4FC2;&#x3092;&#x914D;&#x5217;&#x3067;&#x5B9A;&#x7FA9;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     * [&#x30A4;&#x30D9;&#x30F3;&#x30C8; =&gt; &#x30EA;&#x30B9;&#x30CA;&#x30FC;]
      *
+     * <span class="hljs-doctag">@var</span> array
+     */</span>
+    <span class="hljs-keyword">protected</span> $listen = [
+        <span class="hljs-comment">// Model&#x66F4;&#x65B0;&#x30A4;&#x30D9;&#x30F3;&#x30C8;</span>
+        UpdatedModelEvent::class =&gt; [
+            UpdatedModelListener::class,
+        ],
+    ];
+
+    <span class="hljs-comment">/**
      * <span class="hljs-doctag">@return</span> void
      */</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boot</span><span class="hljs-params">()</span>
     </span>{
-        Route::pattern(<span class="hljs-string">&apos;articleId&apos;</span>, <span class="hljs-string">&apos;[0-9]+&apos;</span>);
-
-        <span class="hljs-keyword">parent</span>::boot();
     }
 }
 </code></pre>
@@ -2622,6 +2575,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
 <p><br></p>
 <h3 id="create">CREATE</h3>
 <h4 id="&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;insert&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<p>Model&#x30AF;&#x30E9;&#x30B9;&#x304C;&#x6301;&#x3064;<code>save</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
@@ -2648,7 +2602,7 @@ $factory-&gt;define(User::class, <span class="hljs-function"><span class="hljs-k
 <p><br></p>
 <h3 id="read">READ</h3>
 <h4 id="&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;select&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
-<p>&#x5185;&#x90E8;&#x3067;select&#x6587;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;<code>all</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x307E;&#x305F;&#x306F;<code>get</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x8FD4;&#x5374;&#x5024;&#x306E;&#x578B;&#x306F;&#xFF0C;Collection&#x3067;&#x3042;&#x308B;&#xFF0E;</p>
+<p>Model&#x30AF;&#x30E9;&#x30B9;&#x304C;&#x6301;&#x3064;<code>save</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;&#x5185;&#x90E8;&#x3067;select&#x6587;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;<code>all</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x307E;&#x305F;&#x306F;<code>get</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x8FD4;&#x5374;&#x5024;&#x306E;&#x578B;&#x306F;&#xFF0C;Collection&#x3067;&#x3042;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
@@ -2707,6 +2661,7 @@ $collection-&gt;toArray();
 <p><br></p>
 <h3 id="update">UPDATE</h3>
 <h4 id="&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;">&#x30FB;update&#x6587;&#x306E;&#x5B9F;&#x884C;</h4>
+<p>Model&#x30AF;&#x30E9;&#x30B9;&#x304C;&#x6301;&#x3064;<code>save</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;</p>
 <pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
@@ -2744,34 +2699,33 @@ $collection-&gt;toArray();
 <p><br></p>
 <h3 id="delete">DELETE</h3>
 <h4 id="&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;">&#x30FB;delete&#x6587;&#x306E;&#x5B9F;&#x884C;&#xFF08;&#x7269;&#x7406;&#x524A;&#x9664;&#xFF09;</h4>
-<pre><code class="lang-find```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x305F;&#x30E2;&#x30C7;&#x30EB;&#x304B;&#x3089;&#xFF0C;```delete```&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3057;&#xFF0C;&#x3053;&#x306E;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;&#xFF0E;">
-```php
-&lt;?php
+<p>Model&#x30AF;&#x30E9;&#x30B9;&#x304C;&#x6301;&#x3064;<code>find</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x8AAD;&#x307F;&#x51FA;&#x3057;&#x305F;&#x30E2;&#x30C7;&#x30EB;&#x304B;&#x3089;&#xFF0C;<code>delete</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3057;&#xFF0C;&#x3053;&#x306E;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
-namespace App\Http\Controllers;
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
 
-use App\Domain\Entity\Example;
-use App\Http\Controllers\Controller;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Domain</span>\<span class="hljs-title">Entity</span>\<span class="hljs-title">Example</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>\<span class="hljs-title">Controller</span>;
 
-class ExampleRepository extends Repository
-{
-    private $example;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Repository</span>
+</span>{
+    <span class="hljs-keyword">private</span> $example;
 
-    public function __construct(Example $example)
-    {
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(Example $example)</span>
+    </span>{
         $this-&gt;example = $example;
     }
 
-    /**
+    <span class="hljs-comment">/**
      * Example&#x30A8;&#x30F3;&#x30C6;&#x30A3;&#x30C6;&#x30A3;&#x3092;&#x524A;&#x9664;
      *
-     * @param Id $id
-     */
-    public function delete(Id $id)
-    {
+     * <span class="hljs-doctag">@param</span> Id $id
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">delete</span><span class="hljs-params">(Id $id)</span>
+    </span>{
         $example = $this-&gt;example-&gt;find($id);
 
-        // &#x5185;&#x90E8;&#x3067;delete&#x6587;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#xFF0C;&#x7269;&#x7406;&#x524A;&#x9664;&#x3055;&#x308C;&#x308B;&#xFF0E;
+        <span class="hljs-comment">// &#x5185;&#x90E8;&#x3067;delete&#x6587;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#xFF0C;&#x7269;&#x7406;&#x524A;&#x9664;&#x3055;&#x308C;&#x308B;&#xFF0E;</span>
         $example-&gt;delete();
     }
 }
@@ -3898,6 +3852,264 @@ $ php artisan optimize:clear
 {% endblock %}
 </code></pre>
 <p><br></p>
+<h2 id="event">Event</h2>
+<h3 id="model-event">Model Event</h3>
+<h4 id="&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x7CFB;">&#x30FB;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x7CFB;</h4>
+<p>Model&#x304C;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x51E6;&#x7406;&#x3092;&#x884C;&#x3046;&#x524D;&#x5F8C;&#x306B;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;&#x5B9A;&#x7FA9;&#x3067;&#x304D;&#x308B;&#xFF0E;&#x4F8B;&#x3048;&#x3070;&#xFF0C;<code>create</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>save</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>update</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>delete</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;&#x306E;&#x5B9F;&#x884C;&#x5F8C;&#x306B;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x306F;&#xFF0C;<code>created</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>saved</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>updated</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;<code>deleted</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#xFF0C;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Concerns</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Contracts</span>\<span class="hljs-title">Events</span>\<span class="hljs-title">Dispatcher</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Events</span>\<span class="hljs-title">NullDispatcher</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Arr</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">InvalidArgumentException</span>;
+
+<span class="hljs-keyword">trait</span> HasEvents
+{
+
+    <span class="hljs-comment">// &#xFF5E; &#x7701;&#x7565; &#xFF5E;    </span>
+
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x306E;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;Dispatcher&#x306B;&#x767B;&#x9332;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *
+     * <span class="hljs-doctag">@param</span>  string  $event
+     * <span class="hljs-doctag">@param</span>  \Closure|string  $callback
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">registerModelEvent</span><span class="hljs-params">($event, $callback)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>(<span class="hljs-keyword">static</span>::$dispatcher)) {
+            $name = <span class="hljs-keyword">static</span>::class;
+
+            <span class="hljs-keyword">static</span>::$dispatcher-&gt;listen(<span class="hljs-string">&quot;eloquent.{$event}: {$name}&quot;</span>, $callback);
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x306E;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;Dispatcher&#x306B;&#x767B;&#x9332;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *    
+     * <span class="hljs-doctag">@param</span>  \Closure|string  $callback
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">saved</span><span class="hljs-params">($callback)</span>
+    </span>{
+        <span class="hljs-keyword">static</span>::registerModelEvent(<span class="hljs-string">&apos;saved&apos;</span>, $callback);
+    }
+
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x306E;save&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x5B9F;&#x884C;&#x5F8C;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;Dispatcher&#x306B;&#x767B;&#x9332;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *    
+     * <span class="hljs-doctag">@param</span>  \Closure|string  $callback
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updated</span><span class="hljs-params">($callback)</span>
+    </span>{
+        <span class="hljs-keyword">static</span>::registerModelEvent(<span class="hljs-string">&apos;updated&apos;</span>, $callback);
+    }
+
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x306E;create&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x5B9F;&#x884C;&#x5F8C;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;Dispatcher&#x306B;&#x767B;&#x9332;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *    
+     * <span class="hljs-doctag">@param</span>  \Closure|string  $callback
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">created</span><span class="hljs-params">($callback)</span>
+    </span>{
+        <span class="hljs-keyword">static</span>::registerModelEvent(<span class="hljs-string">&apos;created&apos;</span>, $callback);
+    }
+
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x306E;delete&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x5B9F;&#x884C;&#x5F8C;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;Dispatcher&#x306B;&#x767B;&#x9332;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *    
+     * <span class="hljs-doctag">@param</span>  \Closure|string  $callback
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deleted</span><span class="hljs-params">($callback)</span>
+    </span>{
+        <span class="hljs-keyword">static</span>::registerModelEvent(<span class="hljs-string">&apos;deleted&apos;</span>, $callback);
+    }
+
+    <span class="hljs-comment">// &#xFF5E; &#x7701;&#x7565; &#xFF5E;       </span>
+
+}
+</code></pre>
+<h4 id="&#x30FB;trait&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x306E;&#x767A;&#x706B;">&#x30FB;Trait&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x306E;&#x767A;&#x706B;</h4>
+<p>Laravel&#x306E;&#x591A;&#x304F;&#x306E;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306B;&#xFF0C;<code>boot</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#xFF0E;Model&#x30AF;&#x30E9;&#x30B9;&#x3067;&#x306F;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x751F;&#x6210;&#x6642;&#x306B;<code>boot</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#xFF0C;&#x3053;&#x308C;&#x306B;&#x3088;&#x308A;&#x306B;<code>bootTraits</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#xFF0E;Trait&#x306B;<code>boot+&lt;&#x30AF;&#x30E9;&#x30B9;&#x540D;&gt;</code>&#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306E;&#x9759;&#x7684;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3068;&#xFF0C;<code>bootTraits</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x3053;&#x308C;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>;
+
+<span class="hljs-comment">// &#xFF5E; &#x7701;&#x7565; &#xFF5E;</span>
+
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Arrayable</span>, <span class="hljs-title">ArrayAccess</span>, <span class="hljs-title">Jsonable</span>, <span class="hljs-title">JsonSerializable</span>, <span class="hljs-title">QueueableEntity</span>, <span class="hljs-title">UrlRoutable</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(array $attributes = [])</span>
+    </span>{
+        <span class="hljs-comment">// boot&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3051;&#x308C;&#x3070;&#x30B3;&#x30FC;&#x30EB;</span>
+        $this-&gt;bootIfNotBooted();
+
+        $this-&gt;initializeTraits();
+
+        $this-&gt;syncOriginal();
+
+        $this-&gt;fill($attributes);
+    }
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bootIfNotBooted</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (! <span class="hljs-keyword">isset</span>(<span class="hljs-keyword">static</span>::$booted[<span class="hljs-keyword">static</span>::class])) {
+            <span class="hljs-keyword">static</span>::$booted[<span class="hljs-keyword">static</span>::class] = <span class="hljs-keyword">true</span>;
+
+            $this-&gt;fireModelEvent(<span class="hljs-string">&apos;booting&apos;</span>, <span class="hljs-keyword">false</span>);
+
+            <span class="hljs-comment">// boot&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;</span>
+            <span class="hljs-keyword">static</span>::boot();
+
+            $this-&gt;fireModelEvent(<span class="hljs-string">&apos;booted&apos;</span>, <span class="hljs-keyword">false</span>);
+        }
+    }
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boot</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">// bootTraits&#x3092;&#x30B3;&#x30FC;&#x30EB;</span>
+        <span class="hljs-keyword">static</span>::bootTraits();
+    }
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bootTraits</span><span class="hljs-params">()</span>
+    </span>{
+        $class = <span class="hljs-keyword">static</span>::class;
+
+        $booted = [];
+
+        <span class="hljs-keyword">static</span>::$traitInitializers[$class] = [];
+
+        <span class="hljs-keyword">foreach</span> (class_uses_recursive($class) <span class="hljs-keyword">as</span> $trait) {
+
+            <span class="hljs-comment">// use&#x3055;&#x308C;&#x305F;Trait&#x306B;boot+&lt;&#x30AF;&#x30E9;&#x30B9;&#x540D;&gt;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B58;&#x5728;&#x3059;&#x308B;&#x304B;&#x3092;&#x5224;&#x5B9A;&#xFF0E;</span>
+            $method = <span class="hljs-string">&apos;boot&apos;</span>.class_basename($trait);
+            <span class="hljs-keyword">if</span> (method_exists($class, $method) &amp;&amp; ! in_array($method, $booted)) {
+
+                <span class="hljs-comment">// &#x6307;&#x5B9A;&#x3057;&#x305F;&#x9759;&#x7684;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x30B3;&#x30FC;&#x30EB;&#xFF0E;</span>
+                forward_static_call([$class, $method]);
+
+                $booted[] = $method;
+            }
+
+            <span class="hljs-keyword">if</span> (method_exists($class, $method = <span class="hljs-string">&apos;initialize&apos;</span>.class_basename($trait))) {
+                <span class="hljs-keyword">static</span>::$traitInitializers[$class][] = $method;
+
+                <span class="hljs-keyword">static</span>::$traitInitializers[$class] = array_unique(
+                    <span class="hljs-keyword">static</span>::$traitInitializers[$class]
+                );
+            }
+        }
+    }    
+
+<span class="hljs-comment">// &#xFF5E; &#x7701;&#x7565; &#xFF5E;</span>
+
+}
+</code></pre>
+<p>&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;Trait&#x3067;&#x306F;&#xFF0C;<code>saved</code>&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;Model&#x66F4;&#x65B0;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;&#x767B;&#x9332;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Models</span>\<span class="hljs-title">Traits</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Events</span>\<span class="hljs-title">UpdatedModelEvent</span>;
+
+<span class="hljs-keyword">trait</span> UpdatedModelTrait
+{
+    <span class="hljs-comment">/**
+     * &#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;&#x767A;&#x706B;&#x3055;&#x305B;&#x307E;&#x3059;&#xFF0E;
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bootUpdatedModelTrait</span><span class="hljs-params">()</span>: <span class="hljs-title">void</span>
+    </span>{
+        <span class="hljs-keyword">static</span>::saved(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Model $updatedModel)</span> </span>{
+            event(<span class="hljs-keyword">new</span> UpdatedModelEvent($updatedModel));
+        });
+
+        <span class="hljs-keyword">static</span>::deleted(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Model $updatedModel)</span> </span>{
+            event(<span class="hljs-keyword">new</span> UpdatedModelEvent($updatedModel));
+        });
+    }
+}
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Events</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UpdatedModelEvent</span>
+</span>{
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> Model
+     */</span>
+    <span class="hljs-keyword">public</span> $updatedModel;
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@param</span> Model
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(Model $updatedModel)</span>
+    </span>{
+        $this-&gt;$updatedModel = $updatedModel;
+    }
+}
+</code></pre>
+<p>Model&#x66F4;&#x65B0;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x304C;&#x767A;&#x706B;&#x3057;&#x3066;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x3067;&#x306F;&#xFF0C;<code>create_by</code>&#x30AB;&#x30E9;&#x30E0;&#x307E;&#x305F;&#x306F;<code>updated_by</code>&#x30AB;&#x30E9;&#x30E0;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x66F4;&#x65B0;&#x8005;&#x540D;&#x306B;&#x66F4;&#x65B0;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#xFF0E;&#x306A;&#x304A;&#xFF0C;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3068;&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x306E;&#x5BFE;&#x5FDC;&#x95A2;&#x4FC2;&#x306F;&#xFF0C;EventServiceProvider&#x3067;&#x767B;&#x9332;&#x3059;&#x308B;&#xFF0E;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Listeners</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Events</span>\<span class="hljs-title">UpdatedModelEvent</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UpdatedModelListener</span>
+</span>{
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@param</span> UpdatedModelEvent
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle</span><span class="hljs-params">(UpdatedModelEvent $updatedModelEvent)</span>: <span class="hljs-title">void</span>
+    </span>{
+        $by = $this-&gt;getModelUpdater();
+
+        <span class="hljs-comment">// create_by&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x5024;&#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304B;&#x3092;&#x5224;&#x5B9A;&#xFF0E;</span>
+        <span class="hljs-keyword">if</span> (is_null($updatedModelEvent-&gt;updatedModel-&gt;created_by)) {     
+            $updatedModelEvent-&gt;updatedModel-&gt;created_by = $by;
+        }
+
+        $updatedModelEvent-&gt;updatedModel-&gt;updated_by = $by;
+
+        <span class="hljs-comment">// save&#x5B9F;&#x884C;&#x6642;&#x306B;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x304C;&#x767A;&#x706B;&#x3057;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">static</span>::withoutEvents(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> <span class="hljs-title">use</span> <span class="hljs-params">($options)</span> </span>{
+            <span class="hljs-comment">// &#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306E;&#x5909;&#x66F4;&#x3092;&#x4FDD;&#x5B58;</span>
+            <span class="hljs-keyword">return</span> $this-&gt;save($options);
+        });
+    }
+
+    <span class="hljs-comment">/**
+     * &#x30E2;&#x30C7;&#x30EB;&#x306E;&#x66F4;&#x65B0;&#x8005;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#xFF0E;
+     *
+     * <span class="hljs-doctag">@return</span> string
+     */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getModelUpdater</span><span class="hljs-params">()</span>: <span class="hljs-title">string</span>
+    </span>{
+        <span class="hljs-comment">// &#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB;&#x7D4C;&#x7531;&#x3067;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x305F;&#x304B;&#x3092;&#x5224;&#x5B9A;&#xFF0E;</span>
+        <span class="hljs-keyword">if</span> (app()-&gt;runningInConsole()) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Artisan Command&apos;</span>;
+        }
+
+        <span class="hljs-comment">// API&#x8A8D;&#x8A3C;&#x306B;&#x6210;&#x529F;&#x3057;&#x305F;&#x304B;&#x3092;&#x5224;&#x5B9A;&#xFF0E;</span>
+        <span class="hljs-keyword">if</span> (auth()-&gt;check()) {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Staff:&apos;</span> . auth()-&gt;id();
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Guest&apos;</span>;
+    }    
+}
+</code></pre>
+<p><br></p>
 <h2 id="application">Application</h2>
 <h3 id="app">App</h3>
 <h4 id="&#x30FB;&#x8A2D;&#x5B9A;&#x65B9;&#x6CD5;">&#x30FB;&#x8A2D;&#x5B9A;&#x65B9;&#x6CD5;</h4>
@@ -4081,7 +4293,7 @@ APP_URL=&lt;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"目次","maxDepth":1,"mode":"nested","selector":"","visible":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-12-26T10:38:43.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-29T11:39:47.912Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Laravel","level":"1.6.3","depth":2,"next":{"title":"テストフレームワークとテスト仕様書","level":"1.6.4","depth":2,"path":"public/backend_testing.md","ref":"public/backend_testing.md","articles":[]},"previous":{"title":"Symfony","level":"1.6.2","depth":2,"path":"public/backend_framework_symfony.md","ref":"public/backend_framework_symfony.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"目次","maxDepth":1,"mode":"nested","selector":"","visible":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_framework_laravel.md","mtime":"2020-12-29T19:27:20.765Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-29T19:28:43.923Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
