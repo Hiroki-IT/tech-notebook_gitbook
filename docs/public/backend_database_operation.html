@@ -29,7 +29,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sunlight-highlighter/sunlight.css">
                 
             
                 
@@ -1550,29 +1550,29 @@
 </tbody>
 </table>
 <h4 id="&#x30FB;pdo&#x306B;&#x3088;&#x308B;rdb&#x306E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x7CFB;&#x306E;&#x64CD;&#x4F5C;">&#x30FB;PDO&#x306B;&#x3088;&#x308B;RDB&#x306E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x7CFB;&#x306E;&#x64CD;&#x4F5C;</h4>
-<pre><code class="lang-PHP"><span class="hljs-meta">&lt;?php</span>
-<span class="hljs-keyword">try</span>{
-    <span class="hljs-comment">// &#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3068;&#x63A5;&#x7D9A;&#xFF0E;</span>
-    $db = getDb();
+<pre><code class="lang-PHP"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-PHP sunlight-highlighted"><span class="sunlight-plaintext">&lt;?php
+try{
+&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3068;&#x63A5;&#x7D9A;&#xFF0E;
+&#xA0;&#xA0;&#xA0;&#xA0;$db&#xA0;=&#xA0;getDb();
 
-    <span class="hljs-comment">// &#x4F8B;&#x5916;&#x51E6;&#x7406;&#x3092;&#x6709;&#x52B9;&#x5316;&#xFF0E;</span>
-    $db-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;&#x4F8B;&#x5916;&#x51E6;&#x7406;&#x3092;&#x6709;&#x52B9;&#x5316;&#xFF0E;
+&#xA0;&#xA0;&#xA0;&#xA0;$db-&gt;setAttribute(PDO::ATTR_ERRMODE,&#xA0;PDO::ERRMODE_EXCEPTION);
 
-    <span class="hljs-comment">// &#x30C8;&#x30E9;&#x30F3;&#x30B6;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x958B;&#x59CB;&#xFF0E;</span>
-    $db-&gt;beginTransaction();
-    <span class="hljs-comment">// &#x3044;&#x304F;&#x3064;&#x304B;&#x306E;SQL&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#xFF0E;&#x203B;&#x3082;&#x3057;&#x5931;&#x6557;&#x3057;&#x305F;&#x5834;&#x5408;&#xFF0C;ERRMODE_EXCEPTION&#x3092;&#x5B9F;&#x884C;&#xFF0E;</span>
-    $db-&gt;exec(<span class="hljs-string">&quot;INSERT INTO movie(title, price) VALUES(&apos;&#x30CF;&#x30EA;&#x30DD;&#x30BF;&apos;, 2000)&quot;</span>)
-    $db-&gt;exec(<span class="hljs-string">&quot;INSERT INTO movie(title, price) VALUES(&apos;&#x30B7;&#x30B9;&#x30BF;&#x30FC;&apos;, 2000)&quot;</span>)
+&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;&#x30C8;&#x30E9;&#x30F3;&#x30B6;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x958B;&#x59CB;&#xFF0E;
+&#xA0;&#xA0;&#xA0;&#xA0;$db-&gt;beginTransaction();
+&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;SQL&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#xFF0E;&#x203B;&#x3082;&#x3057;&#x5931;&#x6557;&#x3057;&#x305F;&#x5834;&#x5408;&#xFF0C;ERRMODE_EXCEPTION&#x3092;&#x5B9F;&#x884C;&#xFF0E;
+&#xA0;&#xA0;&#xA0;&#xA0;$db-&gt;exec(&quot;INSERT&#xA0;INTO&#xA0;movie(title,&#xA0;price)&#xA0;VALUES(&apos;&#x30CF;&#x30EA;&#x30DD;&#x30BF;&apos;,&#xA0;2000)&quot;)
+&#xA0;&#xA0;&#xA0;&#xA0;$db-&gt;exec(&quot;INSERT&#xA0;INTO&#xA0;movie(title,&#xA0;price)&#xA0;VALUES(&apos;&#x30B7;&#x30B9;&#x30BF;&#x30FC;&apos;,&#xA0;2000)&quot;)
 
-    <span class="hljs-comment">// &#x30C8;&#x30E9;&#x30F3;&#x30B6;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x5185;&#x306E;&#x4E00;&#x9023;&#x306E;&#x30B9;&#x30C6;&#x30FC;&#x30C8;&#x30E1;&#x30F3;&#x30C8;&#x304C;&#x6210;&#x529F;&#x3057;&#x305F;&#x3089;&#xFF0C;&#x30ED;&#x30B0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#xFF0E;</span>
-    $db-&gt;commit();
+&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;&#x30C8;&#x30E9;&#x30F3;&#x30B6;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x5185;&#x306E;&#x4E00;&#x9023;&#x306E;&#x30B9;&#x30C6;&#x30FC;&#x30C8;&#x30E1;&#x30F3;&#x30C8;&#x304C;&#x6210;&#x529F;&#x3057;&#x305F;&#x3089;&#xFF0C;&#x30ED;&#x30B0;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#xFF0E;
+&#xA0;&#xA0;&#xA0;&#xA0;$db-&gt;commit();
 
-} <span class="hljs-keyword">catch</span>{
-    <span class="hljs-comment">// &#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x305F;&#x3089;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3057;&#xFF0C;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x51FA;&#x529B;&#xFF0E;</span>
-    $db-&gt;rollBack();
-    <span class="hljs-keyword">print</span> <span class="hljs-string">&quot;&#x5931;&#x6557;&#x3057;&#x307E;&#x3057;&#x305F;&#xFF0E;&#xFF1A;{$e-&gt;getMessage()}&quot;</span>
+}&#xA0;catch{
+&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x305F;&#x3089;&#x30ED;&#x30FC;&#x30EB;&#x30D0;&#x30C3;&#x30AF;&#x3057;&#xFF0C;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x51FA;&#x529B;&#xFF0E;
+&#xA0;&#xA0;&#xA0;&#xA0;$db-&gt;rollBack();
+&#xA0;&#xA0;&#xA0;&#xA0;print&#xA0;&quot;&#x5931;&#x6557;&#x3057;&#x307E;&#x3057;&#x305F;&#xFF0E;&#xFF1A;{$e-&gt;getMessage()}&quot;
 }
-</code></pre>
+</span></pre></div></div></code></pre>
 <h4 id="&#x30FB;doctrine&#x306B;&#x3088;&#x308B;rdb&#x306E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x7CFB;&#x306E;&#x64CD;&#x4F5C;">&#x30FB;Doctrine&#x306B;&#x3088;&#x308B;RDB&#x306E;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x7CFB;&#x306E;&#x64CD;&#x4F5C;</h4>
 <p>&#x8A73;&#x3057;&#x304F;&#x306F;&#xFF0C;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30CE;&#x30FC;&#x30C8;&#x3092;&#x53C2;&#x7167;&#x305B;&#x3088;&#xFF0E;</p>
 <p><br></p>
@@ -1610,45 +1610,45 @@
 <p><img src="https://raw.githubusercontent.com/Hiroki-IT/tech-notebook/master/images/&#x5A92;&#x4F53;&#x969C;&#x5BB3;&#x306E;&#x969C;&#x5BB3;&#x56DE;&#x5FA9;&#x6A5F;&#x80FD;.jpg" alt="&#x5A92;&#x4F53;&#x969C;&#x5BB3;&#x306E;&#x969C;&#x5BB3;&#x56DE;&#x5FA9;&#x6A5F;&#x80FD;"></p>
 <p><strong>&#xFF0A;&#x5177;&#x4F53;&#x4F8B;&#xFF0A;</strong></p>
 <p>&#x30D0;&#x30C3;&#x30AF;&#x30A2;&#x30C3;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30FC;&#x30C9;</p>
-<pre><code class="lang-SQL"><span class="hljs-comment">-- --------------------------------------------------------</span>
-<span class="hljs-comment">-- Host:                         xxxxx</span>
-<span class="hljs-comment">-- Server version:               10.1.38-MariaDB - mariadb.org binary distribution</span>
-<span class="hljs-comment">-- Server OS:                    Win64</span>
-<span class="hljs-comment">-- HeidiSQL Version:             10.2.0.5611</span>
-<span class="hljs-comment">-- --------------------------------------------------------</span>
+<pre><code class="lang-SQL"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-SQL sunlight-highlighted"><span class="sunlight-plaintext">--&#xA0;--------------------------------------------------------
+--&#xA0;Host:&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;xxxxx
+--&#xA0;Server&#xA0;version:&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;10.1.38-MariaDB&#xA0;-&#xA0;mariadb.org&#xA0;binary&#xA0;distribution
+--&#xA0;Server&#xA0;OS:&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Win64
+--&#xA0;HeidiSQL&#xA0;Version:&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;10.2.0.5611
+--&#xA0;--------------------------------------------------------
 
-<span class="hljs-comment">/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */</span>;
-<span class="hljs-comment">/*!40101 SET NAMES utf8 */</span>;
-<span class="hljs-comment">/*!50503 SET NAMES utf8mb4 */</span>;
-<span class="hljs-comment">/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */</span>;
-<span class="hljs-comment">/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE=&apos;NO_AUTO_VALUE_ON_ZERO&apos; */</span>;
+/*!40101&#xA0;SET&#xA0;@OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT&#xA0;*/;
+/*!40101&#xA0;SET&#xA0;NAMES&#xA0;utf8&#xA0;*/;
+/*!50503&#xA0;SET&#xA0;NAMES&#xA0;utf8mb4&#xA0;*/;
+/*!40014&#xA0;SET&#xA0;@OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS,&#xA0;FOREIGN_KEY_CHECKS=0&#xA0;*/;
+/*!40101&#xA0;SET&#xA0;@OLD_SQL_MODE=@@SQL_MODE,&#xA0;SQL_MODE=&apos;NO_AUTO_VALUE_ON_ZERO&apos;&#xA0;*/;
 
-# &#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x4F5C;&#x6210;
-<span class="hljs-comment">-- Dumping database structure for kizukeba_pronami_php</span>
-<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-string">`kizukeba_pronami_php`</span> <span class="hljs-comment">/*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */</span>;
-<span class="hljs-keyword">USE</span> <span class="hljs-string">`kizukeba_pronami_php`</span>;
+#&#xA0;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x4F5C;&#x6210;
+--&#xA0;Dumping&#xA0;database&#xA0;structure&#xA0;for&#xA0;kizukeba_pronami_php
+CREATE&#xA0;DATABASE&#xA0;IF&#xA0;NOT&#xA0;EXISTS&#xA0;`kizukeba_pronami_php`&#xA0;/*!40100&#xA0;DEFAULT&#xA0;CHARACTER&#xA0;SET&#xA0;utf8&#xA0;COLLATE&#xA0;utf8_unicode_ci&#xA0;*/;
+USE&#xA0;`kizukeba_pronami_php`;
 
-# &#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x6307;&#x5B9A;
-<span class="hljs-comment">-- Dumping structure for table kizukeba_pronami_php.mst_staff</span>
-<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-string">`mst_staff`</span> (
-  <span class="hljs-string">`code`</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT,
-  <span class="hljs-string">`name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">15</span>) <span class="hljs-keyword">COLLATE</span> utf8_unicode_ci <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-  <span class="hljs-string">`password`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">32</span>) <span class="hljs-keyword">COLLATE</span> utf8_unicode_ci <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
-  PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`code`</span>)
-) <span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span> AUTO_INCREMENT=<span class="hljs-number">22</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=utf8 <span class="hljs-keyword">COLLATE</span>=utf8_unicode_ci;
+#&#xA0;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3092;&#x6307;&#x5B9A;
+--&#xA0;Dumping&#xA0;structure&#xA0;for&#xA0;table&#xA0;kizukeba_pronami_php.mst_staff
+CREATE&#xA0;TABLE&#xA0;IF&#xA0;NOT&#xA0;EXISTS&#xA0;`mst_staff`&#xA0;(
+&#xA0;&#xA0;`code`&#xA0;int(11)&#xA0;NOT&#xA0;NULL&#xA0;AUTO_INCREMENT,
+&#xA0;&#xA0;`name`&#xA0;varchar(15)&#xA0;COLLATE&#xA0;utf8_unicode_ci&#xA0;NOT&#xA0;NULL,
+&#xA0;&#xA0;`password`&#xA0;varchar(32)&#xA0;COLLATE&#xA0;utf8_unicode_ci&#xA0;NOT&#xA0;NULL,
+&#xA0;&#xA0;PRIMARY&#xA0;KEY&#xA0;(`code`)
+)&#xA0;ENGINE=InnoDB&#xA0;AUTO_INCREMENT=22&#xA0;DEFAULT&#xA0;CHARSET=utf8&#xA0;COLLATE=utf8_unicode_ci;
 
-# &#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x4F5C;&#x6210;
-<span class="hljs-comment">-- Dumping data for table kizukeba_pronami_php.mst_staff: ~8 rows (approximately)</span>
-<span class="hljs-comment">/*!40000 ALTER TABLE `mst_staff` DISABLE KEYS */</span>;
-<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-string">`mst_staff`</span> (<span class="hljs-string">`code`</span>, <span class="hljs-string">`name`</span>, <span class="hljs-string">`password`</span>) <span class="hljs-keyword">VALUES</span>
-    (<span class="hljs-number">1</span>, <span class="hljs-string">&apos;&#x79E6;&#x57FA;&#x535A;&apos;</span>, <span class="hljs-string">&apos;xxxxxxx&apos;</span>),
-    (<span class="hljs-number">2</span>, <span class="hljs-string">&apos;&#x85E4;&#x539F;&#x57FA;&#x592E;&apos;</span>, <span class="hljs-string">&apos;xxxxxxx&apos;</span>);
-<span class="hljs-comment">/*!40000 ALTER TABLE `mst_staff` ENABLE KEYS */</span>;
+#&#xA0;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x4F5C;&#x6210;
+--&#xA0;Dumping&#xA0;data&#xA0;for&#xA0;table&#xA0;kizukeba_pronami_php.mst_staff:&#xA0;~8&#xA0;rows&#xA0;(approximately)
+/*!40000&#xA0;ALTER&#xA0;TABLE&#xA0;`mst_staff`&#xA0;DISABLE&#xA0;KEYS&#xA0;*/;
+INSERT&#xA0;INTO&#xA0;`mst_staff`&#xA0;(`code`,&#xA0;`name`,&#xA0;`password`)&#xA0;VALUES
+&#xA0;&#xA0;&#xA0;&#xA0;(1,&#xA0;&apos;&#x79E6;&#x57FA;&#x535A;&apos;,&#xA0;&apos;xxxxxxx&apos;),
+&#xA0;&#xA0;&#xA0;&#xA0;(2,&#xA0;&apos;&#x85E4;&#x539F;&#x57FA;&#x592E;&apos;,&#xA0;&apos;xxxxxxx&apos;);
+/*!40000&#xA0;ALTER&#xA0;TABLE&#xA0;`mst_staff`&#xA0;ENABLE&#xA0;KEYS&#xA0;*/;
 
-<span class="hljs-comment">/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, &apos;&apos;) */</span>;
-<span class="hljs-comment">/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */</span>;
-<span class="hljs-comment">/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */</span>;
-</code></pre>
+/*!40101&#xA0;SET&#xA0;SQL_MODE=IFNULL(@OLD_SQL_MODE,&#xA0;&apos;&apos;)&#xA0;*/;
+/*!40014&#xA0;SET&#xA0;FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS&#xA0;IS&#xA0;NULL,&#xA0;1,&#xA0;@OLD_FOREIGN_KEY_CHECKS)&#xA0;*/;
+/*!40101&#xA0;SET&#xA0;CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT&#xA0;*/;
+</span></pre></div></div></code></pre>
 <p><br></p>
 <h2 id="02-03-&#x6392;&#x4ED6;&#x5236;&#x5FA1;">02-03. &#x6392;&#x4ED6;&#x5236;&#x5FA1;</h2>
 <h3 id="&#x306A;&#x305C;&#x6392;&#x4ED6;&#x5236;&#x5FA1;&#x304C;&#x5FC5;&#x8981;&#x304B;">&#x306A;&#x305C;&#x6392;&#x4ED6;&#x5236;&#x5FA1;&#x304C;&#x5FC5;&#x8981;&#x304B;</h3>
@@ -1729,7 +1729,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"データベースの操作","level":"1.14.1","depth":2,"next":{"title":"SQL","level":"1.14.2","depth":2,"path":"public/backend_database_mysql.md","ref":"public/backend_database_mysql.md","articles":[]},"previous":{"title":"データベース","level":"1.14","depth":1,"ref":"","articles":[{"title":"データベースの操作","level":"1.14.1","depth":2,"path":"public/backend_database_operation.md","ref":"public/backend_database_operation.md","articles":[]},{"title":"SQL","level":"1.14.2","depth":2,"path":"public/backend_database_mysql.md","ref":"public/backend_database_mysql.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["intopic-toc","copy-code-button","advanced-emoji","back-to-top-button","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"目次","maxDepth":3,"mode":"nested","selector":"","visible":true},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_database_operation.md","mtime":"2020-12-20T17:43:34.837Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-29T19:32:12.224Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"データベースの操作","level":"1.14.1","depth":2,"next":{"title":"SQL","level":"1.14.2","depth":2,"path":"public/backend_database_mysql.md","ref":"public/backend_database_mysql.md","articles":[]},"previous":{"title":"データベース","level":"1.14","depth":1,"ref":"","articles":[{"title":"データベースの操作","level":"1.14.1","depth":2,"path":"public/backend_database_operation.md","ref":"public/backend_database_operation.md","articles":[]},{"title":"SQL","level":"1.14.2","depth":2,"path":"public/backend_database_mysql.md","ref":"public/backend_database_mysql.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["intopic-toc","advanced-emoji","back-to-top-button","-highlight","sunlight-highlighter","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"目次","maxDepth":3,"mode":"nested","selector":"","visible":true},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sunlight-highlighter":{"lineNumbers":false,"theme":"dark","lineNumber":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"僕のドキュメントサイト【GitBook版】","language":"ja","gitbook":"*","description":"This is Hiroki-IT/tech-notebook_gitbook"},"file":{"path":"public/backend_database_operation.md","mtime":"2020-12-20T17:43:34.837Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-30T16:30:36.389Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1748,10 +1748,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
         
     
         
