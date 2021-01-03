@@ -54,7 +54,7 @@ Facadeとして使用したいクラスを定義する．
 ```php
 <?php
 
-namespace App\Domain\Entity;
+namespace App\Domain\DTO;
 
 class Example
 {
@@ -352,7 +352,7 @@ class ExampleServiceProvider extends ServiceProvider
 ```php
 <?php
 
-namespace App\Domain\Entity;
+namespace App\Domain\DTO;
 
 class Example extends Entity
 {
@@ -960,6 +960,7 @@ $ php artisan db:seed --class=ExampleSeeder
 <?php
 
 use App\Domain\Auth\User;
+use App\Domain\ValueObject\Type\UserType;
 use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factory;
 
@@ -967,12 +968,16 @@ use Illuminate\Database\Eloquent\Factory;
  * @var Factory $factory
  */
 $factory->define(User::class, function (Faker $faker) {
+    
     return [
-        'name'              => $faker->name,
-        'email'             => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'password'          => 'test',
-        'remember_token'    => Str::random(10),
+        'user_name'             => $faker->name,
+        'tel_number'            => $faker->phoneNumber,
+        'email'                 => $faker->unique()->safeEmail,
+        'password'              => 'test',
+        'user_type'             => UserType::getRandomValue(),
+        'remember_token'        => Str::random(10),
+        'email_verified_at'     => now(),
+        'last_authenticated_at' => now(),
     ];
 });
 ```
@@ -982,7 +987,8 @@ $factory->define(User::class, function (Faker $faker) {
 ```php
 <?php
 
-use App\Domain\Entity\Order;
+use App\Domain\Entity\Product;
+use App\Domain\ValueObject\Type\ProductType
 use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factory;
 
@@ -990,13 +996,11 @@ use Illuminate\Database\Eloquent\Factory;
  * @var Factory $factory
  */
 $factory->define(User::class, function (Faker $faker) {
+
     return [
-        'name '      => $faker->name,
-        'price'      => $faker->price,
-        'created_by' => $faker->name,
-        'updated_by' => $faker->name,
-        'created_at' => $faker->dateTime,
-        'updated_at' => $faker->dateTime,
+        'product_name' => $faker->word,
+        'price'        => $faker->randomNumber(4),
+        'product_type' => ProductType::getRandomValue(),
     ];
 });
 ```
@@ -1063,7 +1067,7 @@ class DatabaseSeeder extends Seeder
         
         // 全ての環境で作成するテストデータ
         $this->call([
-            OrderSeeder::class,
+            ProductSeeder::class,
         ]);
     }
 }
@@ -1496,7 +1500,7 @@ class ExampleRepository extends Repository
 ```php
 <?php
 
-namespace App\Domain\Entity;
+namespace App\Domain\DTO;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -2214,7 +2218,7 @@ LaravelのResponseクラスは，```Symfony\Component\HttpFoundation\Response```
 ```php
 <?php
 
-namespace App\Http\Controllers\Example;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Response;
@@ -2265,7 +2269,7 @@ final class ExampleController extends Controller
 ```php
 <?php
 
-namespace App\Http\Controllers\Example;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Response;
@@ -2397,7 +2401,7 @@ public function boot()
 3. ユーザからのリクエスト時，クライアントIDを元に『認証』を行い，アクセストークンをレスポンスする．
 
 ```php
-$user = App\User::find(1);
+$user = User::find(1);
 
 // スコープ無しのトークンを作成する
 $token = $user->createToken('Token Name')->accessToken;
@@ -2490,7 +2494,7 @@ Route::get('user', 'UserController@index')->middleware('auth:api');
 ```php
 <?php
   
-namespace App\Domain\Entity;
+namespace App\Domain\DTO;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
