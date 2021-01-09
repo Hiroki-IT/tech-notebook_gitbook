@@ -156,12 +156,12 @@ $ php artisan make:provider <クラス名>
 
 #### ・ServiceProviderの用途
 
-| 用途の種類                                         | 説明                                                         |
-| -------------------------------------------------- | ------------------------------------------------------------ |
-| AppServiceProvider                                 | ・ServiceContainerへのクラスのバインド（登録）<br>・ServiceContainerからのインスタンスのリゾルブ（生成） |
-| MacroServiceProvider                               | ServiceContainerへのメソッドのバインド（登録）               |
-| RouteServiceProvider<br>（app.php，web.phpも使用） | ルーティングとコントローラの対応関係の定義                   |
-| EventServiceProvider                               | EventListenerとEventhandler関数の対応関係の定義              |
+| 用途の種類                                                   | 説明                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| AppServiceProvider                                           | ・ServiceContainerへのクラスのバインド（登録）<br>・ServiceContainerからのインスタンスのリゾルブ（生成） |
+| MacroServiceProvider                                         | ServiceContainerへのメソッドのバインド（登録）               |
+| RouteServiceProvider<br>（```app.php```，```web.php```も使用） | ルーティングとコントローラの対応関係の定義                   |
+| EventServiceProvider                                         | EventListenerとEventhandler関数の対応関係の定義              |
 
 #### ・ServiceProviderのコール
 
@@ -1078,7 +1078,7 @@ class ProductsSeeder extends Seeder
                 'price'        => 300,
                 'product_type' => '1',
                 'created_by'   => ExecutorConstant::ARTISAN_COMMAND,
-                'updated_by'   => ExecutorConstant::ARTISAN_COMMAND,           
+                'updated_by'   => ExecutorConstant::ARTISAN_COMMAND,            
                 'created_at'   => NOW(),
                 'updated_at'   => NOW(),
                 'deleted_at'   => NULL
@@ -1088,10 +1088,10 @@ class ProductsSeeder extends Seeder
                 'price'        => 200,
                 'product_type' => '2',
                 'created_by'   => ExecutorConstant::ARTISAN_COMMAND,
-                'updated_by'   => ExecutorConstant::ARTISAN_COMMAND,           
+                'updated_by'   => ExecutorConstant::ARTISAN_COMMAND,            
                 'created_at'   => NOW(),
                 'updated_at'   => NOW(),
-                'deleted_at'   => NULL              
+                'deleted_at'   => NULL                
             ],            
             [
                 'product_name' => '消しゴム',
@@ -1101,7 +1101,7 @@ class ProductsSeeder extends Seeder
                 'updated_by'   => ExecutorConstant::ARTISAN_COMMAND,            
                 'created_at'   => NOW(),
                 'updated_at'   => NOW(),
-                'deleted_at'   => NULL,               
+                'deleted_at'   => NULL                
             ],
             
             // ～ 省略 ～
@@ -1211,7 +1211,7 @@ $ php artisan make:factory <Factory名> --model=<対象とするModel名>
 
 #### ・Fakerライブラリのformatters
 
-Fakerはダミーデータを作成するためのライブラリである．Farkerクラスのインスタンスは，プロパティにランダムなデータを保持している．このプロパティを特に，Formattersという．
+Fakerはダミーデータを作成するためのライブラリである．Farkerクラスは，プロパティにランダムなデータを保持している．このプロパティを特に，Formattersという．
 
 参考リンク：https://github.com/fzaninotto/Faker
 
@@ -1270,7 +1270,7 @@ $factory->define(User::class, function (Faker $faker) {
 });
 ```
 
-#### ・Seederによるダミーデータの量産
+#### ・Seederによるダミーデータ量産
 
 Factoryにおける定義を基にして，指定した数だけダミーデータを量産する．
 
@@ -2090,57 +2090,7 @@ class ExampleRepository extends Repository
 
 ## File Systems
 
-### ファイルの保存先
-
-#### ・設定方法
-
-環境変数を```.env```ファイルに実装する．```filesystems.php```ファイルから，指定された設定が選択される．
-
-```
-AWS_ACCESS_KEY_ID=<アクセスキー>
-AWS_SECRET_ACCESS_KEY=<シークレットアクセスキー>
-AWS_DEFAULT_REGION=<リージョン>
-AWS_BUCKET=<バケット名>
-```
-
-```php
-<?php
-
-namespace App\Http\Controllers;
-
-use Storage;
-
-class FileSystemPublicController extends Controller
-{
-    /**
-     * ファイルを保存する
-     */
-    public function index()
-    {
-        $disk = Storage::disk('public');
-
-        // 保存対象のファイルを読み込む
-        $public_path = '/path/to/public/';
-        $img_path = sprintf('%s%s', $public_path, 'test.jpg');
-        $contents = file_get_contents($img_path);
-
-        // 保存先ディレクトリ
-        $store_dir = 'images';
-
-        // ファイル名
-        $store_filename = 'example.jpg';
-
-        // 保存先パス（ディレクトリ＋ファイル名）
-        $store_file_path = sprintf('%s/%s', $store_dir, $store_filename);
-
-        // ファイルをアップロード．ルートパスは「/storage/app/public」
-        $disk->put($store_file_path, $contents);
-
-        $disk->url($store_file_path);
-
-    }
-}
-```
+### ファイルの操作
 
 #### ・ローカルストレージ（非公開）の場合
 
@@ -2164,10 +2114,29 @@ return [
             'root'   => storage_path('app'),
         ],
         
-        // ～ 省略 ～
+     // ～ 省略 ～
         
+    // シンボリックリンクの関係を定義
+    'links' => [
+        
+        // 「/var/www/project/public/storage」から「/var/www/project/storage/app/public」へのリンク
+        public_path('storage') => storage_path('app/public'),
     ],
 ];
+```
+
+**＊実装例＊**
+
+Storageファサードの```disk```メソッドを用いてlocalディスクを指定する．```file.txt```ファイルを```storage/app/file.txt```として保存する．
+
+```php
+Storage::disk('local')->put('file.txt', 'file.txt');
+```
+
+ただし，```filesytems.php```ファイルでデフォルトディスクは```local```になっているため，```put```メソッドを直接使用できる．
+
+```php
+Storage::put('file.txt', 'file.txt');
 ```
 
 #### ・ローカルストレージ（公開）の場合
@@ -2198,17 +2167,79 @@ return [
 ];
 ```
 
+**＊実装例＊**
+
+Storageファサードの```disk```メソッドを用いてpublicディスクを指定する．また，```file.txt```ファイルを```storage/app/public/file.txt```として保存する．
+
+```php
+Storage::disk('s3')->put('file.txt', 'file.txt');
+```
+
+ただし，環境変数を使用して，```filesytems.php```ファイルでデフォルトディスクを```s3```に変更すると，```put```メソッドを直接使用できる．
+
+```php
+FILESYSTEM_DRIVER=s3
+```
+
+```php
+Storage::put('file.txt', 'file.txt');
+```
+
+**＊実装例＊**
+
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Storage;
+
+class FileSystemPublicController extends Controller
+{
+    /**
+     * ファイルをpublicディスクに保存する
+     */
+    public function putContentsInPublicDisk()
+    {
+        // 保存先をpublicに設定する．
+        $disk = Storage::disk('public');
+
+        // 保存対象のファイルを読み込む
+        $file_path = '/path/to/public/example.jpg'
+        $contents = file_get_contents($file_path);
+
+        // 保存先パス（ディレクトリ＋ファイル名）
+        $saved_file_path = '/images/example.jpg';
+
+        // example.jpgを「/images/example.jpg」に保存
+        // ルートディレクトリは「/storage/app/public」
+        $disk->put($saved_file_path, $contents);
+    }
+}
+```
+
 #### ・クラウドストレージの場合
 
-ファイルをS3バケット内のディレクトリに保存する．
+ファイルをS3バケット内のディレクトリに保存する．環境変数を```.env```ファイルに実装する．```filesystems.php```ファイルから，指定された設定が選択される．AWSアカウントの認証情報を環境変数として設定するか，またはS3アクセスポリシーをEC2やECSタスクに付与することにより，S3にアクセスできるようになる．
+
+```
+# S3アクセスポリシーをEC2やECSタスクに付与してもよい
+AWS_ACCESS_KEY_ID=<アクセスキー>
+AWS_SECRET_ACCESS_KEY=<シークレットアクセスキー>
+AWS_DEFAULT_REGION=<リージョン>
+
+# 必須
+AWS_BUCKET=<バケット名>
+```
 
 ```php
 return [
 
-    // ～ 省略 ～
+    'default' => env('FILESYSTEM_DRIVER', 'local'),
     
-    'cloud' => env('FILESYSTEM_CLOUD', 's3'),
-
+     // ～ 省略 ～
+    
     'disks' => [
 
         // ～ 省略 ～
@@ -2226,9 +2257,27 @@ return [
 ];
 ```
 
+**＊実装例＊**
+
+Storageファサードの```disk```メソッドを用いてs3ディスクを指定する．また，```file.txt```ファイルをS3バケットのルートに```file.txt```として保存する．
+
+```php
+Storage::disk('s3')->put('file.txt', 'file.txt');
+```
+
+ただし，環境変数を使用して，```filesytems.php```ファイルでデフォルトディスクを```s3```に変更すると，```put```メソッドを直接使用できる．
+
+```php
+FILESYSTEM_DRIVER=s3
+```
+
+```php
+Storage::put('file.txt', 'file.txt');
+```
+
 <br>
 
-## Routes
+## Routing
 
 ### artisanコマンドによる操作
 
@@ -2251,7 +2300,7 @@ $ php artisan optimize:clear
 
 <br>
 
-### 種類
+### ルーティングファイルの種類
 
 #### ・```api.php```ファイル
 
@@ -2267,7 +2316,7 @@ API以外の場合，こちらにルーティング処理を実装する．第�
 
 <br>
 
-### グルーピング
+### Routeファサード
 
 #### ・```namespace```メソッド
 
@@ -2370,10 +2419,6 @@ Route::group(['namespace' => 'Auth' , 'middleware' => 'auth'])->group(function (
 });
 ```
 
-<br>
-
-### HTTPメソッド
-
 #### ・```http```メソッド
 
 Routeクラスには，各HTTPメソッドをルーティングできるメソッドが用意されている．
@@ -2444,15 +2489,13 @@ class RouteServiceProvider extends ServiceProvider
 }
 ```
 
-
-
 <br>
 
 ### ヘルスチェック
 
-#### ・単純な200レスポンス
+#### ・単純な```200```レスポンス
 
-ALBやGlobal Acceleratorから```/healthcheck```パスに対してヘルスチェックを設定した上で，200ステータスのレスポンスを送信するようにする．Nginxでヘルスチェックを実装することもできるが，アプリケーションの死活管理としては，Laravelに実装する方が適切である．RouteServiceProviderも参照せよ．
+ALBやGlobal Acceleratorから```/healthcheck```パスに対してヘルスチェックを設定した上で，```200```ステータスのレスポンスを送信するようにする．Nginxでヘルスチェックを実装することもできるが，アプリケーションの死活管理としては，Laravelに実装する方が適切である．RouteServiceProviderも参照せよ．
 
 **＊実装例＊**
 
@@ -2512,7 +2555,7 @@ class ExampleBeforeMiddleware
 ```
 #### ・AfterMiddleware
 
-コントローラメソッドのレスポンスの実行後（テンプレートのレンダリングを含む）に実行する処理を設定できる．```$response```には，Responseクラスが代入されている．
+コントローラメソッドのレスポンスの実行後（テンプレートのレンダリングを含む）に実行する処理を設定できる．
 
 **＊実装例＊**
 
@@ -2638,7 +2681,7 @@ $validatedData = $request->validate([
 ]);
 ```
 
-#### ・Validator
+#### ・Validatorファサード
 
 Validatorファサードの```make```メソッドを使用して，ルールを定義する．第一引数で，バリデーションを行うリクエストデータを渡す．validationルールに反すると，一つ目のルール名（例えば```required```）に基づき，```validation.php```から対応するエラーメッセージを自動的に選択する．
 
@@ -2822,91 +2865,7 @@ class UserController extends Controller
     {
         //
     }
-}
-```
-
-<br>
-
-### Responseクラス
-
-#### ・Json型データのレスポンス
-
-Responseクラスは，SymfonyコンポーネントのResponseクラスを継承している．
-
-**＊実装例＊**
-
-```php
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Response;
-
-class ExampleController extends Controller
-{
-
-    public function index()
-    {
-
-        // ～ 省略 ～
-
-        return response()->json([
-            'name'  => 'Abigail',
-            'state' => 'CA'
-        ]);
-    }
-}
-```
-
-#### ・Viewテンプレートのレスポンス
-
-**＊実装例＊**
-
-```php
-<?php
-
-namespace App\Http\Controllers\Example;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Response;
-
-class ExampleController extends Controller
-{
-
-    public function index()
-    {
-        // ～ 省略 ～
-
-        // データ，ステータスコード，ヘッダーなどを設定する場合
-        return response()
-            ->view('hello', $data, 200)
-            ->header('Content-Type', $type);
-    }
-}
-```
-
-```php
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Response;
-
-final class ExampleController extends Controller
-{
-
-    public function index()
-    {
-        // ～ 省略 ～
-
-        // ステータスコードのみ設定する場合
-        return response()
-            ->view('hello')
-            ->setStatusCode(200);
-    }
-}
+}    
 ```
 
 <br>
@@ -2951,7 +2910,7 @@ $ php artisan passport:client --password
 
 <br>
 
-### AuthによるDigest認証
+### AuthファサードによるDigest認証
 
 パスワードを```attempt```メソッドを用いて自動的にハッシュ化し，データベースのハッシュ値と照合する．認証が終わると，認証セッションを開始する．```intended```メソッドで，ログイン後の初期ページにリダイレクトする．
 
@@ -3230,7 +3189,7 @@ $ php artisan optimize:clear
 
 #### ・データの出力
 
-Responseクラスから渡されたデータは，```{{ 変数名 }}``で取得できる．`
+Controllerクラスから返却されたデータは，```{{ 変数名 }}```で取得できる．`
 
 **＊実装例＊**
 
@@ -3980,3 +3939,270 @@ return [
     ]
 ];
 ```
+
+<br>
+
+## よく使うグローバルヘルパー関数
+
+### 一覧
+
+以下リンクを参照せよ．
+
+https://readouble.com/laravel/6.x/ja/helpers.html#method-view
+
+<br>
+
+### ```config```ヘルパー
+
+#### ・環境変数ファイルの読み込み
+
+環境変数ファイル名とキー名をドットで指定し，事前に設定された値を出力する．
+
+**＊実装例＊**
+
+標準で搭載されている```app.php```ファイルの```timezone```キーの値を出力する．
+
+```php
+<?php
+
+$value = config('app.timezone');
+```
+
+#### ・独自環境変数ファイルの作成と読み込み
+
+configディレクトリに任意の名前のphp形式を作成しておく．これは，configヘルパーで読み込むことができる．
+
+**＊実装例＊**
+
+
+```php
+<?php
+
+$requestUrl = config('api.example1.endpoint_url');
+```
+
+
+```php
+<?php
+
+return [
+    'example1' => [
+        'endpoint_url' => env('ENDPOINT_URL', ''),
+        'api_key'      => env('SQUID_API_KEY'),
+    ],
+    'example2' => [
+        'endpoint_url' => env('ENDPOINT_URL', ''),
+        'api_key'      => env('SQUID_API_KEY'),
+    ]
+];
+```
+<br>
+
+### ```response```ヘルパー
+
+#### ・ソースコード
+
+https://github.com/laravel/framework/blob/6.x/src/Illuminate/Contracts/Routing/ResponseFactory.php
+
+#### ・Json型データのレスポンス
+
+返却されるResponseFactoryクラスの```json```メソッドにレンダリングしたいJSONデータを設定する．
+
+**＊実装例＊**
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
+
+class ExampleController extends Controller
+{
+    public function index()
+    {
+
+        // ～ 省略 ～
+
+        return response()
+            ->json([
+                'name'  => 'Abigail',
+                'state' => 'CA'
+            ]);
+    }
+}
+```
+
+#### ・Viewテンプレートのレスポンス
+
+返却されるResponseFactoryクラスの```view```メソッドに，レンダリングしたいデータ（テンプレート，array型データ，ステータスコードなど）を設定する．また，Viewクラスの```header```メソッドにHTTPヘッダーの値を設定する．
+
+**＊実装例＊**
+
+```php
+<?php
+
+namespace App\Http\Controllers\Example;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
+
+class ExampleController extends Controller
+{
+    public function index()
+    {
+        // ～ 省略 ～
+
+        // データ，ステータスコード，ヘッダーなどを設定する場合
+        return response()
+            ->view(
+              'hello',
+              $data,
+              200
+            )->header(
+              'Content-Type',
+              $type
+            );
+    }
+}
+```
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
+
+class ExampleController extends Controller
+{
+    public function index()
+    {
+        // ～ 省略 ～
+
+        // ステータスコードのみ設定する場合
+        return response()
+            ->view('hello')
+            ->setStatusCode(200);
+    }
+}
+```
+
+#### ・ロギング
+
+返却されるResponseFactoryクラスの```error```メソッドに，エラーメッセージを設定するようにする．この時，```sprintf```メソッドを使用すると便利である．
+
+**＊実装例＊**
+
+外部のAPIに対してリクエストを送信し，データを取得する．取得したJSONデータを，クライアントにレスポンスする．この時，リクエスト処理のために，Guzzleライブラリを使用している．
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
+use Illuminate\Http\Response;
+
+class ExampleController extends Controller
+{
+    public function index()
+    {
+        $client = new Client();
+        $requestUrl = config('api.example1.endpoint_url');
+        
+        try {
+            
+            $response = $client->request(
+                'GET',
+                $requestUrl,
+                [
+                    'headers' => [
+                        'Content-Type' => 'application/json',
+                        'X-API-Key'    => 'api.example1.api_key',
+                    ]
+                ]
+            );
+            
+            // JSONをクライアントにレスポンス
+            return $response->getBody()->getContents();
+            
+        } catch (GuzzleException $e) {
+            
+            return response()
+                ->error(sprintf(
+                    '%s : %s at %s line %s',
+                    get_class($e),
+                    $e->getMessage(),
+                    $e->getFile(),
+                    $e->getLine()
+                ));
+        }
+    }
+```
+
+```php
+<?php
+
+return [
+    'example1' => [
+        'endpoint_url' => env('ENDPOINT_URL', ''),
+        'api_key'      => env('SQUID_API_KEY'),
+    ],
+    'example2' => [
+        'endpoint_url' => env('ENDPOINT_URL', ''),
+        'api_key'      => env('SQUID_API_KEY'),
+    ]
+];
+```
+
+<br>
+
+### ```path```系ヘルパー
+
+#### ・```base_path```ヘルパー
+
+引数を設定しない場合，projectルートディレクトリの絶対パスを生成する．また，projectルートディレクトリからの相対パスを引数として，絶対パスを生成する．
+
+```php
+<?php
+
+// /var/www/project
+$path = base_path();
+
+// /var/www/project/vendor/bin
+$path = base_path('vendor/bin');
+```
+
+#### ・```public_path```ヘルパー
+
+引数を設定しない場合，publicディレクトリの絶対パスを生成する．また，publicディレクトリからの相対パスを引数として，絶対パスを生成する．
+
+```php
+<?php
+
+// /var/www/project/public
+$path = public_path();
+
+// /var/www/project/public/css/app.css
+$path = public_path('css/app.css');
+```
+
+#### ・```storage_path```ヘルパー
+
+引数を設定しない場合，storageディレクトリの絶対パスを生成する．まあ，storageディレクトリからの相対パスを引数として，絶対パスを生成する．
+
+```php
+<?php
+
+// /var/www/project/storage
+$path = storage_path();
+
+// /var/www/project/storage/app/file.txt
+$path = storage_path('app/file.txt');
+```
+
